@@ -1,4 +1,4 @@
-﻿field,required,description
+field,required,description
 report_id,yes,연구용 결과 문서 식별자
 timestamp,yes,생성시각과 시간대
 app_commit,yes,실행 코드 버전
@@ -17,5 +17,5 @@ calculation_annex,yes,재계산 가능한 CSV/JSON·수식·계수 버전·불�
 evidence_manifest,yes,원본 파일·행 ID·SHA-256·첨부 경로
 framework_mapping,yes,CBAM/RE100/선택 ISO 항목 대응·누락 증빙·직접/간접 활용 조건
 revision_history,yes,작성자·시각·수정 사유·문서 버전
-signature_timestamp,conditional,E04 검토 결과에 따른 디지털 서명·신뢰 타임스탬프 및 검증 정보
+signature_timestamp,conditional,E03 검토 결과에 따른 디지털 서명·신뢰 타임스탬프 및 검증 정보
 external_verification,conditional,실제 검증기관 발행 원본·범위·의견 연결
