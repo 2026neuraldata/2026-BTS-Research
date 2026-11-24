@@ -1,6 +1,6 @@
 """Validate the research plan's dates, dependency graph, and source coverage."""
 from pathlib import Path
-from datetime import date
+from datetime import date,datetime
 import csv,json,sys,re
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -9,11 +9,12 @@ def read_csv(p):
 tasks=read_csv('management/tasks.csv'); by_id={t['id']:t for t in tasks}
 cfg=json.loads((ROOT/'config.yaml').read_text(encoding='utf-8'))
 errors=[]
+def parse_date(s):return datetime.strptime('2026/'+s,'%Y/%m/%d').date()
 if len(by_id)!=len(tasks):errors.append('Duplicate task ID')
-pause0=date.fromisoformat(cfg['dates']['pause_start']);pause1=date.fromisoformat(cfg['dates']['pause_end'])
+pause0=parse_date(cfg['dates']['pause_start']);pause1=parse_date(cfg['dates']['pause_end'])
 statuses={'planned','in_progress','review','done','blocked','conditional','deferred','artifact_present','reported'}
 for t in tasks:
-    try: start,end=map(date.fromisoformat,[t['start'],t['due']])
+    try: start,end=map(parse_date,[t['start'],t['due']])
     except ValueError: errors.append(f"{t['id']}: invalid date");continue
     if start>end:errors.append(f"{t['id']}: reversed dates")
     if start<=pause1 and end>=pause0:errors.append(f"{t['id']}: overlaps exam pause")
@@ -22,7 +23,7 @@ for t in tasks:
         if not t[k].strip():errors.append(f"{t['id']}: missing {k}")
     for dep in filter(None,t['dependencies'].split(';')):
         if dep not in by_id:errors.append(f"{t['id']}: unknown dependency {dep}")
-        elif by_id[dep]['due']>t['due']:errors.append(f"{t['id']}: dependency due after dependent")
+        elif parse_date(by_id[dep]['due'])>parse_date(t['due']):errors.append(f"{t['id']}: dependency due after dependent")
 seen=set();active=set()
 def visit(id):
     if id in active:errors.append('Dependency cycle: '+id);return
