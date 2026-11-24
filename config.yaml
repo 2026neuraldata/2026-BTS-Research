@@ -3,19 +3,20 @@
     "title": "2026 BTS Research",
     "repository": "2026neuraldata/2026-BTS-Research",
     "visibility": "private",
-    "as_of": "2026-11-24",
+    "as_of": "11/24",
     "timezone": "Asia/Seoul",
-    "plan_status": "proposed_execution_baseline"
+    "plan_status": "execution_schedule",
+    "year": 2026
   },
   "dates": {
     "meeting_days": [
-      "2026-11-28",
-      "2026-11-29"
+      "11/28",
+      "11/29"
     ],
-    "poster_final": "2026-12-06",
-    "pause_start": "2026-12-07",
-    "pause_end": "2026-12-18",
-    "presentation": "2026-12-29"
+    "poster_final": "12/6",
+    "pause_start": "12/7",
+    "pause_end": "12/18",
+    "presentation": "12/29"
   },
   "data": {
     "source_sha256": "3e7680f10157ff622bb2df0aab2c1cf7acb0ec9f5f9bd030d730dca578c4763a",
@@ -49,7 +50,6 @@
       "poster_and_demo"
     ],
     "conditional": [
-      "additional_experiment",
       "dspy_judge_optimization"
     ],
     "deferred": [
@@ -67,7 +67,16 @@
     "literature_questions": 10,
     "primary_points_per_question": 2,
     "gold_excluded_from_candidate_context": true,
-    "independent_test_not_established": true
+    "independent_test_not_established": true,
+    "judge_candidates": [
+      "GPT",
+      "Claude",
+      "Gemini"
+    ],
+    "judge_selection_due": "11/27",
+    "judge_final_due": "12/2",
+    "primary_judge": "selected_by_calibration",
+    "secondary_judge": "different_provider"
   },
   "energy": {
     "electricity_equivalent_is_not_process_electricity": true,
