@@ -2,7 +2,7 @@
   "project": {
     "title": "2026 BTS Research",
     "repository": "2026neuraldata/2026-BTS-Research",
-    "visibility": "private",
+    "visibility": "public",
     "as_of": "11/24",
     "timezone": "Asia/Seoul",
     "plan_status": "execution_schedule",
