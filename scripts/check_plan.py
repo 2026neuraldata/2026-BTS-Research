@@ -11,13 +11,14 @@ cfg=json.loads((ROOT/'config.yaml').read_text(encoding='utf-8'))
 errors=[]
 def parse_date(s):return datetime.strptime('2026/'+s,'%Y/%m/%d').date()
 if len(by_id)!=len(tasks):errors.append('Duplicate task ID')
-pause0=parse_date(cfg['dates']['pause_start']);pause1=parse_date(cfg['dates']['pause_end'])
+pauses=[(parse_date(x['start']),parse_date(x['end']),x['reason']) for x in cfg['dates']['non_working_periods']]
 statuses={'planned','in_progress','review','done','blocked','conditional','deferred','artifact_present','reported'}
 for t in tasks:
     try: start,end=map(parse_date,[t['start'],t['due']])
     except ValueError: errors.append(f"{t['id']}: invalid date");continue
     if start>end:errors.append(f"{t['id']}: reversed dates")
-    if start<=pause1 and end>=pause0:errors.append(f"{t['id']}: overlaps exam pause")
+    for pause0,pause1,reason in pauses:
+        if start<=pause1 and end>=pause0:errors.append(f"{t['id']}: overlaps non-working period ({reason})")
     if t['status'] not in statuses:errors.append(f"{t['id']}: unknown status")
     for k in ['owner','reviewer','deliverables','acceptance','basis']:
         if not t[k].strip():errors.append(f"{t['id']}: missing {k}")
@@ -43,4 +44,4 @@ for x in manifest:
     if not re.fullmatch(r'[a-f0-9]{64}',x['sha256']):errors.append('Invalid source hash: '+x['audit_id'])
 if errors:
     print('\n'.join(errors));sys.exit(1)
-print(f'PASS: {len(tasks)} tasks; acyclic dependencies; no exam-period work; 289 Drive + 4 ZIP-only source records.')
+print(f'PASS: {len(tasks)} tasks; acyclic dependencies; no exam/Christmas-period work; 289 Drive + 4 ZIP-only source records.')
