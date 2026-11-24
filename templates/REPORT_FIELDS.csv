@@ -10,4 +10,12 @@ energy_results,yes,계산값·단위·기준/추천 비교
 assumptions,yes,가정·누락값·계수 기준
 sources,yes,제목·DOI·페이지·원본 행
 limitations,yes,검증 범위와 미검증 항목
-review_status,yes,사람 검토 여부; 공식 인증 아님
+review_status,yes,미검토/내부 검토/외부 검증 구분 및 실제 검증 문서 연결
+reporting_scope,yes,제도·보고기간·조직/공정 경계·기능단위·적용 가능성
+claim_type,yes,추천 시나리오/실측 실적/가정값 구분
+calculation_annex,yes,재계산 가능한 CSV/JSON·수식·계수 버전·불확실성
+evidence_manifest,yes,원본 파일·행 ID·SHA-256·첨부 경로
+framework_mapping,yes,CBAM/RE100/선택 ISO 항목 대응·누락 증빙·직접/간접 활용 조건
+review_history,yes,검토자·시각·수정 사유·문서 버전
+signature_timestamp,conditional,E04 검토 결과에 따른 디지털 서명·신뢰 타임스탬프 및 검증 정보
+external_verification,conditional,실제 검증기관 발행 원본·범위·의견 연결
