@@ -16,7 +16,19 @@
     "poster_final": "12/6",
     "pause_start": "12/7",
     "pause_end": "12/18",
-    "presentation": "12/29"
+    "presentation": "12/29",
+    "non_working_periods": [
+      {
+        "start": "12/7",
+        "end": "12/18",
+        "reason": "기말고사"
+      },
+      {
+        "start": "12/23",
+        "end": "12/27",
+        "reason": "크리스마스 휴식"
+      }
+    ]
   },
   "data": {
     "source_sha256": "3e7680f10157ff622bb2df0aab2c1cf7acb0ec9f5f9bd030d730dca578c4763a",
@@ -89,6 +101,7 @@
       "PROGRESS.md",
       "docs/TEAM_TASKS.md"
     ],
-    "no_tasks_during_exam_pause": true
+    "no_tasks_during_exam_pause": true,
+    "no_tasks_during_non_working_periods": true
   }
 }
