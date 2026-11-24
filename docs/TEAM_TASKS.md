@@ -14,14 +14,14 @@
 <tr><td width="90">🔵 <strong>D01</strong></td><td width="390">분석에 사용할 최종 데이터와 그림 확정</td><td width="180">김선우</td><td width="140">11/24–11/25</td><td width="80">예정</td></tr>
 <tr><td width="90">🔴 <strong>G01</strong></td><td width="390">전체 일정과 담당별 제출물 정리</td><td width="180">김선우</td><td width="140">11/24–11/25</td><td width="80">예정</td></tr>
 <tr><td width="90">🔵 <strong>D02</strong></td><td width="390">앱에 넣을 실험 데이터 표와 변수 설명 작성</td><td width="180">김선우</td><td width="140">11/25–11/26</td><td width="80">예정</td></tr>
-<tr><td width="90">🔴 <strong>G02</strong></td><td width="390">11/28 회의: 연구 범위·평가 모델·제출물 점검</td><td width="180">김선우</td><td width="140">11/28–11/28</td><td width="80">예정</td></tr>
+<tr><td width="90">🔴 <strong>G02</strong></td><td width="390">11/28 회의: 연구 범위·평가 모델·제출물 점검</td><td width="180">김선우</td><td width="140">11/28</td><td width="80">예정</td></tr>
 <tr><td width="90">🟡 <strong>P01</strong></td><td width="390">포스터 크기 확인과 내용 배치 설계</td><td width="180">김선우</td><td width="140">11/25–11/28</td><td width="80">예정</td></tr>
 <tr><td width="90">🔵 <strong>D03</strong></td><td width="390">언양·굴화 비교 표와 설명 작성</td><td width="180">김선우</td><td width="140">11/27–11/29</td><td width="80">예정</td></tr>
 <tr><td width="90">🟢 <strong>E04</strong></td><td width="390">탄소 증빙용 PDF 양식 조사·예시 제작</td><td width="180">김선우·임수현</td><td width="140">11/28–11/29</td><td width="80">예정</td></tr>
-<tr><td width="90">🔴 <strong>G03</strong></td><td width="390">11/29 회의: 앱 시연과 평가 예행연습 점검</td><td width="180">김선우</td><td width="140">11/29–11/29</td><td width="80">예정</td></tr>
-<tr><td width="90">🔴 <strong>G04</strong></td><td width="390">포스터에 넣을 최종 표·그림·결론 확정</td><td width="180">김선우</td><td width="140">12/3–12/3</td><td width="80">예정</td></tr>
+<tr><td width="90">🔴 <strong>G03</strong></td><td width="390">11/29 회의: 앱 시연과 평가 예행연습 점검</td><td width="180">김선우</td><td width="140">11/29</td><td width="80">예정</td></tr>
+<tr><td width="90">🔴 <strong>G04</strong></td><td width="390">12/3 회의: 포스터에 넣을 최종 표·그림·결론 확정</td><td width="180">김선우</td><td width="140">12/3</td><td width="80">예정</td></tr>
 <tr><td width="90">🟡 <strong>P02</strong></td><td width="390">포스터 전체 초안 완성</td><td width="180">김선우</td><td width="140">12/3–12/4</td><td width="80">예정</td></tr>
-<tr><td width="90">🟡 <strong>P03</strong></td><td width="390">포스터 최종 PDF와 편집 원본 저장</td><td width="180">김선우</td><td width="140">12/6–12/6</td><td width="80">예정</td></tr>
+<tr><td width="90">🟡 <strong>P03</strong></td><td width="390">포스터 최종 PDF와 편집 원본 저장</td><td width="180">김선우</td><td width="140">12/6</td><td width="80">예정</td></tr>
 <tr><td width="90">🟡 <strong>P04</strong></td><td width="390">발표 대본 작성</td><td width="180">김선우</td><td width="140">12/19–12/22</td><td width="80">예정</td></tr>
 <tr><td width="90">🟡 <strong>P07</strong></td><td width="390">예상 질문과 답변 작성</td><td width="180">김선우·임수현·이건희</td><td width="140">12/19–12/22</td><td width="80">예정</td></tr>
 </tbody>
@@ -76,8 +76,8 @@
 <table width="880">
 <thead><tr><th width="90">작업 ID</th><th width="390">해야 할 일</th><th width="180">담당</th><th width="140">기간</th><th width="80">상태</th></tr></thead>
 <tbody>
-<tr><td width="90">🟡 <strong>P05</strong></td><td width="390">발표 직전 출력물·앱·백업 최종 점검</td><td width="180">전원</td><td width="140">12/28–12/28</td><td width="80">예정</td></tr>
-<tr><td width="90">🟡 <strong>P06</strong></td><td width="390">12/29 연구 성과 발표</td><td width="180">전원</td><td width="140">12/29–12/29</td><td width="80">예정</td></tr>
+<tr><td width="90">🟡 <strong>P05</strong></td><td width="390">발표 직전 출력물·앱·백업 최종 점검</td><td width="180">전원</td><td width="140">12/28</td><td width="80">예정</td></tr>
+<tr><td width="90">🟡 <strong>P06</strong></td><td width="390">12/29 연구 성과 발표</td><td width="180">전원</td><td width="140">12/29</td><td width="80">예정</td></tr>
 </tbody>
 </table>
 
@@ -273,7 +273,7 @@
 ### 🔴 G02 · 11/28 회의: 연구 범위·평가 모델·제출물 점검
 
 - **담당:** 김선우.
-- **기간:** 11/28–11/28. **상태:** 예정.
+- **기간:** 11/28. **상태:** 예정.
 - **목적:** 최종 평가와 포스터에 필요한 준비 상태를 확인하기 위함.
 - **먼저 필요한 작업:** 🔴 **G01**, 🔵 **D01**, 🟢 **E02**, 🟣 **L02**, 🟣 **L06**.
 - **준비 자료:** 회의 시간·장소는 별도 확인.
@@ -360,7 +360,7 @@
 ### 🔴 G03 · 11/29 회의: 앱 시연과 평가 예행연습 점검
 
 - **담당:** 김선우.
-- **기간:** 11/29–11/29. **상태:** 예정.
+- **기간:** 11/29. **상태:** 예정.
 - **목적:** 최종 결과를 만들 수 있는 상태인지 실제 출력으로 확인하기 위함.
 - **먼저 필요한 작업:** 🔴 **G02**, 🟠 **C03**, 🟣 **L03**.
 - **준비 자료:** 통합 시연 결과.
@@ -495,10 +495,10 @@
 - **제출물:** judge_scores.csv, pairwise_results.csv, human_judge_comparison.csv.
 - **완료 기준:** 심사위원별 점수·승/무/패·순서 불일치·사람과의 점수 차이 기록; 서로 다른 척도는 별도 표.
 
-### 🔴 G04 · 포스터에 넣을 최종 표·그림·결론 확정
+### 🔴 G04 · 12/3 회의: 포스터에 넣을 최종 표·그림·결론 확정
 
 - **담당:** 김선우.
-- **기간:** 12/3–12/3. **상태:** 예정.
+- **기간:** 12/3. **상태:** 예정.
 - **목적:** 평가표·앱·포스터가 같은 결과를 설명하도록 맞추기 위함.
 - **먼저 필요한 작업:** 🟣 **L05**, 🟢 **E03**, 🟣 **L07**.
 - **준비 자료:** 최종 분석·평가·에너지 결과.
@@ -532,7 +532,7 @@
 ### 🟡 P03 · 포스터 최종 PDF와 편집 원본 저장
 
 - **담당:** 김선우.
-- **기간:** 12/6–12/6. **상태:** 예정.
+- **기간:** 12/6. **상태:** 예정.
 - **목적:** 12/6까지 제출 가능한 최종 파일을 완성하기 위함.
 - **먼저 필요한 작업:** 🟡 **P02**, 🟠 **C06**.
 - **준비 자료:** 담당별 최종 제출물.
@@ -601,7 +601,7 @@
 ### 🟡 P05 · 발표 직전 출력물·앱·백업 최종 점검
 
 - **담당:** 전원.
-- **기간:** 12/28–12/28. **상태:** 예정.
+- **기간:** 12/28. **상태:** 예정.
 - **목적:** 발표 준비물 누락과 버전 불일치를 방지하기 위함.
 - **먼저 필요한 작업:** 🟠 **C07**, 🟡 **P04**, 🟡 **P07**.
 - **준비 자료:** 동결된 결과와 최종 시연.
@@ -618,7 +618,7 @@
 ### 🟡 P06 · 12/29 연구 성과 발표
 
 - **담당:** 전원.
-- **기간:** 12/29–12/29. **상태:** 예정.
+- **기간:** 12/29. **상태:** 예정.
 - **목적:** 완료한 연구 결과와 한계를 청중에게 전달하기 위함.
 - **먼저 필요한 작업:** 🟡 **P05**.
 - **준비 자료:** 확정 시각·장소는 별도 확인.
