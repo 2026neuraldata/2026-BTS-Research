@@ -1,0 +1,85 @@
+{
+  "project": {
+    "title": "2026 BTS Research",
+    "repository": "2026neuraldata/2026-BTS-Research",
+    "visibility": "private",
+    "as_of": "2026-11-24",
+    "timezone": "Asia/Seoul",
+    "plan_status": "proposed_execution_baseline"
+  },
+  "dates": {
+    "meeting_days": [
+      "2026-11-28",
+      "2026-11-29"
+    ],
+    "poster_final": "2026-12-06",
+    "pause_start": "2026-12-07",
+    "pause_end": "2026-12-18",
+    "presentation": "2026-12-29"
+  },
+  "data": {
+    "source_sha256": "3e7680f10157ff622bb2df0aab2c1cf7acb0ec9f5f9bd030d730dca578c4763a",
+    "jar_rows": 24,
+    "solids_rows": 26,
+    "solids_site": "Gulhwa",
+    "ph_levels": [
+      5,
+      7,
+      9
+    ],
+    "actual_doses_mg_L": [
+      20.1,
+      40.2,
+      60.3,
+      80.16
+    ],
+    "jar_repeats_per_condition": 1,
+    "solids_repeats_per_treated_condition": 2,
+    "evaluation_minutes": [
+      5,
+      30
+    ],
+    "raw_immutable": true
+  },
+  "scope": {
+    "required": [
+      "observed_condition_recommendation",
+      "process_energy_scenarios",
+      "human_scored_model_comparison",
+      "poster_and_demo"
+    ],
+    "conditional": [
+      "additional_experiment",
+      "dspy_judge_optimization"
+    ],
+    "deferred": [
+      "local_llm_migration",
+      "dense_vector_search_unless_needed",
+      "AI_energy_measurement_without_inputs",
+      "formal_certification",
+      "interactive_map_expansion",
+      "sludge_reuse"
+    ]
+  },
+  "evaluation": {
+    "questions": 20,
+    "experimental_questions": 10,
+    "literature_questions": 10,
+    "primary_points_per_question": 2,
+    "gold_excluded_from_candidate_context": true,
+    "independent_test_not_established": true
+  },
+  "energy": {
+    "electricity_equivalent_is_not_process_electricity": true,
+    "unknown_input_policy": "missing_not_zero",
+    "mass_basis_must_match_factor": true
+  },
+  "tracking": {
+    "source": "management/tasks.csv",
+    "generated": [
+      "PROGRESS.md",
+      "docs/TEAM_TASKS.md"
+    ],
+    "no_tasks_during_exam_pause": true
+  }
+}
