@@ -8,62 +8,77 @@
 
 ## 김선우
 
-| 작업 ID | 해야 할 일 | 담당 | 기간 | 상태 |
-|---|---|---|---|---|
-| 🔵 **D01** | 분석에 사용할 최종 데이터와 그림 확정 | 김선우 | 11/24–11/25 | 예정 |
-| 🔴 **G01** | 전체 일정과 담당별 제출물 정리 | 김선우 | 11/24–11/25 | 예정 |
-| 🔵 **D02** | 앱에 넣을 실험 데이터 표와 변수 설명 작성 | 김선우 | 11/25–11/26 | 예정 |
-| 🔴 **G02** | 11/28 회의: 연구 범위·평가 모델·제출물 점검 | 김선우 | 11/28–11/28 | 예정 |
-| 🟡 **P01** | 포스터 크기 확인과 내용 배치 설계 | 김선우 | 11/25–11/28 | 예정 |
-| 🔵 **D03** | 언양·굴화 비교 표와 설명 작성 | 김선우 | 11/27–11/29 | 예정 |
-| 🔴 **G03** | 11/29 회의: 앱 시연과 평가 예행연습 점검 | 김선우 | 11/29–11/29 | 예정 |
-| 🔴 **G04** | 포스터에 넣을 최종 표·그림·결론 확정 | 김선우 | 12/3–12/3 | 예정 |
-| 🟡 **P02** | 포스터 전체 초안 완성 | 김선우 | 12/3–12/4 | 예정 |
-| 🟡 **P04** | 포스터 최종 PDF와 편집 원본 저장 | 김선우 | 12/6–12/6 | 예정 |
-| 🟡 **P05** | 발표 대본 작성 | 김선우 | 12/19–12/22 | 예정 |
-| 🟡 **P08** | 예상 질문과 답변 작성 | 김선우·임수현·이건희 | 12/19–12/22 | 예정 |
+<table width="880">
+<thead><tr><th width="90">작업 ID</th><th width="390">해야 할 일</th><th width="180">담당</th><th width="140">기간</th><th width="80">상태</th></tr></thead>
+<tbody>
+<tr><td width="90">🔵 <strong>D01</strong></td><td width="390">분석에 사용할 최종 데이터와 그림 확정</td><td width="180">김선우</td><td width="140">11/24–11/25</td><td width="80">예정</td></tr>
+<tr><td width="90">🔴 <strong>G01</strong></td><td width="390">전체 일정과 담당별 제출물 정리</td><td width="180">김선우</td><td width="140">11/24–11/25</td><td width="80">예정</td></tr>
+<tr><td width="90">🔵 <strong>D02</strong></td><td width="390">앱에 넣을 실험 데이터 표와 변수 설명 작성</td><td width="180">김선우</td><td width="140">11/25–11/26</td><td width="80">예정</td></tr>
+<tr><td width="90">🔴 <strong>G02</strong></td><td width="390">11/28 회의: 연구 범위·평가 모델·제출물 점검</td><td width="180">김선우</td><td width="140">11/28–11/28</td><td width="80">예정</td></tr>
+<tr><td width="90">🟡 <strong>P01</strong></td><td width="390">포스터 크기 확인과 내용 배치 설계</td><td width="180">김선우</td><td width="140">11/25–11/28</td><td width="80">예정</td></tr>
+<tr><td width="90">🔵 <strong>D03</strong></td><td width="390">언양·굴화 비교 표와 설명 작성</td><td width="180">김선우</td><td width="140">11/27–11/29</td><td width="80">예정</td></tr>
+<tr><td width="90">🔴 <strong>G03</strong></td><td width="390">11/29 회의: 앱 시연과 평가 예행연습 점검</td><td width="180">김선우</td><td width="140">11/29–11/29</td><td width="80">예정</td></tr>
+<tr><td width="90">🔴 <strong>G04</strong></td><td width="390">포스터에 넣을 최종 표·그림·결론 확정</td><td width="180">김선우</td><td width="140">12/3–12/3</td><td width="80">예정</td></tr>
+<tr><td width="90">🟡 <strong>P02</strong></td><td width="390">포스터 전체 초안 완성</td><td width="180">김선우</td><td width="140">12/3–12/4</td><td width="80">예정</td></tr>
+<tr><td width="90">🟡 <strong>P04</strong></td><td width="390">포스터 최종 PDF와 편집 원본 저장</td><td width="180">김선우</td><td width="140">12/6–12/6</td><td width="80">예정</td></tr>
+<tr><td width="90">🟡 <strong>P05</strong></td><td width="390">발표 대본 작성</td><td width="180">김선우</td><td width="140">12/19–12/22</td><td width="80">예정</td></tr>
+<tr><td width="90">🟡 <strong>P08</strong></td><td width="390">예상 질문과 답변 작성</td><td width="180">김선우·임수현·이건희</td><td width="140">12/19–12/22</td><td width="80">예정</td></tr>
+</tbody>
+</table>
 
 ## 임수현
 
-| 작업 ID | 해야 할 일 | 담당 | 기간 | 상태 |
-|---|---|---|---|---|
-| 🟢 **E01** | 에너지·탄소 계산식과 배출계수 확정 | 임수현 | 11/24–11/26 | 예정 |
-| 🟢 **E02** | 에너지 계산에 넣을 값과 가정 정리 | 임수현 | 11/25–11/27 | 예정 |
-| 🟢 **E03** | 앱의 에너지·탄소 계산 결과 검산 | 임수현 | 11/30–12/2 | 예정 |
-| 🟡 **P08** | 예상 질문과 답변 작성 | 김선우·임수현·이건희 | 12/19–12/22 | 예정 |
+<table width="880">
+<thead><tr><th width="90">작업 ID</th><th width="390">해야 할 일</th><th width="180">담당</th><th width="140">기간</th><th width="80">상태</th></tr></thead>
+<tbody>
+<tr><td width="90">🟢 <strong>E01</strong></td><td width="390">에너지·탄소 계산식과 배출계수 확정</td><td width="180">임수현</td><td width="140">11/24–11/26</td><td width="80">예정</td></tr>
+<tr><td width="90">🟢 <strong>E02</strong></td><td width="390">에너지 계산에 넣을 값과 가정 정리</td><td width="180">임수현</td><td width="140">11/25–11/27</td><td width="80">예정</td></tr>
+<tr><td width="90">🟢 <strong>E03</strong></td><td width="390">앱의 에너지·탄소 계산 결과 검산</td><td width="180">임수현</td><td width="140">11/30–12/2</td><td width="80">예정</td></tr>
+<tr><td width="90">🟡 <strong>P08</strong></td><td width="390">예상 질문과 답변 작성</td><td width="180">김선우·임수현·이건희</td><td width="140">12/19–12/22</td><td width="80">예정</td></tr>
+</tbody>
+</table>
 
 ## 이건희
 
-| 작업 ID | 해야 할 일 | 담당 | 기간 | 상태 |
-|---|---|---|---|---|
-| 🟣 **L01** | 평가 20문항의 정답과 근거 검수 | 이건희 | 11/24–11/26 | 예정 |
-| 🟣 **L02** | 일반·응집 전문 LLM 비교 조건 확정 | 이건희 | 11/25–11/27 | 예정 |
-| 🟣 **L06** | GPT·Claude·Gemini 심사위원 후보 비교 및 선정 | 이건희 | 11/26–11/27 | 예정 |
-| 🟣 **L03** | LLM 비교와 심사위원 채점 예행연습 | 이건희 | 11/28–11/29 | 예정 |
-| 🟣 **L04** | 사람이 채점한 심사위원 보정 자료 작성 | 이건희 | 11/29–11/30 | 예정 |
-| 🟣 **L05** | 최종 일반·응집 전문 LLM 답변 수집 및 사람 채점 | 이건희 | 12/1–12/2 | 예정 |
-| 🟣 **L07** | 심사위원 LLM 최종 채점과 사람 점수 비교 | 이건희 | 12/1–12/2 | 예정 |
-| 🟡 **P08** | 예상 질문과 답변 작성 | 김선우·임수현·이건희 | 12/19–12/22 | 예정 |
+<table width="880">
+<thead><tr><th width="90">작업 ID</th><th width="390">해야 할 일</th><th width="180">담당</th><th width="140">기간</th><th width="80">상태</th></tr></thead>
+<tbody>
+<tr><td width="90">🟣 <strong>L01</strong></td><td width="390">평가 20문항의 정답과 근거 검수</td><td width="180">이건희</td><td width="140">11/24–11/26</td><td width="80">예정</td></tr>
+<tr><td width="90">🟣 <strong>L02</strong></td><td width="390">일반·응집 전문 LLM 비교 조건 확정</td><td width="180">이건희</td><td width="140">11/25–11/27</td><td width="80">예정</td></tr>
+<tr><td width="90">🟣 <strong>L06</strong></td><td width="390">GPT·Claude·Gemini 심사위원 후보 비교 및 선정</td><td width="180">이건희</td><td width="140">11/26–11/27</td><td width="80">예정</td></tr>
+<tr><td width="90">🟣 <strong>L03</strong></td><td width="390">LLM 비교와 심사위원 채점 예행연습</td><td width="180">이건희</td><td width="140">11/28–11/29</td><td width="80">예정</td></tr>
+<tr><td width="90">🟣 <strong>L04</strong></td><td width="390">사람이 채점한 심사위원 보정 자료 작성</td><td width="180">이건희</td><td width="140">11/29–11/30</td><td width="80">예정</td></tr>
+<tr><td width="90">🟣 <strong>L05</strong></td><td width="390">최종 일반·응집 전문 LLM 답변 수집 및 사람 채점</td><td width="180">이건희</td><td width="140">12/1–12/2</td><td width="80">예정</td></tr>
+<tr><td width="90">🟣 <strong>L07</strong></td><td width="390">심사위원 LLM 최종 채점과 사람 점수 비교</td><td width="180">이건희</td><td width="140">12/1–12/2</td><td width="80">예정</td></tr>
+<tr><td width="90">🟡 <strong>P08</strong></td><td width="390">예상 질문과 답변 작성</td><td width="180">김선우·임수현·이건희</td><td width="140">12/19–12/22</td><td width="80">예정</td></tr>
+</tbody>
+</table>
 
 ## 허재영
 
-| 작업 ID | 해야 할 일 | 담당 | 기간 | 상태 |
-|---|---|---|---|---|
-| 🟠 **C01** | 현재 앱 코드와 실행 버전 확보 | 허재영 | 11/24–11/25 | 예정 |
-| 🟠 **C02** | 실험 조건 추천과 문헌 출처 표시 수정 | 허재영 | 11/25–11/28 | 예정 |
-| 🟠 **C04** | 일반·응집 전문 LLM의 답변 수집 기능 구현 | 허재영 | 11/27–11/28 | 예정 |
-| 🟠 **C03** | 앱에 에너지·탄소 계산 기능 연결 | 허재영 | 11/27–11/29 | 예정 |
-| 🟠 **C05** | 심사위원 채점 프롬프트 개선·최종 고정 | 허재영 | 11/30–12/1 | 조건부 |
-| 🟠 **C06** | 입력·근거·결과가 담긴 연구용 PDF 저장 기능 구현 | 허재영 | 11/30–12/1 | 예정 |
-| 🟠 **C07** | 발표용 앱 접속·QR·영상 백업 점검 | 허재영 | 12/19–12/22 | 예정 |
+<table width="880">
+<thead><tr><th width="90">작업 ID</th><th width="390">해야 할 일</th><th width="180">담당</th><th width="140">기간</th><th width="80">상태</th></tr></thead>
+<tbody>
+<tr><td width="90">🟠 <strong>C01</strong></td><td width="390">현재 앱 코드와 실행 버전 확보</td><td width="180">허재영</td><td width="140">11/24–11/25</td><td width="80">예정</td></tr>
+<tr><td width="90">🟠 <strong>C02</strong></td><td width="390">실험 조건 추천과 문헌 출처 표시 수정</td><td width="180">허재영</td><td width="140">11/25–11/28</td><td width="80">예정</td></tr>
+<tr><td width="90">🟠 <strong>C04</strong></td><td width="390">일반·응집 전문 LLM의 답변 수집 기능 구현</td><td width="180">허재영</td><td width="140">11/27–11/28</td><td width="80">예정</td></tr>
+<tr><td width="90">🟠 <strong>C03</strong></td><td width="390">앱에 에너지·탄소 계산 기능 연결</td><td width="180">허재영</td><td width="140">11/27–11/29</td><td width="80">예정</td></tr>
+<tr><td width="90">🟠 <strong>C05</strong></td><td width="390">심사위원 채점 프롬프트 개선·최종 고정</td><td width="180">허재영</td><td width="140">11/30–12/1</td><td width="80">조건부</td></tr>
+<tr><td width="90">🟠 <strong>C06</strong></td><td width="390">입력·근거·결과가 담긴 연구용 PDF 저장 기능 구현</td><td width="180">허재영</td><td width="140">11/30–12/1</td><td width="80">예정</td></tr>
+<tr><td width="90">🟠 <strong>C07</strong></td><td width="390">발표용 앱 접속·QR·영상 백업 점검</td><td width="180">허재영</td><td width="140">12/19–12/22</td><td width="80">예정</td></tr>
+</tbody>
+</table>
 
 ## 전원
 
-| 작업 ID | 해야 할 일 | 담당 | 기간 | 상태 |
-|---|---|---|---|---|
-| 🟡 **P03** | 포스터 수치·설명·앱 화면 교차 검수 | 전원 | 12/5–12/5 | 예정 |
-| 🟡 **P06** | 발표 직전 출력물·앱·백업 최종 점검 | 전원 | 12/28–12/28 | 예정 |
-| 🟡 **P07** | 12/29 연구 성과 발표 | 전원 | 12/29–12/29 | 예정 |
+<table width="880">
+<thead><tr><th width="90">작업 ID</th><th width="390">해야 할 일</th><th width="180">담당</th><th width="140">기간</th><th width="80">상태</th></tr></thead>
+<tbody>
+<tr><td width="90">🟡 <strong>P03</strong></td><td width="390">포스터 수치·설명·앱 화면 교차 검수</td><td width="180">전원</td><td width="140">12/5–12/5</td><td width="80">예정</td></tr>
+<tr><td width="90">🟡 <strong>P06</strong></td><td width="390">발표 직전 출력물·앱·백업 최종 점검</td><td width="180">전원</td><td width="140">12/28–12/28</td><td width="80">예정</td></tr>
+<tr><td width="90">🟡 <strong>P07</strong></td><td width="390">12/29 연구 성과 발표</td><td width="180">전원</td><td width="140">12/29–12/29</td><td width="80">예정</td></tr>
+</tbody>
+</table>
 
 ## 작업별 상세 설명
 
