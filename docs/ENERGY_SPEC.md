@@ -1,6 +1,6 @@
 # 공정 에너지·탄소 계산 규격
 
-- 담당: 임수현 산식·계수·입력 확보, 허재영 구현, 선우 원본 조건 대조임.
+- 담당: 임수현 산식·계수·입력 확보, 허재영 구현, 선우 원본 조건 대조.
 - 근거: [Energy_Usage_임수현.pdf](https://drive.google.com/file/d/13_P8N2nwInXZqbeVw2PwCMmkdxmX8ZBG/view?usp=drivesdk) 및 [Dev_Status_Features_허재영.pdf](https://drive.google.com/file/d/1UctLqjikQwz9aCi_4hPZ3Ef4RUAcu-s1/view?usp=drivesdk)임. 아래는 현재 자료에서 확인한 계산 문제를 정리한 구현 요구사항임.
 
 ## 구분해서 보여줄 출력

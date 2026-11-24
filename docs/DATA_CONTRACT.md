@@ -1,6 +1,6 @@
 # 데이터 인수인계 규격
 
-- 담당: 김선우 작성, 허재영 구현 연결, 이건희 평가 수치 대조임.
+- 담당: 김선우 작성, 허재영 구현 연결, 이건희 평가 수치 대조.
 - 기준 원본: [Jar_Test_TS_VS_Data.xlsx](https://docs.google.com/spreadsheets/d/1YBOluRZW8hG1QDAmGNnKk65ANJPa0imD/edit?usp=drivesdk&ouid=100418307827053295745&rtpof=true&sd=true)임. SHA256은 `config.yaml`에 고정함.
 - 10월 계획의 목표 dose와 실제 Excel의 투입량을 혼동하지 않음.
 

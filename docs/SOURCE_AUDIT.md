@@ -1,6 +1,6 @@
 # 전체 파일 검토 범위와 제약
 
-- 기준: 2026-11-24에 확인한 [WasteWaterTreatment_BTS](https://drive.google.com/drive/folders/16-b9HOjdeWbTJhNRAXyhg43JkSZKVdZY)의 현재 목록임.
+- 기준: 11/24에 확인한 [WasteWaterTreatment_BTS](https://drive.google.com/drive/folders/16-b9HOjdeWbTJhNRAXyhg43JkSZKVdZY)의 현재 목록임.
 - 날짜 폴더8개를 포함한108개 하위 폴더 목록에서 **Drive 파일289개**를 확보함. 내려받기 실패0건, 바이트 수 불일치0건임.
 - 서로 다른 바이트 내용253개, 완전 동일 사본36개임. 사본도 개별 경로·hash·원문 링크를 목록에 남김.
 - ZIP3개의 내부 파일240건을 검사함. 그중 별도 Drive 파일과 동일하지 않은 내부 문서4개를 추가 검토함.
