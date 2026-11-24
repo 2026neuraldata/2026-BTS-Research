@@ -104,7 +104,7 @@
 2. 실행 앱과 배포 URL의 버전 대조.
 3. 사용 중인 모델 ID와 실행 설정 기록.
 
-- **제출물:** C01.zip(app/ 소스, 실제 의존성 잠금 파일, README.md, app_version.csv).
+- **제출물:** C01.zip(app/ 소스, 실제 의존성 잠금 파일, app_version.csv).
 - **완료 기준:** 현재 실행 코드 확보; localhost와 Sites URL의 기능·버전 관계 확인; 실제 API 모델 ID 기록.
 
 ### 🔵 D01 · 분석에 사용할 최종 데이터와 그림 확정
