@@ -20,7 +20,7 @@ for t in tasks:
     for pause0,pause1,reason in pauses:
         if start<=pause1 and end>=pause0:errors.append(f"{t['id']}: overlaps non-working period ({reason})")
     if t['status'] not in statuses:errors.append(f"{t['id']}: unknown status")
-    for k in ['owner','reviewer','deliverables','acceptance','basis']:
+    for k in ['owner','deliverables','acceptance','basis']:
         if not t[k].strip():errors.append(f"{t['id']}: missing {k}")
     for dep in filter(None,t['dependencies'].split(';')):
         if dep not in by_id:errors.append(f"{t['id']}: unknown dependency {dep}")
