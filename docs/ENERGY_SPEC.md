@@ -33,12 +33,12 @@
 ## 필요한 입력 파일
 
 - energy_inputs.csv: scenario_id, site, basis(batch/day), measured_or_assumed, volume_L/flow_m3_day, mixing_method, stage, power_W 또는 μ/V/G/Np/ρ/N/D, time_h, efficiency, acid/base mass·concentration, source_id, uncertainty_note임.
-- energy_factors.csv: substance, factor_value, unit, mass_basis, concentration, geography, year, boundary, manufacturing_route, source_id, page/table, assumption, reviewer임.
+- energy_factors.csv: substance, factor_value, unit, mass_basis, concentration, geography, year, boundary, manufacturing_route, source_id, page/table, assumption, author임.
 - 문헌별 식별자는 DOI/제목 기반으로 고정함. PPT의1–10과 보고서의R01–R15 번호만으로 연결하지 않음.
 
-## 검수 예시와 범위
+## 계산 예시와 범위
 
-- 60→40.2mg/L, 10,000m³/day 조건의 약품 차이는198kg/day임. 이 예시는 수식 검수용 시나리오이며 실험으로 관측한 현장 절감량이 아님.
+- 60→40.2mg/L, 10,000m³/day 조건의 약품 차이는198kg/day임. 이 예시는 수식 계산용 시나리오이며 실험으로 관측한 현장 절감량이 아님.
 - 0.6535를 가정한129.393kgCO2e/day는 해당 가정의 산술 결과이며, 올바른 제품 계수 확보와 별개임.
 - 입력 근거가 없으면 ‘현재 계산 불가’와 필요한 입력을 표시함. 가정 시나리오를 제공할 때는 측정값과 구분함.
 - AI 추론 전력, 전체 하수처리장의 생물공정 배출, 슬러지 처분·자원화는 이번 기본 경계 밖임. 필요하면 별도 경계로 연구함.
