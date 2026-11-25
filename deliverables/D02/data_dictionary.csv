@@ -1,0 +1,58 @@
+﻿file,field,unit,source_column_or_formula,description,missing_count,missing_policy,recommendation_use,data_type
+jar_conditions.csv,condition_id,ID,generated,지역·목표 pH·명목 dose로 만든 고유 설계조건 ID,0,공란은 미기록(0 아님); 임의 대체 금지,추적용 식별자,string
+jar_conditions.csv,source_row,row,Excel row,원본 행 번호,0,공란은 미기록(0 아님); 임의 대체 금지,출처 추적용,integer
+jar_conditions.csv,site,category,C,"폐수 출처; 허용값 Eonyang(언양), Gulhwa(굴화). 지역 간 전이 가능성은 미검증.",0,공란은 미기록(0 아님); 임의 대체 금지,후보 필터: 지역,string
+jar_conditions.csv,sample_date,YYYY-MM-DD,not recorded,채수일; 원본 미기록으로 공란,24,공란은 미기록(0 아님); 임의 대체 금지,날짜 조회 필터,date (ISO 8601; YYYY-MM-DD)
+jar_conditions.csv,experiment_date,YYYY-MM-DD,B,"기록된 실험일만 Excel 날짜 변환, 다른 행으로 전파 금지",20,공란은 미기록(0 아님); 임의 대체 금지,날짜 조회 필터,date (ISO 8601; YYYY-MM-DD)
+jar_conditions.csv,target_ph,pH (무차원),N,목표 pH,0,공란은 미기록(0 아님); 임의 대체 금지,관측 조건의 목표 pH; 후보 필터 또는 추천 출력,number (finite decimal)
+jar_conditions.csv,measured_ph,pH (무차원),S,pH 조정 후 실측 pH(원본 S); 목표 pH와 구분하며 목표 대비 ±0.2 확인용,0,공란은 미기록(0 아님); 임의 대체 금지,QC·참고 전용,number (finite decimal)
+jar_conditions.csv,coagulant,text,H,응집제; 현재 허용값 FeCl3(염화철(III)). 다른 응집제 추천 불가.,0,공란은 미기록(0 아님); 임의 대체 금지,후보 필터: 응집제,string
+jar_conditions.csv,dose_actual_mg_L,mg/L,M,원본 M열 계산값. Stock 제조에 사용한 시약 질량/stock 최종 부피 × stock 투입 부피/원수 부피(L). 실험 투입량이며 유효성분 순도·수화물 여부·무수 FeCl3 환산 기준은 미확인.,0,공란은 미기록(0 아님); 임의 대체 금지,목표 충족 후보의 최소 실제 투입량 선택 기준; 탄소 계산은 질량 기준 확인 후,number (finite decimal)
+jar_conditions.csv,dose_nominal_level_mg_L,mg/L,M → 대응 설계수준 20/40/60/80,실제 투입량과 대응하는 명목 설계수준(20/40/60/80). 실제값(20.10/40.20/60.30/80.16)과 구분. 추천·에너지·탄소 계산에 사용 금지.,0,공란은 미기록(0 아님); 임의 대체 금지,설계조건 식별·표시 전용; 추천·에너지·탄소 계산 금지,number (finite decimal)
+jar_conditions.csv,volume_L,L,E/1000,비커에 투입한 원수 부피. stock 및 pH 조정 시약을 넣기 전 기준 부피.,0,공란은 미기록(0 아님); 임의 대체 금지,실험 맥락·에너지 입력 후보,number (finite decimal)
+jar_conditions.csv,initial_ntu,NTU,F,응집 전 원수 탁도. NTU(Nephelometric Turbidity Unit).,0,공란은 미기록(0 아님); 임의 대체 금지,원수 유사성 필터 및 제거율 분모,number (finite decimal)
+jar_conditions.csv,ntu_5min,NTU,Z,침전 5분 시점의 잔류 탁도(원본 시점 표기).,0,공란은 미기록(0 아님); 임의 대체 금지,5분 선택 시 목표 잔류 탁도 비교,number (finite decimal)
+jar_conditions.csv,ntu_30min,NTU,AA,침전 30분 시점의 잔류 탁도(동일 비커).,0,공란은 미기록(0 아님); 임의 대체 금지,30분 선택 시 목표 잔류 탁도 비교,number (finite decimal)
+jar_conditions.csv,removal_5_pct,%,100*(F-Z)/F,5분 탁도 제거율 = 100×(원수 탁도−5분 탁도)/원수 탁도. 초기 탁도가 0 이하 또는 결측이면 계산하지 않음.,0,원수 탁도 0 이하 또는 필요한 값 결측 시 공란; 임의 대체 금지,5분 제거율 비교 지표; 독립 측정값 아님,number (finite decimal)
+jar_conditions.csv,removal_30_pct,%,100*(F-AA)/F,30분 탁도 제거율 = 100×(원수 탁도−30분 탁도)/원수 탁도. 초기 탁도가 0 이하 또는 결측이면 계산하지 않음.,0,원수 탁도 0 이하 또는 필요한 값 결측 시 공란; 임의 대체 금지,30분 제거율 비교 지표; 독립 측정값 아님,number (finite decimal)
+jar_conditions.csv,rapid_rpm,rpm,U,급속 교반 속도,24,공란은 미기록(0 아님); 임의 대체 금지,참고·에너지 입력 후보; 누락 시 계산 불가 또는 별도 가정 시나리오,number (finite decimal)
+jar_conditions.csv,rapid_min,min,V,급속 교반 시간,24,공란은 미기록(0 아님); 임의 대체 금지,참고·에너지 입력 후보; 누락 시 계산 불가 또는 별도 가정 시나리오,number (finite decimal)
+jar_conditions.csv,slow_rpm,rpm,W,완속 교반 속도,24,공란은 미기록(0 아님); 임의 대체 금지,참고·에너지 입력 후보; 누락 시 계산 불가 또는 별도 가정 시나리오,number (finite decimal)
+jar_conditions.csv,slow_min,min,X,완속 교반 시간,24,공란은 미기록(0 아님); 임의 대체 금지,참고·에너지 입력 후보; 누락 시 계산 불가 또는 별도 가정 시나리오,number (finite decimal)
+jar_conditions.csv,acid_type,text,P,HCl 명시된 경우만 기록,24,공란은 미기록(0 아님); 임의 대체 금지,참고·에너지 입력 후보; 누락 시 계산 불가 또는 별도 가정 시나리오,string
+jar_conditions.csv,acid_amount,µL,R conditional on P,산 단독 식별 시 총투입량,24,공란은 미기록(0 아님); 산·염기별 투입량 임의 배분 금지,참고·에너지 입력 후보; 누락 시 계산 불가 또는 별도 가정 시나리오,number (finite decimal)
+jar_conditions.csv,base_type,text,P,NaOH 명시된 경우만 기록,24,공란은 미기록(0 아님); 임의 대체 금지,참고·에너지 입력 후보; 누락 시 계산 불가 또는 별도 가정 시나리오,string
+jar_conditions.csv,base_amount,µL,R conditional on P,염기 단독 식별 시 총투입량,24,공란은 미기록(0 아님); 산·염기별 투입량 임의 배분 금지,참고·에너지 입력 후보; 누락 시 계산 불가 또는 별도 가정 시나리오,number (finite decimal)
+jar_conditions.csv,adjustment_reagent_raw,text,P,원본 조절 시약,24,공란은 미기록(0 아님); 임의 대체 금지,참고·에너지 입력 후보; 누락 시 계산 불가 또는 별도 가정 시나리오,string
+jar_conditions.csv,adjustment_concentration_mol_L,mol/L,Q,조절 시약 농도,24,공란은 미기록(0 아님); 임의 대체 금지,참고·에너지 입력 후보; 누락 시 계산 불가 또는 별도 가정 시나리오,number (finite decimal)
+jar_conditions.csv,adjustment_total_uL,µL,R,산·염기 총투입; 개별량으로 임의 배분 금지,24,공란은 미기록(0 아님); 산·염기별 투입량 임의 배분 금지,참고·에너지 입력 후보; 누락 시 계산 불가 또는 별도 가정 시나리오,number (finite decimal)
+jar_conditions.csv,stock_mass_mg,mg,I,Stock 용액 제조에 사용한 시약의 실제 질량; 유효성분/무수물 기준은 미확인.,0,공란은 미기록(0 아님); 임의 대체 금지,참고·에너지 입력 후보; 누락 시 계산 불가 또는 별도 가정 시나리오,number (finite decimal)
+jar_conditions.csv,stock_volume_mL,mL,J,Stock 용액 제조 후 최종 부피.,0,공란은 미기록(0 아님); 임의 대체 금지,참고·에너지 입력 후보; 누락 시 계산 불가 또는 별도 가정 시나리오,number (finite decimal)
+jar_conditions.csv,stock_dose_mL,mL,L,비커에 투입한 stock 용액의 부피.,0,공란은 미기록(0 아님); 임의 대체 금지,참고·에너지 입력 후보; 누락 시 계산 불가 또는 별도 가정 시나리오,number (finite decimal)
+jar_conditions.csv,observation_note,text,AD;AE,"원본 AD(플록·침전 상태), AE(특이사항)의 기록을 보존. 기록 없음은 이상 없음의 증거가 아님.",22,공란은 미기록(0 아님); 임의 대체 금지,QC·참고 전용; 자동 제외 아님,string
+jar_conditions.csv,qc_flag,text,derived,세미콜론 구분: experiment_date_missing=실험일 미기록; mixing_incomplete=교반 미기록; adjustment_input_incomplete=산염기 입력 미기록; observation_note_present=원본 특이사항 존재. 모두 목표 pH ±0.2 적합; 자동 제외 아님,0,공란은 미기록(0 아님); 임의 대체 금지,QC·참고 전용; 자동 제외 아님,string
+jar_conditions.csv,source_id,ID,source index,GitHub 원본 식별 ID,0,공란은 미기록(0 아님); 임의 대체 금지,출처 추적용,string
+jar_conditions.csv,source_sha256,hex,source workbook,원본 SHA-256,0,공란은 미기록(0 아님); 임의 대체 금지,출처 추적용,string
+jar_conditions.csv,source_sheet,text,sheet name,원본 시트,0,공란은 미기록(0 아님); 임의 대체 금지,출처 추적용,string
+solids_exploratory.csv,sample_id,ID,generated,"지역·원본 시료명(A열, 빈 셀은 직전 시료명으로 연결)·반복 번호로 생성한 고유 ID; 원본 실험 ID는 아님. 문자열로 사용.",0,공란은 미기록(0 아님); 임의 대체 금지,탐색 전용; 운영 추천 목적함수·필터에 사용 금지,string
+solids_exploratory.csv,condition_id,ID,A; Jar design match,처리수는 동일 지역·목표 pH·명목 투입량의 Jar 설계조건 ID와 연결. 원수는 공란. 같은 비커의 직접 반복 매칭이 아님.,2,원수는 해당 없음; 처리수는 Jar 설계조건 ID 필요,탐색 전용; 운영 추천 목적함수·필터에 사용 금지,string
+solids_exploratory.csv,replicate_id,index,B (raw); A group row order (treated),"원수는 B열 실제 반복 번호, 처리수는 A열 시료명별 행 순서로 부여한 독립 반복 식별자(1 또는 2). 실험 수행 순서·Jar 반복을 뜻하지 않음.",0,공란은 미기록(0 아님); 임의 대체 금지,탐색 전용; 운영 추천 목적함수·필터에 사용 금지,integer
+solids_exploratory.csv,site,category,source scope,굴화 폐수만 존재; 허용값 Gulhwa.,0,공란은 미기록(0 아님); 임의 대체 금지,탐색 전용; 운영 추천 목적함수·필터에 사용 금지,string
+solids_exploratory.csv,sample_type,category,A,"raw=원수, treated=처리수.",0,공란은 미기록(0 아님); 임의 대체 금지,탐색 전용; 운영 추천 목적함수·필터에 사용 금지,string
+solids_exploratory.csv,target_ph,pH (무차원),A,시료명 목표 pH; 원수 공란,2,원수는 해당 없음; 임의 pH 부여 금지,탐색 전용; 운영 추천 목적함수·필터에 사용 금지,number (finite decimal)
+solids_exploratory.csv,dose_nominal_level_mg_L,mg/L,A,처리수의 시료명(A열)에서 읽은 명목 설계수준(20/40/60/80); 원수는 무처리를 표시하는 0. 실제 시약 투입량 측정값 아님.,0,공란은 미기록(0 아님); 임의 대체 금지,탐색 전용; 운영 추천 목적함수·필터에 사용 금지,number (finite decimal)
+solids_exploratory.csv,dose_actual_mg_L,mg/L,Jar condition link,동일 설계조건의 Jar 실제 stock 기준 투입량을 연결한 참고값; TS/VS 시험 자체의 실제 투입량은 미측정. 추천·에너지 계산에 사용 금지.,2,원수는 해당 없음; TS/VS 직접 측정값으로 대체 금지,탐색 전용; 운영 추천 목적함수·필터에 사용 금지,number (finite decimal)
+solids_exploratory.csv,dish_g,g,C,빈 접시 질량,0,공란은 미기록(0 아님); 임의 대체 금지,탐색 전용; 운영 추천 목적함수·필터에 사용 금지,number (finite decimal)
+solids_exploratory.csv,dried_g,g,D,건조 후 질량,0,공란은 미기록(0 아님); 임의 대체 금지,탐색 전용; 운영 추천 목적함수·필터에 사용 금지,number (finite decimal)
+solids_exploratory.csv,burned_g,g,E,강열 후 질량,0,공란은 미기록(0 아님); 임의 대체 금지,탐색 전용; 운영 추천 목적함수·필터에 사용 금지,number (finite decimal)
+solids_exploratory.csv,volume_L,L,F/1000,시료 부피,0,공란은 미기록(0 아님); 임의 대체 금지,탐색 전용; 운영 추천 목적함수·필터에 사용 금지,number (finite decimal)
+solids_exploratory.csv,ts_g_L,g/L,(D-C)/(F/1000),"총고형물(Total Solids, TS): (건조 후 질량−빈 접시 질량)/시료 부피(L). 음수도 원본 계산 결과 보존.",0,공란은 미기록(0 아님); 임의 대체 금지,탐색 전용; 운영 추천 목적함수·필터에 사용 금지,number (finite decimal)
+solids_exploratory.csv,vs_g_L,g/L,(D-E)/(F/1000),"휘발성고형물(Volatile Solids, VS): (건조 후 질량−강열 후 질량)/시료 부피(L). 질량 불일치가 존재하여 분석 정확성 미확정.",0,공란은 미기록(0 아님); 임의 대체 금지,탐색 전용; 운영 추천 목적함수·필터에 사용 금지,number (finite decimal)
+solids_exploratory.csv,valid_mass_relation,0/1,derived,"1=TS>0, VS≥0, TS≥VS 충족; 0=불충족. 부동소수점 비교 허용오차 1e-9 g/L 적용. 분석 정확성 자체를 보증하지 않음.",0,공란은 미기록(0 아님); 임의 대체 금지,탐색 전용; 운영 추천 목적함수·필터에 사용 금지,integer
+solids_exploratory.csv,vs_ts_ratio,dimensionless (0–1),VS/TS if valid,"VS/TS (무차원 비율, 0–1); valid_mass_relation=1인 5기록에만 계산. 전체 대표값 아님.",21,질량 관계 불충족 21건은 공란; 역산·보간 금지,탐색 전용; 운영 추천 목적함수·필터에 사용 금지,number (finite decimal)
+solids_exploratory.csv,qc_flag,text,derived,세미콜론 구분: mass_inconsistent=질량 관계 불충족; valid_ratio_only=질량 관계 충족 및 비율 계산 가능; negative_ts/zero_ts/vs_gt_ts=개별 진단. 원본 유지; 전부 탐색 전용,0,공란은 미기록(0 아님); 임의 대체 금지,탐색 전용; 운영 추천 목적함수·필터에 사용 금지,string
+solids_exploratory.csv,source_row,row,Excel row,원본 행 번호,0,공란은 미기록(0 아님); 임의 대체 금지,탐색 자료 출처 추적용,integer
+solids_exploratory.csv,source_sheet,text,sheet name,원본 시트,0,공란은 미기록(0 아님); 임의 대체 금지,탐색 자료 출처 추적용,string
+solids_exploratory.csv,source_id,ID,source index,원본 식별 ID,0,공란은 미기록(0 아님); 임의 대체 금지,탐색 자료 출처 추적용,string
+solids_exploratory.csv,source_sha256,hex,source workbook,원본 SHA-256,0,공란은 미기록(0 아님); 임의 대체 금지,탐색 자료 출처 추적용,string
+solids_exploratory.csv,usage,category,constant,허용값 exploratory_only; 전체 26기록 운영 추천 제외.,0,공란은 미기록(0 아님); 임의 대체 금지,탐색 전용; 운영 추천 목적함수·필터에 사용 금지,string
