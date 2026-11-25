@@ -43,7 +43,7 @@
 
 | ID | 파일 | 역할·해석 |
 |---|---|---|
-| S023 | [data analysis_1/Analysis_Results_for_MCQ_Creation.zip](https://drive.google.com/file/d/1eha3TG038P4l69rAwTgYjhjCDnkOtqDf/view?usp=drivesdk) | 이전 분석/MCQ 후보 자료 — 이력 비교; 현재 해석은 11/23 기준본 우선 |
+| S023 | [data analysis_1/Analysis_Results_for_MCQ_Creation.zip](https://drive.google.com/file/d/1eha3TG038P4l69rAwTgYjhjCDnkOtqDf/view?usp=drivesdk) | 변경 이력으로만 보존; 현행 평가·보정·검색 입력 및 신규 문항 제작에 재사용 금지; 이전 문항·정답·파생 자료를 후보 LLM 입력에서도 제외; 기존 문헌 원문은 검증 후 신규 문항 근거로 활용 가능 |
 | S024 | [data analysis_1/Jar_Test_TS_VS_All_5_Phases_Analysis.zip](https://drive.google.com/file/d/1G5St6b-sy-Mt1uTX-CGiSquKRHdiWPq7/view?usp=drivesdk) | 이전 분석/MCQ 후보 자료 — 이력 비교; 현재 해석은 11/23 기준본 우선 |
 | S025 | [data analysis_1/Jar_Test_TS_VS_All_5_Phases_Analysis/Coagulation_Analysis/00_README_FIRST.md](https://docs.google.com/document/d/1xAd3EmChkq15149si_8GTIVc6hnpNYKh/edit?usp=drivesdk&ouid=100418307827053295745&rtpof=true&sd=true) | 이전 분석/MCQ 후보 자료 — 이력 비교; 현재 해석은 11/23 기준본 우선 |
 | S026 | [data analysis_1/Jar_Test_TS_VS_All_5_Phases_Analysis/Coagulation_Analysis/00_Source/experiment_original.xlsx](https://docs.google.com/spreadsheets/d/12SEVmuIkeXpzhgWVPifIG36-qmB0Fhlg/edit?usp=drivesdk&ouid=100418307827053295745&rtpof=true&sd=true) | 이전 분석/MCQ 후보 자료 — 이력 비교; 현재 해석은 11/23 기준본 우선 |
@@ -160,17 +160,17 @@
 | S137 | [data analysis_1/Jar_Test_TS_VS_All_5_Phases_Analysis/Coagulation_Analysis/run_all.py](https://drive.google.com/file/d/1xnTg7Q2KykK-WUweDpIqIB804szVeNwQ/view?usp=drivesdk) | 이전 분석/MCQ 후보 자료 — 이력 비교; 현재 해석은 11/23 기준본 우선 |
 | S138 | [data analysis_1/Jar_Test_TS_VS_All_5_Phases_Analysis/Coagulation_Analysis/source_manifest.json](https://drive.google.com/file/d/1oX1d5q4Zyoe7UlS7dJ3JZrZSM6_Nz2Gx/view?usp=drivesdk) | 이전 분석/MCQ 후보 자료 — 이력 비교; 현재 해석은 11/23 기준본 우선 |
 | S139 | [energy usage/Energy_Usage_Research.txt](https://drive.google.com/file/d/1B9pHLjR10mBvWHHWna4kaQguPz7x9Fnz/view?usp=drivesdk) | 에너지 문헌·발표 자료 — 공정 범위·약품 기준·계수 단위 확인 |
-| S290 | [data analysis_1/Analysis_Results_for_MCQ_Creation.zip::Q&A example/객관식_예시_전체_문제은행.csv](https://drive.google.com/file/d/1eha3TG038P4l69rAwTgYjhjCDnkOtqDf/view?usp=drivesdk) | MCQ 후보은행/이용안내 — 현재20문항과 구분; 평가 입력 누출 방지 |
-| S291 | [data analysis_1/Analysis_Results_for_MCQ_Creation.zip::Q&A example/객관식_예시_전체_문제은행.docx](https://drive.google.com/file/d/1eha3TG038P4l69rAwTgYjhjCDnkOtqDf/view?usp=drivesdk) | MCQ 후보은행/이용안내 — 현재20문항과 구분; 평가 입력 누출 방지 |
-| S292 | [data analysis_1/Analysis_Results_for_MCQ_Creation.zip::README.md](https://drive.google.com/file/d/1eha3TG038P4l69rAwTgYjhjCDnkOtqDf/view?usp=drivesdk) | MCQ 후보은행/이용안내 — 현재20문항과 구분; 평가 입력 누출 방지 |
-| S293 | [data analysis_1/Analysis_Results_for_MCQ_Creation.zip::출제유형_최종선정.md](https://drive.google.com/file/d/1eha3TG038P4l69rAwTgYjhjCDnkOtqDf/view?usp=drivesdk) | MCQ 후보은행/이용안내 — 현재20문항과 구분; 평가 입력 누출 방지 |
+| S290 | [data analysis_1/Analysis_Results_for_MCQ_Creation.zip::Q&A example/객관식_예시_전체_문제은행.csv](https://drive.google.com/file/d/1eha3TG038P4l69rAwTgYjhjCDnkOtqDf/view?usp=drivesdk) | 변경 이력으로만 보존; 현행 평가·보정·검색 입력 및 신규 문항 제작에 재사용 금지; 이전 문항·정답·파생 자료를 후보 LLM 입력에서도 제외; 기존 문헌 원문은 검증 후 신규 문항 근거로 활용 가능 |
+| S291 | [data analysis_1/Analysis_Results_for_MCQ_Creation.zip::Q&A example/객관식_예시_전체_문제은행.docx](https://drive.google.com/file/d/1eha3TG038P4l69rAwTgYjhjCDnkOtqDf/view?usp=drivesdk) | 변경 이력으로만 보존; 현행 평가·보정·검색 입력 및 신규 문항 제작에 재사용 금지; 이전 문항·정답·파생 자료를 후보 LLM 입력에서도 제외; 기존 문헌 원문은 검증 후 신규 문항 근거로 활용 가능 |
+| S292 | [data analysis_1/Analysis_Results_for_MCQ_Creation.zip::README.md](https://drive.google.com/file/d/1eha3TG038P4l69rAwTgYjhjCDnkOtqDf/view?usp=drivesdk) | 변경 이력으로만 보존; 현행 평가·보정·검색 입력 및 신규 문항 제작에 재사용 금지; 이전 문항·정답·파생 자료를 후보 LLM 입력에서도 제외; 기존 문헌 원문은 검증 후 신규 문항 근거로 활용 가능 |
+| S293 | [data analysis_1/Analysis_Results_for_MCQ_Creation.zip::출제유형_최종선정.md](https://drive.google.com/file/d/1eha3TG038P4l69rAwTgYjhjCDnkOtqDf/view?usp=drivesdk) | 변경 이력으로만 보존; 현행 평가·보정·검색 입력 및 신규 문항 제작에 재사용 금지; 이전 문항·정답·파생 자료를 후보 LLM 입력에서도 제외; 기존 문헌 원문은 검증 후 신규 문항 근거로 활용 가능 |
 
 ## 11/21
 
 | ID | 파일 | 역할·해석 |
 |---|---|---|
-| S140 | [LLM validation/Answer_Key.docx](https://docs.google.com/document/d/1Ovl-yLv8YSa5UUh4DxBXki6tEiTrON6d/edit?usp=drivesdk&ouid=100418307827053295745&rtpof=true&sd=true) | 평가문항·정답·평가안 — 모델 성능 결과가 아니며 후보 시스템 입력에서 분리 |
-| S141 | [LLM validation/Question_Paper.docx](https://docs.google.com/document/d/1Wg3fB1B71bb-0RPqwC5fhdHYkzLEwaar/edit?usp=drivesdk&ouid=100418307827053295745&rtpof=true&sd=true) | 평가문항·정답·평가안 — 모델 성능 결과가 아니며 후보 시스템 입력에서 분리 |
+| S140 | [LLM validation/Answer_Key.docx](https://docs.google.com/document/d/1Ovl-yLv8YSa5UUh4DxBXki6tEiTrON6d/edit?usp=drivesdk&ouid=100418307827053295745&rtpof=true&sd=true) | 변경 이력으로만 보존; 현행 평가·보정·검색 입력 및 신규 문항 제작에 재사용 금지; 이전 문항·정답·파생 자료를 후보 LLM 입력에서도 제외; 기존 문헌 원문은 검증 후 신규 문항 근거로 활용 가능 |
+| S141 | [LLM validation/Question_Paper.docx](https://docs.google.com/document/d/1Wg3fB1B71bb-0RPqwC5fhdHYkzLEwaar/edit?usp=drivesdk&ouid=100418307827053295745&rtpof=true&sd=true) | 변경 이력으로만 보존; 현행 평가·보정·검색 입력 및 신규 문항 제작에 재사용 금지; 이전 문항·정답·파생 자료를 후보 LLM 입력에서도 제외; 기존 문헌 원문은 검증 후 신규 문항 근거로 활용 가능 |
 
 ## 11/22
 
@@ -184,10 +184,10 @@
 
 | ID | 파일 | 역할·해석 |
 |---|---|---|
-| S145 | [LLM validation/LLM validation_이건희.pptx](https://docs.google.com/presentation/d/1TQB9C-YvuKrqMGA1EaFTDYjdImiCBsr_/edit?usp=drivesdk&ouid=100418307827053295745&rtpof=true&sd=true) | 이전 평가문항·정답·평가안 — 변경 이력으로만 보존; 현행 평가·보정·검색 입력 및 후보 시스템 입력에서 제외 |
-| S146 | [LLM validation/progress.txt](https://drive.google.com/file/d/11vw56jPzouVvtpE2xNEak_2D0cDGt2MJ/view?usp=drivesdk) | 이전 평가문항·정답·평가안 — 변경 이력으로만 보존; 현행 평가·보정·검색 입력 및 후보 시스템 입력에서 제외 |
-| S147 | [LLM validation/updated/Answer_Key_updated.docx](https://docs.google.com/document/d/1uBPKvLb0Sx5BRegCvaAND1KTIcIDFVxf/edit?usp=drivesdk&ouid=100418307827053295745&rtpof=true&sd=true) | 이전 평가문항·정답·평가안 — 변경 이력으로만 보존; 현행 평가·보정·검색 입력 및 후보 시스템 입력에서 제외 |
-| S148 | [LLM validation/updated/Question_Paper_updated.docx](https://docs.google.com/document/d/1zafscSeC9vBLgu_iCCXaYicYbql19eLy/edit?usp=drivesdk&ouid=100418307827053295745&rtpof=true&sd=true) | 이전 평가문항·정답·평가안 — 변경 이력으로만 보존; 현행 평가·보정·검색 입력 및 후보 시스템 입력에서 제외 |
+| S145 | [LLM validation/LLM validation_이건희.pptx](https://docs.google.com/presentation/d/1TQB9C-YvuKrqMGA1EaFTDYjdImiCBsr_/edit?usp=drivesdk&ouid=100418307827053295745&rtpof=true&sd=true) | 변경 이력으로만 보존; 현행 평가·보정·검색 입력 및 신규 문항 제작에 재사용 금지; 이전 문항·정답·파생 자료를 후보 LLM 입력에서도 제외; 기존 문헌 원문은 검증 후 신규 문항 근거로 활용 가능 |
+| S146 | [LLM validation/progress.txt](https://drive.google.com/file/d/11vw56jPzouVvtpE2xNEak_2D0cDGt2MJ/view?usp=drivesdk) | 변경 이력으로만 보존; 현행 평가·보정·검색 입력 및 신규 문항 제작에 재사용 금지; 이전 문항·정답·파생 자료를 후보 LLM 입력에서도 제외; 기존 문헌 원문은 검증 후 신규 문항 근거로 활용 가능 |
+| S147 | [LLM validation/updated/Answer_Key_updated.docx](https://docs.google.com/document/d/1uBPKvLb0Sx5BRegCvaAND1KTIcIDFVxf/edit?usp=drivesdk&ouid=100418307827053295745&rtpof=true&sd=true) | 변경 이력으로만 보존; 현행 평가·보정·검색 입력 및 신규 문항 제작에 재사용 금지; 이전 문항·정답·파생 자료를 후보 LLM 입력에서도 제외; 기존 문헌 원문은 검증 후 신규 문항 근거로 활용 가능 |
+| S148 | [LLM validation/updated/Question_Paper_updated.docx](https://docs.google.com/document/d/1zafscSeC9vBLgu_iCCXaYicYbql19eLy/edit?usp=drivesdk&ouid=100418307827053295745&rtpof=true&sd=true) | 변경 이력으로만 보존; 현행 평가·보정·검색 입력 및 신규 문항 제작에 재사용 금지; 이전 문항·정답·파생 자료를 후보 LLM 입력에서도 제외; 기존 문헌 원문은 검증 후 신규 문항 근거로 활용 가능 |
 | S149 | [data analysis_2/BTS_VS_Original_Reanalysis_1123.zip](https://drive.google.com/file/d/1VRyarPqxo694Dz2hN_xKQUfOpadlfUXa/view?usp=drivesdk) | 최신 원본 기준 분석 — 기준 분석본; TS 제외·VS 탐색 제약 유지 |
 | S150 | [data analysis_2/BTS_VS_Original_Reanalysis_1123/BTS/00_README_FIRST.md](https://docs.google.com/document/d/1h1fbprifrXb54kWbmeu-e5i2SrKwtZ6C/edit?usp=drivesdk&ouid=100418307827053295745&rtpof=true&sd=true) | 최신 원본 기준 분석 — 기준 분석본; TS 제외·VS 탐색 제약 유지 |
 | S151 | [data analysis_2/BTS_VS_Original_Reanalysis_1123/BTS/00_Source/BTS_Carbonlogic_Presentation_1122.pptx](https://docs.google.com/presentation/d/1yeUCFm7YcYxljTz-EC3tX8acUQXUSRj4/edit?usp=drivesdk&ouid=100418307827053295745&rtpof=true&sd=true) | 최신 원본 기준 분석 — 기준 분석본; TS 제외·VS 탐색 제약 유지 |
@@ -333,4 +333,4 @@
 | S286 | [progress_overall/Data_Analysis_김선우.pdf](https://drive.google.com/file/d/1o2OGKhoRQ7n2b7n3AzS1_2XJzwqjdA3K/view?usp=drivesdk) | 최신 담당 현황 — 완료 범위와 계획/미검증 부분을 분리하는 기준 |
 | S287 | [progress_overall/Dev_Status_Features_허재영.pdf](https://drive.google.com/file/d/1UctLqjikQwz9aCi_4hPZ3Ef4RUAcu-s1/view?usp=drivesdk) | 최신 담당 현황 — 완료 범위와 계획/미검증 부분을 분리하는 기준 |
 | S288 | [progress_overall/Energy_Usage_임수현.pdf](https://drive.google.com/file/d/13_P8N2nwInXZqbeVw2PwCMmkdxmX8ZBG/view?usp=drivesdk) | 최신 담당 현황 — 완료 범위와 계획/미검증 부분을 분리하는 기준 |
-| S289 | [progress_overall/LLM_Validation_이건희.pdf](https://drive.google.com/file/d/15_HNCQfPAqK64jPsemyXN-WTXxzN6_GV/view?usp=drivesdk) | 최신 담당 현황 — 완료 범위와 계획/미검증 부분을 분리하는 기준 |
+| S289 | [progress_overall/LLM_Validation_이건희.pdf](https://drive.google.com/file/d/15_HNCQfPAqK64jPsemyXN-WTXxzN6_GV/view?usp=drivesdk) | 변경 이력으로만 보존; 현행 평가·보정·검색 입력 및 신규 문항 제작에 재사용 금지; 이전 문항·정답·파생 자료를 후보 LLM 입력에서도 제외; 기존 문헌 원문은 검증 후 신규 문항 근거로 활용 가능 |
