@@ -1,0 +1,119 @@
+{
+  "task_id": "D01",
+  "date": "2026-11-25",
+  "status": "verified_baseline_for_team_review",
+  "source": {
+    "name": "Jar_Test_TS_VS_Data.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1YBOluRZW8hG1QDAmGNnKk65ANJPa0imD/edit",
+    "sha256": "3e7680f10157ff622bb2df0aab2c1cf7acb0ec9f5f9bd030d730dca578c4763a",
+    "bytes": 36562,
+    "archive_copy_path": "BTS/00_Source/experiment_original.xlsx",
+    "archive_copy_sha256": "3e7680f10157ff622bb2df0aab2c1cf7acb0ec9f5f9bd030d730dca578c4763a",
+    "immutable": true
+  },
+  "analysis": {
+    "name": "BTS_VS_Original_Reanalysis_1123.zip",
+    "url": "https://drive.google.com/file/d/1VRyarPqxo694Dz2hN_xKQUfOpadlfUXa/view",
+    "sha256": "c1f622112fbe3f24cf785592f6c714926f9c3284f4a1836c64fc15634decd0a0",
+    "zip_integrity": "pass",
+    "root": "BTS/",
+    "figure_index": "figure_index.csv",
+    "code": [
+      "BTS/run_all.py",
+      "BTS/common.py"
+    ],
+    "original_figure_index_archive_path": "BTS/FIGURE_INDEX.csv",
+    "original_figure_index_sha256": "69c296d7fc7a892baa007b4709334c20dc26aae1c7b7f0af425e5bb64ede9a4c",
+    "figure_index_sha256": "40d0f6058547bca276fc31c88b5eb1620a28909b712a11762efd1f63e93a4db0"
+  },
+  "checks": {
+    "raw_workbook_vs_archive_copy": "byte-identical",
+    "raw_rows_vs_analysis_csv": "pass (all fields from original reader)",
+    "jar_conditions": 24,
+    "jar_conditions_by_site": {
+      "Eonyang": 12,
+      "Gulhwa": 12
+    },
+    "solids_records": 26,
+    "solids_site": "Gulhwa",
+    "raw_solids_records": 2,
+    "treated_solids_records": 24,
+    "valid_ratio": 5,
+    "vs_gt_ts": 21,
+    "negative_ts": 2,
+    "figure_count": 15,
+    "figure_png_integrity": "pass",
+    "figure_selection": "proposed prioritization; all 15 retained, exploratory figures not operational",
+    "zero_ts": 1,
+    "jar_target_ph_within_0_2": 24,
+    "jar_experiment_date_recorded": 4,
+    "jar_mixing_fields_recorded": 0,
+    "jar_adjustment_fields_recorded": 0,
+    "figure_pdf_svg_paths_and_hashes": "15 each; binary hashes recorded, no visual PDF/SVG audit",
+    "source_numeric_checks_direct_xml": 346,
+    "d02_row_mapping": "24 Jar and 26 solids, unique IDs, source rows and primary numeric data verified",
+    "observation_note_rows": [
+      10,
+      27
+    ],
+    "d02_vs_1123_csv": "pass: all 50 row identities, common quantitative fields, Jar notes and QC membership",
+    "jar_removal_recomputed": "pass: 48 values",
+    "final_review_cached_xml_numeric_checks": 396,
+    "final_review_dictionary": "57/57 fields and missing counts match; recommendation roles clarified; 2 numeric CSVs byte-identical to reviewed revision",
+    "final_review_figure_units": "15/15 figure provenance hashes verified; axis and displayed units cross-checked against archived plotting code",
+    "final_review_jar_dose_recalculated": "24/24",
+    "final_review_solids_recalculated": "52/52 TS/VS and 5/5 valid ratio",
+    "final_review_jar_removal_recalculated": "48/48"
+  },
+  "baseline_data": [
+    {
+      "role": "jar",
+      "archive_path": "BTS/Phase_01_Validation/data/jar_original.csv",
+      "sha256": "bc9a71db5391c34cc272d8597bd087848e78633508c13d36492abcd076e03b6f",
+      "rows": 24
+    },
+    {
+      "role": "solids",
+      "archive_path": "BTS/Phase_01_Validation/data/ts_vs_original.csv",
+      "sha256": "53cd6343311495be97b7f4010e07135ffb58c73570038b03183d41b508e4564c",
+      "rows": 26
+    },
+    {
+      "role": "solids_qc",
+      "archive_path": "BTS/Phase_01_Validation/results/tables/qc_original_all_26.csv",
+      "sha256": "c3a025b6730b3c2ae4e29027b2218aa4e134a9fff98262ea7d08a0f7502ac34e",
+      "rows": 26
+    },
+    {
+      "role": "solids_condition_summary",
+      "archive_path": "BTS/Phase_01_Validation/data/vs_condition_summary.csv",
+      "sha256": "0d2e4b2ee71cf54c2067ac10e92d12bf1fe679b56edf9d9fda27e7d5e98f1b3d",
+      "rows": 12
+    }
+  ],
+  "limitations": [
+    "No new experiments or independent external validation.",
+    "Drive URLs require team access; actual recipient permissions not independently confirmed.",
+    "Figure binaries and source CSVs linked inside unchanged archive; no rerendering or model refitting in D01."
+  ],
+  "plan_commit": "fa32aa8ee7e09eb1dd637dae28d29e20cca1283d",
+  "revision": "2026-11-25_final_review",
+  "d02_handoff": [
+    {
+      "file": "jar_conditions.csv",
+      "sha256": "6449437cf126bb484d9b14c523645ad7c0892c713388a829dc373b7cb3076e25",
+      "rows": 24
+    },
+    {
+      "file": "solids_exploratory.csv",
+      "sha256": "a49f4ec739478cd189e03a8a8d707d87bcb682031e0571bb412fdd722b820e82",
+      "rows": 26
+    },
+    {
+      "file": "data_dictionary.csv",
+      "sha256": "a7ce5f6d261c4e8d961cc7a7cbfdf4ad69233cd70726f00cff8bb8a41c5761e3",
+      "rows": 57
+    }
+  ],
+  "qc_rules_sha256": "a9b98f6e635819e2cfa699b36e3c802982d8ea3e85217da6ca5d4f3fab753d01"
+}
