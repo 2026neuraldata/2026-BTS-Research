@@ -33,7 +33,7 @@
 
 ## 3. 담당별 마감 일정
 
-마감일 기준으로 정리함. 시작일·정확한 파일 형식·선행 작업은 [담당별 상세 작업](https://github.com/2026neuraldata/2026-BTS-Research/blob/fa32aa8ee7e09eb1dd637dae28d29e20cca1283d/docs/TEAM_TASKS.md) 참조. 11/28까지의 업무는 제5절에 제출 파일을 명시함.
+마감일 기준으로 정리함. 시작일·정확한 파일 형식·선행 작업은 [담당별 상세 작업](https://github.com/2026neuraldata/2026-BTS-Research/blob/main/docs/TEAM_TASKS.md) 참조. 11/28까지의 업무는 제5절에 제출 파일을 명시함.
 
 | 마감 | 김선우 | 임수현 | 이건희 | 허재영 |
 |---|---|---|---|---|
@@ -114,6 +114,6 @@
 
 - [현재 GitHub main](https://github.com/2026neuraldata/2026-BTS-Research/tree/main)
 - [합의된 연구계획 스냅샷(11/24)](https://github.com/2026neuraldata/2026-BTS-Research/tree/fa32aa8ee7e09eb1dd637dae28d29e20cca1283d)
-- [작업 원장 tasks.csv](https://github.com/2026neuraldata/2026-BTS-Research/blob/fa32aa8ee7e09eb1dd637dae28d29e20cca1283d/management/tasks.csv) · [담당별 상세 작업](https://github.com/2026neuraldata/2026-BTS-Research/blob/fa32aa8ee7e09eb1dd637dae28d29e20cca1283d/docs/TEAM_TASKS.md) · [연구 일정](https://github.com/2026neuraldata/2026-BTS-Research/blob/fa32aa8ee7e09eb1dd637dae28d29e20cca1283d/docs/ROADMAP.md) · [결정 목록](https://github.com/2026neuraldata/2026-BTS-Research/blob/fa32aa8ee7e09eb1dd637dae28d29e20cca1283d/docs/DECISIONS.md)
+- [작업 원장 tasks.csv](https://github.com/2026neuraldata/2026-BTS-Research/blob/main/management/tasks.csv) · [담당별 상세 작업](https://github.com/2026neuraldata/2026-BTS-Research/blob/main/docs/TEAM_TASKS.md) · [연구 일정](https://github.com/2026neuraldata/2026-BTS-Research/blob/main/docs/ROADMAP.md) · [결정 목록](https://github.com/2026neuraldata/2026-BTS-Research/blob/main/docs/DECISIONS.md)
 
 본 문서는 기존 계획의 요약 및 회의 안건임. 업무 배정·기한·필수 제출 형식을 임의 변경하지 않음. 변경된 계획이 있으면 회의에서 확인 후 갱신함.
