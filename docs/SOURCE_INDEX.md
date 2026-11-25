@@ -184,10 +184,10 @@
 
 | ID | 파일 | 역할·해석 |
 |---|---|---|
-| S145 | [LLM validation/LLM validation_이건희.pptx](https://docs.google.com/presentation/d/1TQB9C-YvuKrqMGA1EaFTDYjdImiCBsr_/edit?usp=drivesdk&ouid=100418307827053295745&rtpof=true&sd=true) | 평가문항·정답·평가안 — 모델 성능 결과가 아니며 후보 시스템 입력에서 분리 |
-| S146 | [LLM validation/progress.txt](https://drive.google.com/file/d/11vw56jPzouVvtpE2xNEak_2D0cDGt2MJ/view?usp=drivesdk) | 평가문항·정답·평가안 — 모델 성능 결과가 아니며 후보 시스템 입력에서 분리 |
-| S147 | [LLM validation/updated/Answer_Key_updated.docx](https://docs.google.com/document/d/1uBPKvLb0Sx5BRegCvaAND1KTIcIDFVxf/edit?usp=drivesdk&ouid=100418307827053295745&rtpof=true&sd=true) | 평가문항·정답·평가안 — 모델 성능 결과가 아니며 후보 시스템 입력에서 분리 |
-| S148 | [LLM validation/updated/Question_Paper_updated.docx](https://docs.google.com/document/d/1zafscSeC9vBLgu_iCCXaYicYbql19eLy/edit?usp=drivesdk&ouid=100418307827053295745&rtpof=true&sd=true) | 평가문항·정답·평가안 — 모델 성능 결과가 아니며 후보 시스템 입력에서 분리 |
+| S145 | [LLM validation/LLM validation_이건희.pptx](https://docs.google.com/presentation/d/1TQB9C-YvuKrqMGA1EaFTDYjdImiCBsr_/edit?usp=drivesdk&ouid=100418307827053295745&rtpof=true&sd=true) | 이전 평가문항·정답·평가안 — 변경 이력으로만 보존; 현행 평가·보정·검색 입력 및 후보 시스템 입력에서 제외 |
+| S146 | [LLM validation/progress.txt](https://drive.google.com/file/d/11vw56jPzouVvtpE2xNEak_2D0cDGt2MJ/view?usp=drivesdk) | 이전 평가문항·정답·평가안 — 변경 이력으로만 보존; 현행 평가·보정·검색 입력 및 후보 시스템 입력에서 제외 |
+| S147 | [LLM validation/updated/Answer_Key_updated.docx](https://docs.google.com/document/d/1uBPKvLb0Sx5BRegCvaAND1KTIcIDFVxf/edit?usp=drivesdk&ouid=100418307827053295745&rtpof=true&sd=true) | 이전 평가문항·정답·평가안 — 변경 이력으로만 보존; 현행 평가·보정·검색 입력 및 후보 시스템 입력에서 제외 |
+| S148 | [LLM validation/updated/Question_Paper_updated.docx](https://docs.google.com/document/d/1zafscSeC9vBLgu_iCCXaYicYbql19eLy/edit?usp=drivesdk&ouid=100418307827053295745&rtpof=true&sd=true) | 이전 평가문항·정답·평가안 — 변경 이력으로만 보존; 현행 평가·보정·검색 입력 및 후보 시스템 입력에서 제외 |
 | S149 | [data analysis_2/BTS_VS_Original_Reanalysis_1123.zip](https://drive.google.com/file/d/1VRyarPqxo694Dz2hN_xKQUfOpadlfUXa/view?usp=drivesdk) | 최신 원본 기준 분석 — 기준 분석본; TS 제외·VS 탐색 제약 유지 |
 | S150 | [data analysis_2/BTS_VS_Original_Reanalysis_1123/BTS/00_README_FIRST.md](https://docs.google.com/document/d/1h1fbprifrXb54kWbmeu-e5i2SrKwtZ6C/edit?usp=drivesdk&ouid=100418307827053295745&rtpof=true&sd=true) | 최신 원본 기준 분석 — 기준 분석본; TS 제외·VS 탐색 제약 유지 |
 | S151 | [data analysis_2/BTS_VS_Original_Reanalysis_1123/BTS/00_Source/BTS_Carbonlogic_Presentation_1122.pptx](https://docs.google.com/presentation/d/1yeUCFm7YcYxljTz-EC3tX8acUQXUSRj4/edit?usp=drivesdk&ouid=100418307827053295745&rtpof=true&sd=true) | 최신 원본 기준 분석 — 기준 분석본; TS 제외·VS 탐색 제약 유지 |

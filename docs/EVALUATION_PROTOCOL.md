@@ -1,8 +1,35 @@
 # LLM·추천·계산 검증 프로토콜
 
 - 담당: 이건희 문항·채점·평가 실행 관리, 허재영 실행기·로그·심사위원 구현.
-- 자료: [LLM_Validation_이건희.pdf](https://drive.google.com/file/d/15_HNCQfPAqK64jPsemyXN-WTXxzN6_GV/view?usp=drivesdk) / [Question_Paper_updated.docx](https://docs.google.com/document/d/1zafscSeC9vBLgu_iCCXaYicYbql19eLy/edit?usp=drivesdk&ouid=100418307827053295745&rtpof=true&sd=true) / [Answer_Key_updated.docx](https://docs.google.com/document/d/1uBPKvLb0Sx5BRegCvaAND1KTIcIDFVxf/edit?usp=drivesdk&ouid=100418307827053295745&rtpof=true&sd=true).
-- 현재 확보된 것은20문항과 정답·근거 초안이며, 실제 모델 비교 결과는 미확인임.
+- 기존 자료: `LLM_Validation_이건희.pdf`, `Question_Paper_updated.docx`, `Answer_Key_updated.docx` 및 이를 바탕으로 작성된 문제은행·정답표·채점 기준은 변경 이력으로만 보존함. 현행 평가·보정·검색 입력에서 제외하고 재사용하지 않음.
+- 현행 기준: 11/23 Phase 1–5 재분석본, D01, D02 및 검증 가능한 문헌 원문으로 실험 10문항 + 문헌 10문항을 새로 제작함. 기존 2점 채점 규칙은 유지함.
+- 실제 모델 비교 결과는 미확인임.
+
+## 현행 평가자료 기준
+
+| 기준 자료 | 역할 및 사용 규칙 |
+|---|---|
+| 11/23 Phase 1–5 재분석본 | 신규 실험 문항·정답 근거의 기준 분석본. 탁도·제거율·침전 거동·2목적 Pareto 등 관측 결과를 우선 사용하고 회귀 추정·탐색 결과는 실측과 구분함 |
+| D01 `data_manifest.json`·`figure_index.csv` | 기준 분석본의 버전·해시·그림·CSV 경로 및 문항별 출처 추적 |
+| D01 `qc_rules.md` | Jar 반복 부족, TS/VS 물리적 불일치, 추정 결과의 한계 등 품질·해석 제한 적용 |
+| D02 `jar_conditions.csv`·`data_dictionary.csv` | 24개 Jar 조건의 수치·단위·실험조건·원본 행 대조 및 필요한 파생 지표 재계산 |
+| D02 `solids_exploratory.csv` | 품질 진단·탐색 전용. 처리 성능·운영 최적조건·탄소 절감의 확정 정답에서 제외 |
+| 문헌 원문 | 검증 가능한 원문·쪽수·조건에 근거한 신규 문헌 문항 제작. 미확인 근거는 정답으로 확정하지 않음 |
+
+### Phase별 적용 제한
+
+- Phase 1 Data Validation: 반복 부족과 TS/VS 물리적 불일치를 QC 문항으로 활용 가능함.
+- Phase 2 Pattern Discovery: 지역별 탁도·제거율·원수 차이를 활용하되 VS 상관을 인과관계로 해석하지 않음.
+- Phase 3 Response Modeling: 실측 투입량별 반응과 침전 거동을 활용하되 회귀 예측은 추정값으로만 취급함.
+- Phase 4 Optimization: 응집제 투입량·잔류 탁도 기반 2목적 Pareto를 활용하고 VS/TS 포함 결과는 탐색용으로 제한함.
+- Phase 5 Validation: LOOCV 등 내부 검증과 통계적 한계를 활용하되 독립 실험 검증이나 확정적 최적조건으로 해석하지 않음.
+
+### 신규 20문항 확정 조건
+
+- 기존 문항을 수정·복사하여 제출하지 않고 신규 문항과 정답 근거를 작성함.
+- 제출물은 `questions.jsonl`, 비공개 `gold.jsonl`, `source_page_mapping.csv`임.
+- 문항별 근거 경로·단위·조건을 기록하고 D02 수치를 대조한 뒤 확정함.
+- 기존 교과서·논문은 원문 검증 후 신규 문항의 출처로 활용 가능함.
 
 ## 세 역할의 구분
 
@@ -70,9 +97,9 @@
 ## 자료 분리
 
 - candidates_allowed: 원본 Jar 데이터, 정리된 문헌 원문, 비정답형 산식·단위임.
-- candidates_excluded: 평가 문제은행, 정답표, 인간 채점결과, 평가용 정답을 재서술한 분석 보고서임.
+- candidates_excluded: 평가 문제은행, 정답표, 인간 채점결과, 평가용 정답을 재서술한 분석 보고서, 기존 `Question_Paper_updated.docx`·`Answer_Key_updated.docx` 및 파생 평가자료임.
 - judge_allowed: 질문, 응답, Gold 근거, 고정 루브릭임. 짧은 채점 사유와 출처만 저장하면 되며 내부 추론 전체가 필요하지 않음.
-- 140개 후보은행은 기존 분석에서 파생된 유사 문제를 포함함. 무작위 행 분할만으로 독립 보정/시험 셋이 되지 않음.
+- 기존 140개 후보은행은 변경 이력으로만 보존하며 현행 평가·보정·검색 입력에서 제외함. 신규 선정·보정 자료와 최종 평가 문제군도 분리함.
 - split_manifest에는 문항·원문/문제군·유사문항·사용 목적(calibration/development/test)을 기록함.
 
 ## 2점 채점 기준
