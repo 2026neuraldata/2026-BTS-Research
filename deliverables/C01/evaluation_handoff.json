@@ -1,0 +1,49 @@
+{
+  "task_id": "C01",
+  "revision": "2026-11-27_integration",
+  "baseline_preserved": true,
+  "baseline_execution": {
+    "provider": "Anthropic",
+    "model_id": "claude-opus-5-5",
+    "model_id_evidence": "logic.py MODEL constant; actual API availability and served model not verified",
+    "max_tokens": 16000,
+    "answer_effort": "medium",
+    "query_effort": "low",
+    "timeout_seconds": 120,
+    "sdk_max_retries": 1,
+    "server_side_fallback": "enabled in baseline",
+    "temperature": "not explicitly set",
+    "environment": "localhost:8503 (C01 owner declared)",
+    "sites": "separate legacy deployment; not evaluation baseline"
+  },
+  "evaluation_target": {
+    "model_id": "claude-opus-5-5",
+    "max_output_tokens": 16000,
+    "answer_effort": "medium",
+    "query_effort_C_only": "low; log all internal calls",
+    "temperature": null,
+    "timeout_seconds": 120,
+    "max_transport_retries": 1,
+    "fallback": "disabled; fail explicitly if served model differs or unknown",
+    "status": "planned_pending_API_and_C03_implementation",
+    "corpus_manifest": "deliverables/L02/corpus_manifest.json (repository-root relative)",
+    "source_of_truth": "deliverables/D02/jar_conditions.csv (repository-root relative)",
+    "path_note": "담당자별 ZIP은 C01만 포함; GitHub 반영 후 공개 산출물을 별도 참조. 허가된 C01 내부 원문은 공개 저장소에서 받지 않음."
+  },
+  "deferred_to": {
+    "C02": [
+      "use D02 instead of legacy Excel; preserve 80.16 precision",
+      "regional/time/coagulant filtering, no unsupported interpolation"
+    ],
+    "C03": [
+      "same model/settings A/B/C, disable fallback, record actual model ID, enforce corpus allowlist and output schema, fresh context, transport-only retry"
+    ],
+    "C04": [
+      "replace legacy carbon factors and equivalent labels using E01/E02; missing remains missing"
+    ],
+    "C07": [
+      "team confirm localhost-only presentation; preserve backup and access checks as applicable"
+    ]
+  },
+  "ready_for_final_run": false
+}
