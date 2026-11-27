@@ -36,3 +36,6 @@
 ## v2 인계 및 파일 위치
 - [최신 D02](https://github.com/2026neuraldata/2026-BTS-Research/tree/main/deliverables/D/D02), [E01](https://github.com/2026neuraldata/2026-BTS-Research/tree/main/deliverables/E/E01), [E02](https://github.com/2026neuraldata/2026-BTS-Research/tree/main/deliverables/E/E02), [L02 공개 설정](https://github.com/2026neuraldata/2026-BTS-Research/tree/main/deliverables/L/L02)은 GitHub 반영 후 해당 경로에서 확보함. 공개본/담당자별 ZIP에 다른 업무 폴더가 없는 것은 의도된 구성임.
 - C03은 비공개 Gold/채점자료 없이 개발용 별도 문항으로 실행기를 검증하고, 최종 문항은 평가 담당자가 통제된 실행에 제공함.
+
+## 2026-11-28 인계 보완
+개발 보관용 ZIP과 실제 평가용 실행 환경을 분리함. 정답 포함 테스트·검색 평가·기존 캐시·미승인 자료는 평가 실행 경계 밖에 보존. C02/C03은 일반화된 다중 조건 조회·추천·계산 기능을 별도 개발 fixture로 확인하고 승인 원자료 및 현재 입력만으로 실행함.
