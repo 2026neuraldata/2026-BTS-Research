@@ -1,0 +1,28 @@
+{
+  "task_id": "L01",
+  "revision": "2026-11-27_integration",
+  "status": "revised_internal_materials; exposure review pending",
+  "question_counts": {
+    "experimental": 10,
+    "literature": 10
+  },
+  "max_score": 40,
+  "files": [
+    {
+      "name": "questions.jsonl",
+      "sha256": "1a01b22e3f0929c8932143366dfb948e5821479af8b6c729baccfa65b5e44c0a",
+      "visibility": "team_internal_only"
+    },
+    {
+      "name": "gold.jsonl",
+      "sha256": "a765d78b2420727628a45884298893e2cdde4fbe8ca727ba6d2fe59ae91979a4",
+      "visibility": "team_internal_only"
+    },
+    {
+      "name": "source_page_mapping.csv",
+      "sha256": "44f3bbef22969627e2a4ae7a207ed7ce73cb359d3c909fc6eceac85b7bbae2c2",
+      "visibility": "team_internal_only"
+    }
+  ],
+  "policy": "Never upload questions, gold, page mappings or answer-bearing rubrics to public GitHub before evaluation. No whole-packet input to candidate models."
+}
