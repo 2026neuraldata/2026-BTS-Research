@@ -1,0 +1,34 @@
+{
+  "revision": "2026-11-27",
+  "files": [
+    {
+      "source_id": "D02_DICTIONARY",
+      "path": "deliverables/D02/data_dictionary.csv",
+      "sha256": "ddebc86e1e90684917fb9469e106a50359f7124b2f96e3289bdce0b3263ffb82",
+      "bytes": 17358
+    },
+    {
+      "source_id": "S018",
+      "path": "deliverables/D02/jar_conditions.csv",
+      "sha256": "557c98b75443bb493de8d3d70150bb0a10aa14d35f42e2957264078f3d7d3648",
+      "bytes": 8449
+    },
+    {
+      "source_id": "S021",
+      "path": "deliverables/C01/app/data/Wastewater Engineering Treatment and Resource Recovery (Inc. Metcalf  Eddy, George Tchobanoglous etc.).pdf",
+      "sha256": "6a3f80c3531dc94d4d519779d4b243af87332d840541df99356da372df8de55b",
+      "bytes": 25078409,
+      "distribution": "internal_authorized_copy_only"
+    },
+    {
+      "source_id": "S022",
+      "path": "deliverables/C01/app/data/Water and Wastewater Engineering Design Principles and Practice, Second Edition (Mackenzie L. Davis).pdf",
+      "sha256": "3dbcae47d8b253ff296be4b4d4ceed2a0ab6c7f4d5494f349e625710b040f50a",
+      "bytes": 33867274,
+      "distribution": "internal_authorized_copy_only"
+    }
+  ],
+  "status": "local_bytes_hashed; runtime retrieval not verified",
+  "path_base": "repository_root",
+  "local_access": "GitHub D02 최신본과 권한 있는 C01 내부 교과서 사본을 동일 SHA-256으로 준비. 담당자별 ZIP에는 다른 업무 폴더를 중복 포함하지 않음."
+}
