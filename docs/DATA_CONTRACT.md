@@ -60,3 +60,5 @@
 - `data_dictionary.csv` SHA-256: `ddebc86e1e90684917fb9469e106a50359f7124b2f96e3289bdce0b3263ffb82`
 - [E02 조건 매핑](../deliverables/E/E02/condition_energy_mapping.csv)으로 24개 조건의 에너지 입력 ID를 연결함. 실제 전력 및 개별 산·염기 투입량은 미확인임.
 - 후보 LLM의 자료 접근 범위는 이 문서 전체가 아니라 [L02 corpus_manifest](../deliverables/L/L02/corpus_manifest.json)와 [접근 통제](EVALUATION_ACCESS_CONTROL.md)를 따름.
+
+- 2026-11-28: 최초 E02 증빙 ZIP 및 내부 입력의 해시는 D01에 기재된 그대로 유지함. 수정본과 별도 보관하고 버전/해시 인계 기록을 남김. 관측 Jar 초기 탁도 차이 및 단일 반복의 한계를 비교에 명시하며 현장 절감 실증으로 해석하지 않음.

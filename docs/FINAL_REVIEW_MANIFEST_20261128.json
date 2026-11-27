@@ -1,0 +1,183 @@
+{
+  "base_commit": "017ac5c6d0bce78754bcacd95f7d0934c2dfa589",
+  "revision": "2026-11-28_final_review",
+  "replace_files": [
+    {
+      "path": ".gitignore",
+      "expected_existing_git_blob_sha1": "69c0182af3617f9c1f9a6e27f0d10e7b3bc129a6",
+      "new_git_blob_sha1": "011548ca92a54485806d1e4e8820fa126929e6ef",
+      "new_sha256": "e01e1e3ffa053757b89ee18c1ae871c9e88817e7576936405e3c6d76d7bee821"
+    },
+    {
+      "path": "PROGRESS.md",
+      "expected_existing_git_blob_sha1": "482b38936d01a3db51eefba16ec27293640b89c3",
+      "new_git_blob_sha1": "041ddff48b18047274dfe09a693174672ba4cc40",
+      "new_sha256": "a604ccbece8a1a5853c1245c2173f63dc9c743d214bd548dedf33de76ec652ca"
+    },
+    {
+      "path": "README.md",
+      "expected_existing_git_blob_sha1": "92dec38f8e4f3a1adc9ec3319efe0f83c42b5ca3",
+      "new_git_blob_sha1": "666fbf7132d0819c997e50dc2141f099af67bcee",
+      "new_sha256": "55975cc13bc438703fdae82e2c503467db9c99b80889a7c835438b4a1f1b2528"
+    },
+    {
+      "path": "config.yaml",
+      "expected_existing_git_blob_sha1": "e6db7345777aa0dfc23305e0cccfa18a97bae641",
+      "new_git_blob_sha1": "a8431a64189a912eb6b06104ac6aa699cbc702b1",
+      "new_sha256": "dd7954d58ccf44494a57b83352b500844c3c1967598a4961b2a929973c251cff"
+    },
+    {
+      "path": "deliverables/C/C01/README.md",
+      "expected_existing_git_blob_sha1": "dd5e291018881f4c4943ec552a138939dc5582c6",
+      "new_git_blob_sha1": "c6b599dad1ae68e3deb75c87cc38d3806090d3d9",
+      "new_sha256": "6059a8a6591c7eda2322a94193e121007e9944c8e93c539f807b626580d75b2d"
+    },
+    {
+      "path": "deliverables/C/C01/evaluation_handoff.json",
+      "expected_existing_git_blob_sha1": "15e40e4db1b8bdcd44d9820693265a868ee7a083",
+      "new_git_blob_sha1": "07b239d4cb17228d09aa9641a0911e78520f365b",
+      "new_sha256": "39d3d23188559eec4b4e609108d863122a76c004bb16cb01cf6c66c71b2bbf02"
+    },
+    {
+      "path": "deliverables/E/E02/README.md",
+      "expected_existing_git_blob_sha1": "4fbd3dd5fcc09509f618800105a9458d934bfc47",
+      "new_git_blob_sha1": "64369edde24aa6f21cd8e5a51d2dbb8e29be9caa",
+      "new_sha256": "1d56579d7a72ebda1f6d223f72eba53e7ee115a1daace93b74cd44e3e509a50c"
+    },
+    {
+      "path": "deliverables/G/G01/meeting_agenda_1128.md",
+      "expected_existing_git_blob_sha1": "60205920b94dd544f732576e1285e288ce962c6d",
+      "new_git_blob_sha1": "fb2d4723bf1f063fdfde3e0d18c4316cc03dcc2a",
+      "new_sha256": "918c7e7d93d0f8f247891818081fd7bf838151517cb4f52feeb9efd1a0440e4a"
+    },
+    {
+      "path": "deliverables/L/L01/README.md",
+      "expected_existing_git_blob_sha1": "e67940c7bd1a16be8c78557a98cb00f92540f816",
+      "new_git_blob_sha1": "3a1be3ba6fe4ae3b177da0edb1776d04e26bc69c",
+      "new_sha256": "536afc524ef17d2a1f7ede8e230c3fa82f98acb79ee530f432d186df3288eac3"
+    },
+    {
+      "path": "deliverables/L/L01/submission_manifest.json",
+      "expected_existing_git_blob_sha1": "80ad0b338eb2cd390a0c6ffdb513df6b9973d527",
+      "new_git_blob_sha1": "03f4da800c380d16c358a9a38cb4458440efb3ad",
+      "new_sha256": "2f56a1da47079ca08cfe67ee90cce86372088966961fa22e2e4ef77a5b872f00"
+    },
+    {
+      "path": "deliverables/L/L02/README.md",
+      "expected_existing_git_blob_sha1": "1c97fa893e64a38506184e8e6953488b973a1d0d",
+      "new_git_blob_sha1": "536ce316591106f6792ae318728e70718abda1b2",
+      "new_sha256": "37f65911251606b17ce83fa9fdb3a7b772ce4fcab295ab1609594e8496fd79fd"
+    },
+    {
+      "path": "deliverables/L/L02/corpus_manifest.json",
+      "expected_existing_git_blob_sha1": "70caaa787063152488eb00fe29276b58b6bb27c6",
+      "new_git_blob_sha1": "56cd58e04aec08fc6f6834767ca5e4dd040454e9",
+      "new_sha256": "3e0902c68e694e6351a11af1992bd3f32cb1dd0f5bfbf1804674f47832e6e896"
+    },
+    {
+      "path": "deliverables/L/L02/evaluation_config.json",
+      "expected_existing_git_blob_sha1": "3e97fc9cf71ea8bd8eff15addbf738720037edde",
+      "new_git_blob_sha1": "e9a8b6d1965d87819642200a9622df6df6aa8886",
+      "new_sha256": "ff3759d32f4a21d801423db33018818899bf302998e7032a84aaf421114df3e3"
+    },
+    {
+      "path": "deliverables/L/L03/README.md",
+      "expected_existing_git_blob_sha1": "2f3d461ba957d82458d31f8424c43f2e950e46fe",
+      "new_git_blob_sha1": "ff5babd631faf12fd874fd5cb2916a45af9dec03",
+      "new_sha256": "f4bc86bdbf93af30e9d477396575cb118c1659009689002dcb91c92518bb0653"
+    },
+    {
+      "path": "docs/DATA_CONTRACT.md",
+      "expected_existing_git_blob_sha1": "8cfe18c4b95fc687f435a62fbf7b0b2a93e51910",
+      "new_git_blob_sha1": "17eaf11fe053f030873c99029b27aae9f9c64a7b",
+      "new_sha256": "c37a2cef1d15a9c4402372ad87eec71fbe06cd9ae4e484c0921e5ab2a0d8c251"
+    },
+    {
+      "path": "docs/DECISIONS.md",
+      "expected_existing_git_blob_sha1": "a4cebb90f26ac55b60356bad2361da6c53c154f4",
+      "new_git_blob_sha1": "dabc05827bfebfe7c8ac62fe18c98eb5c0bf67c6",
+      "new_sha256": "bb4cbcebf4745a69b78e8c4f66cbb101d8d45421e88ee99c80e6b1fc5789761b"
+    },
+    {
+      "path": "docs/ENERGY_SPEC.md",
+      "expected_existing_git_blob_sha1": "80c273caab038f9de6ee6d68dac053f1f209bcbe",
+      "new_git_blob_sha1": "f0e9cf8870ce201e4500d58bb7bc1fe8f058be26",
+      "new_sha256": "c985aacbd667ed8b1be2a392510d607e20c76a941a16a994d3d1c912ea50be90"
+    },
+    {
+      "path": "docs/EVALUATION_ACCESS_CONTROL.md",
+      "expected_existing_git_blob_sha1": "e36f99b0d96dbfab22df2d856b4ba85ccaec237a",
+      "new_git_blob_sha1": "449a57b0011004885edb181f6f8abce0c79c04ad",
+      "new_sha256": "a6f2afbc3bc5c47b25ac7dcb9224cdf9027b541497f2c145272ddcb27c0771b8"
+    },
+    {
+      "path": "docs/EVALUATION_PROTOCOL.md",
+      "expected_existing_git_blob_sha1": "3dcc9bed9f237a04f2e10cb84fc90a7ee5578a82",
+      "new_git_blob_sha1": "c9ccccd40294fb32fa6e5590499e2f1530a2d660",
+      "new_sha256": "3dc2470887d949bcce11f6f3479c3846386a4c39fc245f0905a20e07b0811cfc"
+    },
+    {
+      "path": "docs/FINAL_REVIEW_20261128.md",
+      "expected_existing_git_blob_sha1": null,
+      "new_git_blob_sha1": "2385adf49aca1c1feb782e461688c8bd398cf8a8",
+      "new_sha256": "811e9cbbc60a3b8fb364b3d3b064374666c2c605ded025d9b6ee74a8006a3a25"
+    },
+    {
+      "path": "docs/POSTER_PLAN.md",
+      "expected_existing_git_blob_sha1": "0e96fde635576898900e9bf4fe2fc43b3a78f9ae",
+      "new_git_blob_sha1": "cca3b1d5fdf0659120e4c36f15156de1519ca3af",
+      "new_sha256": "64a064ea7a0b5a648719a351b54cd370cc9bbc7173650fb667efa8113acaff0e"
+    },
+    {
+      "path": "docs/ROADMAP.md",
+      "expected_existing_git_blob_sha1": "def06ac0117bc91365cea9769ca968b3cab91b8e",
+      "new_git_blob_sha1": "068ee5d6d0683a4253a61ceafcbd349c966ae697",
+      "new_sha256": "c971620b5e0214c8eba2ea9e3f4823d514842e1f0232c89058a51eb1a58a0a12"
+    },
+    {
+      "path": "docs/TEAM_TASKS.md",
+      "expected_existing_git_blob_sha1": "bfe4b8c6802c226522cfac908fc113d62449025b",
+      "new_git_blob_sha1": "d52597faafec2866f7ce5b09451394b5c8244949",
+      "new_sha256": "bcadf93c1c01f1513fac6ac330c1a9f994e3ab5c44ece78c34f46cd18e18991e"
+    },
+    {
+      "path": "management/milestones.csv",
+      "expected_existing_git_blob_sha1": "d86483862581eb811ed3725b67721abb61ad83d2",
+      "new_git_blob_sha1": "26dddec353f1e1a8a554dc2fd7f64a79ba2d607a",
+      "new_sha256": "52ad9ddc233ffed12c451b2f24bcf144124bba1f4f1b72ee2db35882983c384d"
+    },
+    {
+      "path": "management/tasks.csv",
+      "expected_existing_git_blob_sha1": "63c4265c0b317b238dad5d7f9b9788db4e0d8554",
+      "new_git_blob_sha1": "d646c45c0aa86203d887c33393db1e37e15592fc",
+      "new_sha256": "f4ab4b7d73797a572cee70f992cfe9a28df0de2b398cbb1e0f41f02d2ef9edc2"
+    },
+    {
+      "path": "scripts/update_trackers.py",
+      "expected_existing_git_blob_sha1": "431e4940bacd0d41e7f4c19f0d97a68d66bb933b",
+      "new_git_blob_sha1": "a3088fa7feaa27a350c01eadf52240e03abc50f6",
+      "new_sha256": "68cd9ca1b3f6dcfa4f4ac28ce91649835c898f02989479c5538ec24137c809a9"
+    }
+  ],
+  "scope": [
+    "R01",
+    "R02",
+    "R03",
+    "R04",
+    "R05",
+    "R06",
+    "R07",
+    "R08",
+    "R09",
+    "R10",
+    "R11",
+    "R12",
+    "R13",
+    "R14",
+    "R15",
+    "R16",
+    "R17",
+    "R18"
+  ],
+  "note": "Earlier manifests are historical; this manifest applies only to the changed public files. No private evaluation contents. Runtime validation pending."
+}
