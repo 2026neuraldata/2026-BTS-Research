@@ -8,3 +8,6 @@
 ## v2 인계
 - D02 기준은 [GitHub jar_conditions.csv](https://github.com/2026neuraldata/2026-BTS-Research/blob/main/deliverables/D/D02/jar_conditions.csv)의 SHA-256 일치본임. `condition_energy_mapping.csv`의 `dose_input_id`/`rapid_input_id`/`slow_input_id`/`ph_input_id`/`pump_input_id`는 `energy_inputs.csv`의 `scenario_id` 참조임. 24개 조건의 공통 장비·교반 입력을 중복 합산하지 않음.
 - E01/E02 시나리오 수치는 변경하지 않았음. 정격전력 시나리오의 E_device_kWh는 전체 장비값이며 비커별 E_mix_kWh와 구분해야 함. 실제 사용 비커 수 미확정.
+
+## 2026-11-28 인계 보완
+11개 시나리오는 가정별 절대량 예시이며 동일 목표를 만족한 기준/추천의 절감량 검증은 아님. C04/E04에서 동일 기능단위·경계·입력 기준의 두 조건을 비교하고 미확보 입력은 missing, 계산 가능한 항목은 부분합으로 표시. 동일 교반시간/rpm만으로 실제 전력 동일 또는 절감 0을 단정하지 않음. 동일 물리식 입력/전력 가정에 한해 동일 계산 결과를 보고. 0.5 L 결과의 단순 확대를 처리장 실측량으로 보고 금지. 최초 E02 ZIP과 초기 입력 CSV는 D01 메타데이터 출처로 원본 보존. 최신본과 별도 버전 관리.
