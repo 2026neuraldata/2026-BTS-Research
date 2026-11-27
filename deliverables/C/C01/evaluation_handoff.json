@@ -26,8 +26,8 @@
     "max_transport_retries": 1,
     "fallback": "disabled; fail explicitly if served model differs or unknown",
     "status": "planned_pending_API_and_C03_implementation",
-    "corpus_manifest": "deliverables/L02/corpus_manifest.json (repository-root relative)",
-    "source_of_truth": "deliverables/D02/jar_conditions.csv (repository-root relative)",
+    "corpus_manifest": "deliverables/L/L02/corpus_manifest.json (repository-root relative)",
+    "source_of_truth": "deliverables/D/D02/jar_conditions.csv (repository-root relative)",
     "path_note": "담당자별 ZIP은 C01만 포함; GitHub 반영 후 공개 산출물을 별도 참조. 허가된 C01 내부 원문은 공개 저장소에서 받지 않음."
   },
   "deferred_to": {

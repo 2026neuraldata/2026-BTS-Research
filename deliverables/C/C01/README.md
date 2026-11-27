@@ -34,5 +34,5 @@
 공개본은 초기 확보 운영 코드 및 일부 공개용으로 편집된 버전 기록·인계 문서만 포함함. 원본 버전 기록과 테스트 코드는 내부 보존함. PDF 원문, Excel 사본, 문헌 캐시, 검색 평가 정답, 평가 실행 코드(eval_search.py), 예상 결과를 포함한 테스트 코드(test_logic.py)는 미포함. 따라서 공개본만으로 전체 앱 또는 테스트를 실행할 수 없음. 팀 내부에서 허가된 원문 및 기존 baseline 입력을 별도 제공받아야 함. 현재 코드에 C02/C03/C04 변경은 반영되지 않았음. 시험용 구현은 L02 허용 목록과 최신 D02를 기준으로 작성함.
 
 ## v2 인계 및 파일 위치
-- [최신 D02](https://github.com/2026neuraldata/2026-BTS-Research/tree/main/deliverables/D02), [E01](https://github.com/2026neuraldata/2026-BTS-Research/tree/main/deliverables/E01), [E02](https://github.com/2026neuraldata/2026-BTS-Research/tree/main/deliverables/E02), [L02 공개 설정](https://github.com/2026neuraldata/2026-BTS-Research/tree/main/deliverables/L02)은 GitHub 반영 후 해당 경로에서 확보함. 공개본/담당자별 ZIP에 다른 업무 폴더가 없는 것은 의도된 구성임.
+- [최신 D02](https://github.com/2026neuraldata/2026-BTS-Research/tree/main/deliverables/D/D02), [E01](https://github.com/2026neuraldata/2026-BTS-Research/tree/main/deliverables/E/E01), [E02](https://github.com/2026neuraldata/2026-BTS-Research/tree/main/deliverables/E/E02), [L02 공개 설정](https://github.com/2026neuraldata/2026-BTS-Research/tree/main/deliverables/L/L02)은 GitHub 반영 후 해당 경로에서 확보함. 공개본/담당자별 ZIP에 다른 업무 폴더가 없는 것은 의도된 구성임.
 - C03은 비공개 Gold/채점자료 없이 개발용 별도 문항으로 실행기를 검증하고, 최종 문항은 평가 담당자가 통제된 실행에 제공함.
