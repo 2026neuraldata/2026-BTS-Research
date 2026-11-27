@@ -3,6 +3,7 @@
 - 담당: 김선우 작성, 허재영 구현 연결, 이건희 평가 수치 대조.
 - 기준 원본: [Jar_Test_TS_VS_Data.xlsx](https://docs.google.com/spreadsheets/d/1YBOluRZW8hG1QDAmGNnKk65ANJPa0imD/edit?usp=drivesdk&ouid=100418307827053295745&rtpof=true&sd=true)임. SHA256은 `config.yaml`에 고정함.
 - 10월 계획의 목표 dose와 실제 Excel의 투입량을 혼동하지 않음.
+- 현행 인계본: [D01](../deliverables/D/D01) · [D02](../deliverables/D/D02). 11/27 E02 확인값을 추가 메타데이터로 반영함. 원본 Excel·11/23 분석 ZIP·TS/VS·기존 측정값은 그대로 유지함.
 
 ## jar_conditions.csv
 
@@ -16,8 +17,10 @@
 | volume_L | 비커 내 시료 부피 | 실제 기록 0.5L와 초기 계획 1L 구별함 |
 | initial_ntu, ntu_5min, ntu_30min | 원수·5분·30분 탁도 | 같은 비커의 시간 측정임 |
 | removal_5_pct, removal_30_pct | (initial−after)/initial×100 | 단위 %; 차이는 %p임 |
-| rapid_rpm, rapid_min, slow_rpm, slow_min | 실제 교반 조건 | 계획/기준조건으로 미기록 값을 채우지 않음 |
-| acid_type, acid_amount, base_type, base_amount | pH 조정 약품 | 부피·농도·질량 기준도 별도 기록함 |
+| rapid_rpm, rapid_min, slow_rpm, slow_min | 공통 확인 교반 조건 (rpm·min) | 24조건: 급속 100 rpm·1분, 완속 30 rpm·30분. 원본 Excel 미기록이며 11/27 실험 수행자 확인값임 |
+| hcl_stock_concentration_mol_L, naoh_stock_concentration_mol_L | 산·염기 stock 농도 (mol/L) | 각각 1 M 공통 확인. 개별 비커 사용 여부·투입량을 의미하지 않음 |
+| supplemental_metadata_source_id, supplemental_metadata_confirmed_date | 추가정보 출처·확인일 | E02_USER_20261127, 2026-11-27; 원본 source_id/hash와 구분 |
+| acid_type, acid_amount, base_type, base_amount | pH 조정 약품·투입량 | 개별 비커 사용 여부·투입량은 미확인으로 공란 유지. 공통 stock 농도와 별개이며 누락은 0 아님 |
 | observation_note, qc_flag | 부유물·흔들림 등 원본 메모 | 제외/포함 판단 근거 보존함 |
 | source_id, source_sha256 | 원본 및 버전 | 모든 후속 표·그림과 연결함 |
 
@@ -42,7 +45,7 @@
 
 - 원본 24 Jar /26 solids 수, 원본 hash, 지역·dose·시점 조합, 결측 여부를 확인함.
 - 그림은 실제 사용한 CSV와 일대일로 연결하고, 관측·회귀 예측·bootstrap을 표시함.
-- 기준본 재분석을 반복 수행하기보다 앱과 평가에 동일한 수치가 전달되는지 우선 검증함.
+- 기준본 재분석을 반복 수행하기보다 앱과 평가에 동일한 수치가 전달되는지 우선 검증함. C02는 D02 실제 dose 소수점 정밀도를 유지하고 E02의 condition_id 매핑을 C04에서 연결함.
 
 ## 녹음에서 추가 확인한 연결 요구
 
@@ -50,3 +53,10 @@
 - 날짜별 조회·비교를 지원할 때 없는 날짜에는 자료 없음으로 응답함. 실제 날짜가 미기록인 행에 임의 날짜를 부여하지 않음.
 - synthetic fixture는 테스트 전용으로 분리하고 UI·로그에 가상 데이터임을 표시함. 실측 분석·벤치마크 결과에 섞지 않음.
 - 문헌 투입량을 보간하려면 원수·약품·pH·평가조건의 일치를 확인해야 함. 단순히 탁도만 가까운 서로 다른 연구의 값을 연결하지 않음.
+
+## 11/27 기준 파일 연결
+
+- `jar_conditions.csv` SHA-256: `557c98b75443bb493de8d3d70150bb0a10aa14d35f42e2957264078f3d7d3648`
+- `data_dictionary.csv` SHA-256: `ddebc86e1e90684917fb9469e106a50359f7124b2f96e3289bdce0b3263ffb82`
+- [E02 조건 매핑](../deliverables/E/E02/condition_energy_mapping.csv)으로 24개 조건의 에너지 입력 ID를 연결함. 실제 전력 및 개별 산·염기 투입량은 미확인임.
+- 후보 LLM의 자료 접근 범위는 이 문서 전체가 아니라 [L02 corpus_manifest](../deliverables/L/L02/corpus_manifest.json)와 [접근 통제](EVALUATION_ACCESS_CONTROL.md)를 따름.

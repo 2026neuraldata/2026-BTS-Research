@@ -1,0 +1,137 @@
+{
+  "base_commit": "42439fece3aa7708d03f0798790e2c6d2978fa7f",
+  "base_repo": "2026neuraldata/2026-BTS-Research",
+  "replace_files": [
+    {
+      "path": "PROGRESS.md",
+      "expected_existing_git_blob_sha1": "b57fa9b76c94e201c8df85cb3f89ada1c9e5198b",
+      "new_git_blob_sha1": "482b38936d01a3db51eefba16ec27293640b89c3",
+      "new_sha256": "fd7dce6485dae2c30d6c95869e396bc160424bc8e6478e90019f9f5f80cd12d7"
+    },
+    {
+      "path": "README.md",
+      "expected_existing_git_blob_sha1": "f19c45051c25dd27c9fafb019d8ed59fdde2e4a7",
+      "new_git_blob_sha1": "92dec38f8e4f3a1adc9ec3319efe0f83c42b5ca3",
+      "new_sha256": "15102cfba7f0f79f28cf4cb533a13b491095c7c3602735bfd59b94665690991f"
+    },
+    {
+      "path": "config.yaml",
+      "expected_existing_git_blob_sha1": "c896e3c247adf863a6773543e8e2d75394884a02",
+      "new_git_blob_sha1": "e6db7345777aa0dfc23305e0cccfa18a97bae641",
+      "new_sha256": "97bf43574e16e0adad531f61f96ec97152792fb6e89977b98996fb8520a2f517"
+    },
+    {
+      "path": "deliverables/G/G01/meeting_agenda_1128.md",
+      "expected_existing_git_blob_sha1": "b915e6f11a6bec8e8791175a2d90b01531cd9f28",
+      "new_git_blob_sha1": "60205920b94dd544f732576e1285e288ce962c6d",
+      "new_sha256": "4ec7e4e86c8ceb0ea901a55ec61cf459960f74b93adb601c71296f029b689961"
+    },
+    {
+      "path": "docs/DATA_CONTRACT.md",
+      "expected_existing_git_blob_sha1": "7f15c0bd1b86b91368dd19175756f062d77951ac",
+      "new_git_blob_sha1": "8cfe18c4b95fc687f435a62fbf7b0b2a93e51910",
+      "new_sha256": "b9803c91ebd1d0a0dae5d969256d18fc605ba2d8d1bb530788e2e7a3837de672"
+    },
+    {
+      "path": "docs/DECISIONS.md",
+      "expected_existing_git_blob_sha1": "b97ce27dc7dcb4c473cecadc70223b152c6ee5ac",
+      "new_git_blob_sha1": "a4cebb90f26ac55b60356bad2361da6c53c154f4",
+      "new_sha256": "8f6e68e7c3a8d428124708e9668d15b4698605b8ea9557d46c049d3054f02df8"
+    },
+    {
+      "path": "docs/ENERGY_SPEC.md",
+      "expected_existing_git_blob_sha1": "1c417a7874d73a0a1a379664e74f25df9eb9a4da",
+      "new_git_blob_sha1": "80c273caab038f9de6ee6d68dac053f1f209bcbe",
+      "new_sha256": "df04f294e8ba1789ce414d1b37a360adf12f63c8bed6594d30452e94d656d472"
+    },
+    {
+      "path": "docs/EVALUATION_PROTOCOL.md",
+      "expected_existing_git_blob_sha1": "1a181a4f8f2e237750735334317ac15141a27f75",
+      "new_git_blob_sha1": "3dcc9bed9f237a04f2e10cb84fc90a7ee5578a82",
+      "new_sha256": "cae94636378cdf238fb5baf14a76e5711b38cec8175acc6187f69fef6520699f"
+    },
+    {
+      "path": "docs/PLAN_UPDATE_20261127.md",
+      "expected_existing_git_blob_sha1": null,
+      "new_git_blob_sha1": "fed642ccd96766fa942528a3f3895cb056444978",
+      "new_sha256": "8f98dc0063ef08d8a9196304b64c6c2be392f1796d9c2e69b37924e1271583bf"
+    },
+    {
+      "path": "docs/ROADMAP.md",
+      "expected_existing_git_blob_sha1": "a6b7513c3dce875b6d71e2087db3714f4cd3d832",
+      "new_git_blob_sha1": "def06ac0117bc91365cea9769ca968b3cab91b8e",
+      "new_sha256": "e8f3242a85be74b6613bcc23d4bb3f295b958f89334289603ad65574069140a3"
+    },
+    {
+      "path": "docs/TEAM_TASKS.md",
+      "expected_existing_git_blob_sha1": "6e069025034e31c5ea27b26b212a48293f4be07c",
+      "new_git_blob_sha1": "bfe4b8c6802c226522cfac908fc113d62449025b",
+      "new_sha256": "d40b3dc5fa0ecd6fac47eb9d639347513b633595910e438c289191bdd80118bd"
+    },
+    {
+      "path": "management/milestones.csv",
+      "expected_existing_git_blob_sha1": "baac0ccff0393b2acbb77fc5152eb37b83f21451",
+      "new_git_blob_sha1": "d86483862581eb811ed3725b67721abb61ad83d2",
+      "new_sha256": "d2b93c6f56267793603a03654d5c339e77de109fb901c88a1bbff0551f9e9490"
+    },
+    {
+      "path": "management/tasks.csv",
+      "expected_existing_git_blob_sha1": "461acabebe15bf7280c83bf785c584f872d84037",
+      "new_git_blob_sha1": "63c4265c0b317b238dad5d7f9b9788db4e0d8554",
+      "new_sha256": "da6223f63f6448dfc93e3f6d302761d6ed8e6e594eeaf61fe82a2b17d31ea09e"
+    },
+    {
+      "path": "scripts/update_trackers.py",
+      "expected_existing_git_blob_sha1": "684a8ca412073a68c50b604e1e1bb08ceb9255ad",
+      "new_git_blob_sha1": "431e4940bacd0d41e7f4c19f0d97a68d66bb933b",
+      "new_sha256": "50b06ebdfbad614b60d2a5230e071b1a78bd55dca180f6568d934e2e9914ea27"
+    }
+  ],
+  "checks": {
+    "tasks": 40,
+    "active_tasks": 32,
+    "unchanged_ids_owners_dates_priorities": true,
+    "existing_dependencies_preserved": true,
+    "acyclic": true,
+    "dependency_due_order": true,
+    "no_work_in_excluded_periods": true,
+    "tracker_reproducible": true,
+    "status": {
+      "done": 7,
+      "conditional": 2,
+      "planned": 23
+    },
+    "changed_task_ids": [
+      "C01",
+      "D01",
+      "D02",
+      "E01",
+      "E02",
+      "L01",
+      "L02",
+      "C02",
+      "C04",
+      "C03",
+      "G02",
+      "D03",
+      "L04",
+      "G03",
+      "L05",
+      "C05",
+      "E04",
+      "L06",
+      "G04",
+      "C07",
+      "L03",
+      "L07"
+    ],
+    "source_manifest_unchanged_verified": {
+      "drive": 289,
+      "zip_only": 4,
+      "distinct_drive_hashes": 253,
+      "all_hashes_valid": true
+    },
+    "remote_head_reconfirmed": "42439fece3aa7708d03f0798790e2c6d2978fa7f"
+  },
+  "note": "Before merging, check main head or per-path existing blob hashes. If any conflict, stop and reconcile. Do not overwrite other files. This manifest is a new file and does not list its own hash. Existing deliverables other than G01 agenda are untouched."
+}

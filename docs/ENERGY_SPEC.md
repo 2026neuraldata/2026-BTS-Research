@@ -1,7 +1,7 @@
 # 공정 에너지·탄소 계산 규격
 
 - 담당: 임수현 산식·계수·입력 확보, 허재영 구현, 선우 원본 조건 대조.
-- 근거: [Energy_Usage_임수현.pdf](https://drive.google.com/file/d/13_P8N2nwInXZqbeVw2PwCMmkdxmX8ZBG/view?usp=drivesdk) 및 [Dev_Status_Features_허재영.pdf](https://drive.google.com/file/d/1UctLqjikQwz9aCi_4hPZ3Ef4RUAcu-s1/view?usp=drivesdk)임. 아래는 현재 자료에서 확인한 계산 문제를 정리한 구현 요구사항임.
+- 근거: [Energy_Usage_임수현.pdf](https://drive.google.com/file/d/13_P8N2nwInXZqbeVw2PwCMmkdxmX8ZBG/view?usp=drivesdk) 및 [Dev_Status_Features_허재영.pdf](https://drive.google.com/file/d/1UctLqjikQwz9aCi_4hPZ3Ef4RUAcu-s1/view?usp=drivesdk)임. 아래는 현재 자료에서 확인한 계산 문제를 정리한 구현 요구사항임. 11/27부터 계산 구현 기준은 [E01 산식](../deliverables/E/E01/formulas.md)·[계수표](../deliverables/E/E01/energy_factors.csv)·[E02 입력 및 매핑](../deliverables/E/E02)임.
 
 ## 구분해서 보여줄 출력
 
@@ -19,7 +19,7 @@
 - 유체에 전달되는 혼합 동력: `P_W = μ × V × G²` 또는 `P_W = Np × ρ × N³ × D⁵`임. N은 회전수/s이며 rpm은 60으로 나눔. 두 식은 대안이며 더하지 않음.
 - 유체 동력으로부터 전기 입력을 추정하면 `E_kWh = Σ(P_W × t_h)/(1000×η)`임. 이미 전기 입력 전력을 실측했다면 η로 다시 나누지 않음.
 - 펌프는 포함 범위를 먼저 정하고 `P_W = ρgQH/η`로 산정함. 이 식의 Q는 m³/s임.
-- `C_total = E_grid × EF_grid + Σ(M_i × EF_i)`임. 약품계수에 포함된 전력 배출을 다시 더하지 않음.
+- `C_total = E_grid × EF_grid + Σ(M_i × EF_i)`임. 필요한 항목과 질량 기준이 모두 확인된 경우에만 해당 경계 전체 합계를 산출함. 일부만 계산되면 부분합으로 명시함. 약품계수에 포함된 전력 배출을 다시 더하지 않음.
 - 변화량은 같은 경계·유량·목표·시간 기준에서 `baseline − recommended`로 계산함. 음수면 증가임; 절감처럼 표시하지 않음.
 
 ## 현재 계산의 수정 우선순위
@@ -27,19 +27,26 @@
 1. 개발 보고서의 `탄소 절감 / 0.4541`은 전력 환산량으로 이름을 바꿔야 함. 교반 에너지 절감 카드와 분리함.
 2. FeCl3의0.6535는 INCOPA 응집제 전체 평균0.106kgCO2e/mol-metal을 무수 FeCl3 몰질량으로 나눈 값임. FeCl3 제품별 검증 계수처럼 사용하지 않음.
 3. INCOPA의 FeCl3 제조 경로별 값과 실제 시약 형태·금속 함량·농도 기준을 맞춰야 함. 서로 다른 kg 기준 값을 바로 교체하거나 평균내지 않음.
-4. 현재 원본의 실제 교반 속도·시간, 장비/기하, 산·염기 사용량 등의 공백을 확보함. 미확보는 0이 아니라 missing임.
+4. 급속 100 rpm·1분, 완속 30 rpm·30분 및 HCl/NaOH stock 각 1 M는 11/27 공통 확인값임. 실제 소비전력·장비 효율/기하·개별 산·염기 사용량·FeCl3 유효성분 질량 기준은 미확인임. rpm만으로 전력 산정 불가. 미확보는 0이 아니라 missing임.
 5. 물리적으로 동등한 처리 성능을 달성하는 기준/추천 조건을 정의함. dose 감소만으로 공정 전력이 줄었다고 추론하지 않음.
 
 ## 필요한 입력 파일
 
-- energy_inputs.csv: scenario_id, site, basis(batch/day), measured_or_assumed, volume_L/flow_m3_day, mixing_method, stage, power_W 또는 μ/V/G/Np/ρ/N/D, time_h, efficiency, acid/base mass·concentration, source_id, uncertainty_note임.
-- energy_factors.csv: substance, factor_value, unit, mass_basis, concentration, geography, year, boundary, manufacturing_route, source_id, page/table, assumption, author임.
+- E02의 실제 `energy_inputs.csv`, `missing_inputs.csv`, `energy_scenarios.csv`, `condition_energy_mapping.csv` 스키마를 그대로 사용함. condition_id·D02 SHA-256·입력 ID를 연결하고 각 입력의 값·단위·출처·확인 상태를 추적함. 별도 고정 입력 스키마를 임의로 요구하지 않음.
+- E01 `energy_factors.csv`의 factor_id, status, substance, factor_value, unit, mass_basis, concentration, geography, year, boundary, manufacturing_route, source_id, page/table, assumption, author를 사용함. `energy_references.csv`로 출처를 연결함.
 - 문헌별 식별자는 DOI/제목 기반으로 고정함. PPT의1–10과 보고서의R01–R15 번호만으로 연결하지 않음.
 
 ## 계산 예시와 범위
 
 - 60→40.2mg/L, 10,000m³/day 조건의 약품 차이는198kg/day임. 이 예시는 수식 계산용 시나리오이며 실험으로 관측한 현장 절감량이 아님.
-- 0.6535를 가정한129.393kgCO2e/day는 해당 가정의 산술 결과이며, 올바른 제품 계수 확보와 별개임.
+- 기존 0.6535를 적용한 계산은 과거 방식의 산술 재현용임. E01 FE_LEGACY(deprecated)는 신규 산정에 사용하지 않음.
 - 입력 근거가 없으면 ‘현재 계산 불가’와 필요한 입력을 표시함. 가정 시나리오를 제공할 때는 측정값과 구분함.
 - AI 추론 전력, 전체 하수처리장의 생물공정 배출, 슬러지 처분·자원화는 이번 기본 경계 밖임. 필요하면 별도 경계로 연구함.
 - E03에서 CBAM·RE100·ISO별 증빙 활용 조건과 PDF 예시를 작성하고 C06에 인계. [PDF 증빙 설계](PDF_EVIDENCE_SPEC.md) 참조. 추천 시나리오와 실제 보고기간의 배출 실적은 분리하고, 제도별 요구 원자료와 외부 검증 결과를 연결.
+
+## 11/27 산식·계수 적용 및 검산
+
+- `GRID_KR_2023`(0.4173 kgCO2e/kWh)은 E01 연구용 대리계수이며, 실제 보고연도·공식 제도 계수가 확인되면 해당 기준을 우선함. `GRID_KR_LEGACY`(0.4541)는 구버전 재현용임.
+- FeCl3 제조경로별 원제품·무수 환산·mol Fe 계수는 대체 표현임. 제품/유효성분 질량 기준 일치 전 실측 배출계수로 사용 금지. HCl/NaOH 1 M stock에 문헌 30%/50% 제품 계수를 직접 곱하지 않음. 실제 투입량과 구매제품 기준 미확보 시 가정 시나리오만 제시함.
+- E02의 11개 시나리오는 문헌 G 기반 또는 장비 정격전력 기반 가정이며 실제 측정 전력 아님. 둘을 더하지 않음. 응집보조제 미사용 확인은 해당 항목만 0 처리 가능하며 미확보값과 구분함.
+- C04/E04는 동일 목표·유량·시간·경계의 기준/추천 비교 및 음의 절감(증가)·부분합·누락 상태를 검산하고, C06 출력 변경 영향을 재확인함.
