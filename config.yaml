@@ -3,11 +3,11 @@
     "title": "2026 BTS Research",
     "repository": "2026neuraldata/2026-BTS-Research",
     "visibility": "public",
-    "as_of": "11/27",
+    "as_of": "11/28",
     "timezone": "Asia/Seoul",
     "plan_status": "execution_schedule_integrated_pending_runtime_validation",
     "year": 2026,
-    "base_commit": "42439fece3aa7708d03f0798790e2c6d2978fa7f"
+    "base_commit": "017ac5c6d0bce78754bcacd95f7d0934c2dfa589"
   },
   "dates": {
     "meeting_days": [
@@ -94,7 +94,7 @@
     "questions": 20,
     "experimental_questions": 10,
     "literature_questions": 10,
-    "question_set_policy": "L01_integrated_internal_2026-11-27; exposure_review_pending",
+    "question_set_policy": "L01_integrated_internal_2026-11-28; exposure_review_pending",
     "legacy_question_set_status": "history_only_excluded_from_evaluation_calibration_and_retrieval",
     "solids_exploratory_policy": "qc_and_exploration_only_not_performance_optimum_or_carbon_gold",
     "primary_points_per_question": 2,
@@ -116,8 +116,9 @@
     "access_control_path": "docs/EVALUATION_ACCESS_CONTROL.md",
     "access_control_verified": false,
     "ready_for_final_run": false,
-    "freeze_gate": "C03/L04 runtime/access pass; C05 judge freeze; exposure review before L06",
-    "base_model_target": "claude-opus-5-5 (configured target, actual API unverified)"
+    "freeze_gate": "C03/L04 runtime/access/format pass; C05 model/config/prompt freeze; exposure review before L06",
+    "base_model_target": "claude-opus-5-5 (configured target, actual API unverified)",
+    "design_status": "complete"
   },
   "energy": {
     "electricity_equivalent_is_not_process_electricity": true,
