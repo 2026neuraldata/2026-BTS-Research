@@ -30,5 +30,5 @@
   ],
   "status": "local_bytes_hashed; runtime retrieval not verified",
   "path_base": "repository_root",
-  "local_access": "GitHub D02 최신본과 권한 있는 C01 내부 교과서 사본을 동일 SHA-256으로 준비. 담당자별 ZIP에는 다른 업무 폴더를 중복 포함하지 않음."
+  "local_access": "GitHub D02 최신본과 권한 있는 C01 내부 교과서 사본을 동일 SHA-256으로 준비. 담당자별 ZIP에는 다른 업무 폴더를 중복 포함하지 않음. 작업 폴더 기준을 명시하고 허가된 C01 사본의 해시를 검증. 후보 실행 경로에는 네 파일만 복사."
 }

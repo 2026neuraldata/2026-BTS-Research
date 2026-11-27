@@ -2,7 +2,7 @@
   "schema_version": "0.2.0",
   "task_id": "L02",
   "prepared_date": "2026-11-27",
-  "status": "integrated_protocol_pending_runtime_and_exposure_verification",
+  "status": "design_complete_runtime_and_exposure_pending",
   "ready_for_final_run": false,
   "protocol_references": [
     "https://github.com/2026neuraldata/2026-BTS-Research/blob/main/docs/EVALUATION_PROTOCOL.md",
@@ -20,9 +20,9 @@
     ],
     "split_manifest": "split_manifest.csv",
     "rubric": "scoring_rubric.md",
-    "split_status": "20문항 평가 예정; L03 질문은 별도 10개로 확인, 개념 인접성 및 실제 개발/보정 노출 이력 검증 전 독립 시험 확정 금지",
+    "split_status": "수정 전후 20문항 및 L03/L04/L05 문제군 노출 검토 전 독립 평가 미확정",
     "path_base": "L02 configuration directory; repository corpus paths resolve from repository root, not this directory",
-    "access_note": "팀 내부 평가 담당자만 L01·L02 비공개 파일 접근. 공개본에서는 경로가 정보용이며 실제 파일은 미포함."
+    "access_note": "공개본에는 비공개 파일 없음; 경로는 평가 담당자 전용 환경에서만 사용."
   },
   "variants": [
     {
@@ -70,7 +70,7 @@
       "A vs B",
       "A vs C"
     ],
-    "information_parity": "B/C 원본 자료와 질량·단위 정보 범위를 동일하게 고정. 실제 검색 문맥 차이는 시스템 구성 효과에 포함. 동일 검색 문맥 비교는 별도 보조 실험으로만 시행.",
+    "information_parity": "B/C 동일 원자료, 일반 조회의 실질 접근 가능성 확인; 실제 검색 결과 동일 강제 금지. C 계산/추천은 승인 자료와 현재 문항 입력만 사용; 운영용 별도 자료·상수 금지.",
     "optional_matched_context_ablation": false
   },
   "corpus": {
@@ -118,7 +118,7 @@
     "corpus_hash_manifest": "corpus_manifest.json",
     "vector_index_version": null,
     "retrieval_check_passed": null,
-    "source_policy": "B/C 동일 D02·S021/S022 바이트 버전. 기본 앱의 12 PDF 전체 검색 금지. 원문은 허가된 내부 사본만 사용. C03에서 검색 범위·페이지·인덱스·실제 입력 추적 검증. E02 내부 결측/채점용 문서 및 정답 파생 문서는 후보 입력 금지."
+    "source_policy": "B/C 동일 D02·S021/S022 바이트 버전. 기본 앱의 12 PDF 전체 검색 금지. 원문은 허가된 내부 사본만 사용. C03에서 검색 범위·페이지·인덱스·실제 입력 추적 검증. E02 내부 결측/채점용 문서 및 정답 파생 문서는 후보 입력 금지. 평가용 계산은 문항 제공 값 및 승인 자료만 사용; 운영용 E01/E02 계수·사례는 평가 환경에 노출하지 않음."
   },
   "shared_generation": {
     "provider": "Anthropic",
@@ -222,6 +222,16 @@
       "both_orders": true,
       "planned_decisions_per_judge": 80,
       "record_order_disagreement": true
+    },
+    "format_policy": {
+      "invalid_json": "zero_and_record_raw",
+      "invalid_or_missing_option": "zero",
+      "valid_correct_option_missing_or_invalid_evidence": "one",
+      "fabricated_source": "evidence_zero",
+      "missing_sources": "apply_item_criterion",
+      "candidate_failure": "zero_in_planned_denominator",
+      "judge_failure": "null",
+      "approval": "C03/L04 tests and freeze before L06"
     }
   },
   "reporting": {
@@ -239,7 +249,9 @@
       "단일 실행은 반복성 검증 아님",
       "20문항 소규모 평가",
       "개발 노출 시 개발셋 평가로 표시",
-      "MCQ 점수로 검색·추천·계산 기능 개별 검증을 대체하지 않음"
+      "MCQ 점수로 검색·추천·계산 기능 개별 검증을 대체하지 않음",
+      "실험 3지선다/문헌 4지선다: 추측 확률 차이; 분야별 점수와 분모를 구분",
+      "동일 문제군 간 의존성; 일반화·독립 표본 주장 금지"
     ]
   },
   "logging": {
@@ -273,7 +285,13 @@
       "input_tokens",
       "output_tokens",
       "cost",
-      "format_failure"
+      "format_failure",
+      "blind_response_id",
+      "tool_inputs_and_outputs",
+      "tool_source_hashes",
+      "format_failure_reason",
+      "exposure_review_id",
+      "run_order"
     ],
     "private_scoring_fields_separate_from_candidate_input": true,
     "new_run_id_on_config_change": true,
@@ -289,10 +307,11 @@
       ]
     },
     {
-      "owner": "이건희 / L02·L05",
+      "owner": "이건희 / L04·L05·L06",
       "items": [
         "개발·보정·선정·최종 평가 실제 노출 이력 및 인접 문제군 검토",
-        "L05 독립 사람 채점 및 다양한 점수대 확보; 부족하면 DSPy 생략"
+        "L05 독립 사람 채점 및 다양한 점수대 확보; 부족하면 DSPy 생략",
+        "선정/최적화/검증 문제군 분리, 자료 부족 시 DSPy 생략"
       ]
     },
     {
@@ -304,6 +323,6 @@
     }
   ],
   "freeze_rule": "통합 설계는 후속 구현 기준안. 실제 API·자료 접근·노출 이력 및 팀 확인 전 최종 실행 금지. 최종 답변 열람 전에 버전·설정·루브릭 동결.",
-  "revision_date": "2026-11-27",
-  "integration_revision": "v2"
+  "revision_date": "2026-11-28",
+  "integration_revision": "v4_review"
 }
