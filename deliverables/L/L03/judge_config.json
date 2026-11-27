@@ -56,6 +56,6 @@
       "settings_status": "pending_account_check"
     }
   ],
-  "next_gate": "L05 separate independent human ratings, diverse actual responses; C05 verify exact API model IDs/settings and freeze manual prompt before final response access. DSPy conditional.",
+  "next_gate": "L05 independent human ratings on separate responses; report additional comparison or unavailable reason. C05 verify actual API IDs/settings, freeze manual baseline, optionally optimize with DSPy and validate on separate responses, then freeze selected final configuration/prompt before final-response access.",
   "security": "Public aggregate only. Raw scoring, question/gold packets and internal prompts withheld."
 }
