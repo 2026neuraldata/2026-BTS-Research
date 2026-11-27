@@ -47,3 +47,8 @@ eval_search.py
 test_logic.py
 literature_pages.json.gz
 *.zip
+
+# private judge configuration variants and extra internal files
+judge_prompt_manual.md
+candidate_judge_scores.csv
+judge_comparison.csv

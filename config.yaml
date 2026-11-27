@@ -7,7 +7,8 @@
     "timezone": "Asia/Seoul",
     "plan_status": "execution_schedule_integrated_pending_runtime_validation",
     "year": 2026,
-    "base_commit": "017ac5c6d0bce78754bcacd95f7d0934c2dfa589"
+    "base_commit": "df4fe3a6b15af486149f908c79f95811bb5c6119",
+    "document_control_path": "docs/DOCUMENT_CONTROL.md"
   },
   "dates": {
     "meeting_days": [
@@ -116,7 +117,7 @@
     "access_control_path": "docs/EVALUATION_ACCESS_CONTROL.md",
     "access_control_verified": false,
     "ready_for_final_run": false,
-    "freeze_gate": "C03/L04 runtime/access/format pass; C05 model/config/prompt freeze; exposure review before L06",
+    "freeze_gate": "C03/L04 runtime/access/format pass; L05 comparison report; C05 manual baseline then optional DSPy and independent validation, final model/config/prompt/rubric freeze; exposure review before L06",
     "base_model_target": "claude-opus-5-5 (configured target, actual API unverified)",
     "design_status": "complete"
   },
