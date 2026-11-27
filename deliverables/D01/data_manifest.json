@@ -1,7 +1,7 @@
 {
   "task_id": "D01",
   "date": "2026-11-25",
-  "status": "verified_baseline_for_team_review",
+  "status": "verified_supplemental_metadata_for_team_review",
   "source": {
     "name": "Jar_Test_TS_VS_Data.xlsx",
     "url": "https://docs.google.com/spreadsheets/d/1YBOluRZW8hG1QDAmGNnKk65ANJPa0imD/edit",
@@ -94,14 +94,15 @@
   "limitations": [
     "No new experiments or independent external validation.",
     "Drive URLs require team access; actual recipient permissions not independently confirmed.",
-    "Figure binaries and source CSVs linked inside unchanged archive; no rerendering or model refitting in D01."
+    "Figure binaries and source CSVs linked inside unchanged archive; no rerendering or model refitting in D01.",
+    "Supplemental mixing and stock concentrations are shared operator-confirmed metadata, not newly measured per-Jar records; original workbook and analysis archive were not reopened in this revision."
   ],
   "plan_commit": "fa32aa8ee7e09eb1dd637dae28d29e20cca1283d",
-  "revision": "2026-11-25_final_review",
+  "revision": "2026-11-27_E02_metadata_update",
   "d02_handoff": [
     {
       "file": "jar_conditions.csv",
-      "sha256": "6449437cf126bb484d9b14c523645ad7c0892c713388a829dc373b7cb3076e25",
+      "sha256": "557c98b75443bb493de8d3d70150bb0a10aa14d35f42e2957264078f3d7d3648",
       "rows": 24
     },
     {
@@ -111,9 +112,112 @@
     },
     {
       "file": "data_dictionary.csv",
-      "sha256": "a7ce5f6d261c4e8d961cc7a7cbfdf4ad69233cd70726f00cff8bb8a41c5761e3",
-      "rows": 57
+      "sha256": "ddebc86e1e90684917fb9469e106a50359f7124b2f96e3289bdce0b3263ffb82",
+      "rows": 61
     }
   ],
-  "qc_rules_sha256": "a9b98f6e635819e2cfa699b36e3c802982d8ea3e85217da6ca5d4f3fab753d01"
+  "qc_rules_sha256": "991ecde7528272894af0e8ec5f1ee0980faddd43e1de1321588a9c4d70a191de",
+  "last_updated": "2026-11-27",
+  "supplemental_metadata": {
+    "source_id": "E02_USER_20261127",
+    "archive": "E02.zip",
+    "archive_sha256": "e2629d93ba69bc6e7a207eda8153ae38896e6a1d494cb33286a696e886b0a920",
+    "member": "E02/energy_inputs.csv",
+    "member_sha256": "0037949a66b8366e668e96d9dd8a5c3df7232d4e05264a712890a9bc44589919",
+    "scenario_ids": [
+      "COMMON_RAPID",
+      "COMMON_SLOW",
+      "COMMON_PH"
+    ],
+    "confirmed_date": "2026-11-27",
+    "evidence_type": "operator_confirmed_common_conditions_reconfirmed_by_research_lead_not_original_workbook_or_independent_measurement",
+    "scope": "Eonyang/Gulhwa shared; 24 Jar conditions; not TS/VS",
+    "values": {
+      "rapid_rpm": "100",
+      "rapid_min": "1",
+      "slow_rpm": "30",
+      "slow_min": "30",
+      "hcl_stock_concentration_mol_L": "1",
+      "naoh_stock_concentration_mol_L": "1",
+      "supplemental_metadata_source_id": "E02_USER_20261127",
+      "supplemental_metadata_confirmed_date": "2026-11-27"
+    },
+    "condition_ids": [
+      "Eonyang_pH5_D20",
+      "Eonyang_pH7_D20",
+      "Eonyang_pH9_D20",
+      "Eonyang_pH5_D40",
+      "Eonyang_pH7_D40",
+      "Eonyang_pH9_D40",
+      "Eonyang_pH5_D60",
+      "Eonyang_pH7_D60",
+      "Eonyang_pH9_D60",
+      "Eonyang_pH5_D80",
+      "Eonyang_pH7_D80",
+      "Eonyang_pH9_D80",
+      "Gulhwa_pH5_D20",
+      "Gulhwa_pH7_D20",
+      "Gulhwa_pH9_D20",
+      "Gulhwa_pH5_D40",
+      "Gulhwa_pH7_D40",
+      "Gulhwa_pH9_D40",
+      "Gulhwa_pH5_D60",
+      "Gulhwa_pH7_D60",
+      "Gulhwa_pH9_D60",
+      "Gulhwa_pH5_D80",
+      "Gulhwa_pH7_D80",
+      "Gulhwa_pH9_D80"
+    ],
+    "unconfirmed": [
+      "per_jar_acid_or_base_use_and_volume",
+      "actual_electricity",
+      "G_or_impeller_inputs",
+      "efficiency",
+      "equipment_model",
+      "FeCl3_active_mass_basis"
+    ],
+    "original_source_unchanged": true
+  },
+  "revision_history": [
+    {
+      "revision": "2026-11-25_final_review",
+      "d02_handoff": [
+        {
+          "file": "jar_conditions.csv",
+          "sha256": "6449437cf126bb484d9b14c523645ad7c0892c713388a829dc373b7cb3076e25",
+          "rows": 24
+        },
+        {
+          "file": "solids_exploratory.csv",
+          "sha256": "a49f4ec739478cd189e03a8a8d707d87bcb682031e0571bb412fdd722b820e82",
+          "rows": 26
+        },
+        {
+          "file": "data_dictionary.csv",
+          "sha256": "a7ce5f6d261c4e8d961cc7a7cbfdf4ad69233cd70726f00cff8bb8a41c5761e3",
+          "rows": 57
+        }
+      ],
+      "qc_rules_sha256": "a9b98f6e635819e2cfa699b36e3c802982d8ea3e85217da6ca5d4f3fab753d01",
+      "note": "Previous verified baseline; original-workbook checks preserved in checks."
+    }
+  ],
+  "current_revision_checks": {
+    "baseline_checks_scope": "checks describes the 2026-11-25 baseline; original source fields not overwritten",
+    "jar_rows": 24,
+    "jar_mixing_complete_operator_confirmed": 24,
+    "jar_stock_concentrations_confirmed": 24,
+    "jar_per_beaker_adjustment_records": 0,
+    "jar_original_unchanged_fields": "pass",
+    "jar_dose_recomputed": 24,
+    "jar_removal_recomputed": 48,
+    "dictionary_fields_and_missing_counts": "61/61 pass",
+    "solids_unchanged_byte_identical": true,
+    "solids_valid_ratio": 5,
+    "solids_vs_gt_ts": 21,
+    "figures": "unchanged, existing figure_index.csv retained; not re-downloaded or rerendered in this revision",
+    "original_excel_and_1123_archive": "unchanged reference hashes; not reopened in this revision"
+  },
+  "checks_scope": "Historical checks of the 2026-11-25 baseline and original-workbook record availability. See current_revision_checks for the updated D02.",
+  "revision_base_commit": "ddca15b3350e1316b85820ea4f15ae26bfe5359d"
 }
