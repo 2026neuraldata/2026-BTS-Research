@@ -6,5 +6,5 @@
 - E01 원본 유지. C04/E04에서 실제 계산/검산.
 
 ## v2 인계
-- D02 기준은 [GitHub jar_conditions.csv](https://github.com/2026neuraldata/2026-BTS-Research/blob/main/deliverables/D02/jar_conditions.csv)의 SHA-256 일치본임. `condition_energy_mapping.csv`의 `dose_input_id`/`rapid_input_id`/`slow_input_id`/`ph_input_id`/`pump_input_id`는 `energy_inputs.csv`의 `scenario_id` 참조임. 24개 조건의 공통 장비·교반 입력을 중복 합산하지 않음.
+- D02 기준은 [GitHub jar_conditions.csv](https://github.com/2026neuraldata/2026-BTS-Research/blob/main/deliverables/D/D02/jar_conditions.csv)의 SHA-256 일치본임. `condition_energy_mapping.csv`의 `dose_input_id`/`rapid_input_id`/`slow_input_id`/`ph_input_id`/`pump_input_id`는 `energy_inputs.csv`의 `scenario_id` 참조임. 24개 조건의 공통 장비·교반 입력을 중복 합산하지 않음.
 - E01/E02 시나리오 수치는 변경하지 않았음. 정격전력 시나리오의 E_device_kWh는 전체 장비값이며 비커별 E_mix_kWh와 구분해야 함. 실제 사용 비커 수 미확정.
