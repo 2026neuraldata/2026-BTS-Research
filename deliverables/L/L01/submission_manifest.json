@@ -1,7 +1,7 @@
 {
   "task_id": "L01",
-  "revision": "2026-11-27_integration",
-  "status": "revised_internal_materials; exposure review pending",
+  "revision": "2026-11-28_final_review",
+  "status": "reviewed_internal_materials; exposure_review_pending",
   "question_counts": {
     "experimental": 10,
     "literature": 10
@@ -10,18 +10,18 @@
   "files": [
     {
       "name": "questions.jsonl",
-      "sha256": "1a01b22e3f0929c8932143366dfb948e5821479af8b6c729baccfa65b5e44c0a",
-      "visibility": "team_internal_only"
+      "sha256": "7d5e43d60fc5119da6a2e2e572ab362037656777295474a5592a6070600ff117",
+      "visibility": "authorized_evaluation_custodians_only"
     },
     {
       "name": "gold.jsonl",
-      "sha256": "a765d78b2420727628a45884298893e2cdde4fbe8ca727ba6d2fe59ae91979a4",
-      "visibility": "team_internal_only"
+      "sha256": "62a017a878058ad7d7ce7b9f476b6f6f2b21cc35b0e3a78098d575e87f136369",
+      "visibility": "authorized_evaluation_custodians_only"
     },
     {
       "name": "source_page_mapping.csv",
-      "sha256": "44f3bbef22969627e2a4ae7a207ed7ce73cb359d3c909fc6eceac85b7bbae2c2",
-      "visibility": "team_internal_only"
+      "sha256": "111041ab0a823b59529b2f09fd7ffaa33afa9d7bfbf468d6579a844d8e46033a",
+      "visibility": "authorized_evaluation_custodians_only"
     }
   ],
   "policy": "Never upload questions, gold, page mappings or answer-bearing rubrics to public GitHub before evaluation. No whole-packet input to candidate models."
