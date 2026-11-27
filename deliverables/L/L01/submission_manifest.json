@@ -11,18 +11,18 @@
     {
       "name": "questions.jsonl",
       "sha256": "7d5e43d60fc5119da6a2e2e572ab362037656777295474a5592a6070600ff117",
-      "visibility": "authorized_evaluation_custodians_only"
+      "visibility": "team_internal_group_share_only"
     },
     {
       "name": "gold.jsonl",
       "sha256": "62a017a878058ad7d7ce7b9f476b6f6f2b21cc35b0e3a78098d575e87f136369",
-      "visibility": "authorized_evaluation_custodians_only"
+      "visibility": "team_internal_group_share_only"
     },
     {
       "name": "source_page_mapping.csv",
       "sha256": "111041ab0a823b59529b2f09fd7ffaa33afa9d7bfbf468d6579a844d8e46033a",
-      "visibility": "authorized_evaluation_custodians_only"
+      "visibility": "team_internal_group_share_only"
     }
   ],
-  "policy": "Questions, gold, page mappings and answer-bearing rubrics remain private before and after evaluation unless separately authorized for release. Never provide whole packets to candidate models."
+  "policy": "Team members may review in the BTS KakaoTalk group. No use of final items or gold for candidate development/optimization; never provide whole packets to candidate models. No external/public release before or after evaluation without separate approval."
 }
