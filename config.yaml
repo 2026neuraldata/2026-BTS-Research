@@ -7,7 +7,7 @@
     "timezone": "Asia/Seoul",
     "plan_status": "execution_schedule_integrated_pending_runtime_validation",
     "year": 2026,
-    "base_commit": "df4fe3a6b15af486149f908c79f95811bb5c6119",
+    "base_commit": "4a3c48cc8d2566d42a190841cc253dd08abaea5d",
     "document_control_path": "docs/DOCUMENT_CONTROL.md"
   },
   "dates": {
@@ -140,5 +140,14 @@
     ],
     "no_tasks_during_exam_pause": true,
     "no_tasks_during_non_working_periods": true
+  },
+  "sharing": {
+    "channel": "BTS_KakaoTalk_team_group",
+    "team_read_access": true,
+    "final_items_for_candidate_development": false,
+    "individual_read_log_required": false,
+    "actual_development_use_review_required": true,
+    "public_release_requires_separate_approval": true,
+    "policy_path": "docs/TEAM_SHARING_POLICY.md"
   }
 }

@@ -14,6 +14,7 @@
 | 회의·평가·포스터·발표 일정 | [전체 일정](docs/ROADMAP.md) |
 | 일반 LLM·응집 전문 LLM·심사위원 LLM | [평가 설계와 모델 선정](docs/EVALUATION_PROTOCOL.md) |
 | 결정할 사항 | [결정 목록](docs/DECISIONS.md) |
+| 팀 내부 산출물 공유 | [공유 및 평가자료 활용 주의사항](docs/TEAM_SHARING_POLICY.md) |
 | 평가자료 보안 | [평가 접근 통제](docs/EVALUATION_ACCESS_CONTROL.md) |
 | 과거 연구 및 변경 이력 (현행 지시 아님) | [과거 기록 목록](docs/HISTORY_INDEX.md) |
 | 실험 데이터와 에너지 계산 기준 | [데이터 기준](docs/DATA_CONTRACT.md) · [에너지 기준](docs/ENERGY_SPEC.md) |
@@ -48,4 +49,4 @@
 - **12/7–12/18:** 기말고사.
 - **12/23–12/27:** 크리스마스 휴식.
 
-- 현행 지침은 위 기준 파일을 사용함. 날짜별 manifest는 각 배포 시점의 증빙으로 보존하며, 이번 반영 검증에는 `docs/DOCUMENT_CLEANUP_MANIFEST_20261128.json`을 사용함.
+- 현행 지침은 위 기준 파일을 사용함. 날짜별 manifest는 각 배포 시점의 증빙으로 보존하며, 이번 반영 검증에는 `docs/TEAM_SHARING_MANIFEST_20261128.json`을 사용함.
