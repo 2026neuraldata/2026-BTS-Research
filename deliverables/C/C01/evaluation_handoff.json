@@ -45,7 +45,7 @@
       "replace legacy carbon factors and equivalent labels using E01/E02; missing remains missing"
     ],
     "C07": [
-      "team confirm localhost-only presentation; preserve backup and access checks as applicable"
+      "use G03 decision: local demonstration or external URL; QR only if external QR use approved; preserve same-version backup and applicable access checks"
     ]
   },
   "ready_for_final_run": false
