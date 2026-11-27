@@ -1,5 +1,8 @@
 # 녹음 파일 검토와 한계
 
+> 과거 기록(11/24까지의 검토): 현행 실행 지시가 아님. [현행 업무](TEAM_TASKS.md)와 [문서 관리 기준](DOCUMENT_CONTROL.md)을 따름. [수정 전 원문](https://github.com/2026neuraldata/2026-BTS-Research/blob/df4fe3a6b15af486149f908c79f95811bb5c6119/docs/AUDIO_REVIEW.md)은 그대로 보존.
+
+
 - 원문: [feedback_from presentation.m4a](https://drive.google.com/file/d/1HBQCxtY-HB-pJN_nOB6lvQn3aklYFdMW/view?usp=drivesdk)임. 재생 길이 약56분03초, 전체 구간 자동 음성인식 전사 후 내용 검토함.
 - 텍스트 피드백: [feedback_from presentation_instruction.txt](https://drive.google.com/file/d/1w4KNAAqX8Uvb0CIOdeRG4dxH8YD9bfI6/view?usp=drivesdk)임. 수치·이름·전문용어는 전사 오류가 있으므로 서면 요약·발표 자료·원본 표를 우선함.
 - 발언자 식별이나 모든 문장의 정확한 청취 검증을 완료한 것은 아님. 전사문을 확정 회의록으로 배포하지 않음.

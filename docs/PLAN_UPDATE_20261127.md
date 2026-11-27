@@ -1,5 +1,7 @@
 # 2026-11-27 후속 연구업무 및 연구계획 갱신
 
+> 과거 기록(11/27): 현행 실행 지시가 아님. [현행 업무](TEAM_TASKS.md) 및 [문서 관리 기준](DOCUMENT_CONTROL.md) 우선. 원문은 [수정 전 커밋](https://github.com/2026neuraldata/2026-BTS-Research/blob/df4fe3a6b15af486149f908c79f95811bb5c6119/docs/PLAN_UPDATE_20261127.md)에서 보존.
+
 - 기준: [main 42439fe](https://github.com/2026neuraldata/2026-BTS-Research/tree/42439fece3aa7708d03f0798790e2c6d2978fa7f). [통합 인계](INTEGRATION_20261127.md) 및 통합 manifest에 등록된 공개 산출물을 기준으로 작성함.
 - 기존 업무 ID·담당자·시작/종료일·우선순위와 기말/크리스마스 업무 제외 기간 유지. 산출물의 원본과 통합 manifest는 변경하지 않음.
 - 상태: G01/D01/D02/C01/E01/E02/L01 완료(산출물 검토·인계 기준), L02/L03 조건부(설계·제공사 잠정 역할 확보, 실제 API/접근통제/독립성 미확인). 나머지 기존 후속 업무는 예정 상태 유지. 실제 제출 시각·팀의 업무 재개·회의 결정은 별도 확인.

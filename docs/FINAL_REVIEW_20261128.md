@@ -1,5 +1,7 @@
 # 2026-11-28 최종 검토 및 인계 기준
 
+> 과거 배포 기록(R01–R18): 이후 문서 정비 F01–F11은 [문서 관리 기준](DOCUMENT_CONTROL.md)을 따름. [수정 전 원문](https://github.com/2026neuraldata/2026-BTS-Research/blob/df4fe3a6b15af486149f908c79f95811bb5c6119/docs/FINAL_REVIEW_20261128.md) 보존.
+
 기준 커밋: `017ac5c6d0bce78754bcacd95f7d0934c2dfa589`. R01–R18 범위 동결. 11/27 통합 및 계획 문서/manifest는 당시 스냅샷으로 보존함. 본 문서와 최신 업무 원장/manifest가 현행 수정 범위의 기준임.
 
 - R01: L02 완료 및 상태 일치

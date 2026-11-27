@@ -1,5 +1,7 @@
 # 2026-11-27 제출물 통합 인계
 
+> 과거 기록(11/27): 현행 실행 지시가 아님. [현행 업무](TEAM_TASKS.md) 및 [문서 관리 기준](DOCUMENT_CONTROL.md) 우선. 원문은 [수정 전 커밋](https://github.com/2026neuraldata/2026-BTS-Research/blob/df4fe3a6b15af486149f908c79f95811bb5c6119/docs/INTEGRATION_20261127.md)에서 보존.
+
 ## 현재 상태
 - D01/D02: GitHub에 반영된 11/27 수정본 유지; 이번 패키지에는 참고 사본만 내부 포함.
 - C01: 확보 당시 코드·버전 유지. localhost 기준 평가 계획, C03에서 API 반환 모델·공통 생성 설정·fallback 비활성화 확인. C02/C04 기존 오류 수정은 기존 업무에서 처리.

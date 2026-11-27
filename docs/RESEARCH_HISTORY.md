@@ -1,5 +1,8 @@
 # 시간순 연구 진행과 해석
 
+> 과거 기록(11/24까지의 검토): 현행 실행 지시가 아님. [현행 업무](TEAM_TASKS.md)와 [문서 관리 기준](DOCUMENT_CONTROL.md)을 따름. [수정 전 원문](https://github.com/2026neuraldata/2026-BTS-Research/blob/df4fe3a6b15af486149f908c79f95811bb5c6119/docs/RESEARCH_HISTORY.md)은 그대로 보존.
+
+
 - 폴더명·문서 본문·버전 차이를 연결하여 재구성함. Drive 업로드 날짜는 연구 수행 날짜와 다르므로 연대 판단에 단독 사용하지 않음.
 - 10월의 template/idea/reference는 당시 선택 전 아이디어를 포함함. 현재 구현이나 완료 결과와 구분함.
 

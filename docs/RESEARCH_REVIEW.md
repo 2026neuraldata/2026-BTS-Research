@@ -1,5 +1,8 @@
 # 연구 현황 요약
 
+> 과거 기록(11/24까지의 검토): 현행 실행 지시가 아님. [현행 업무](TEAM_TASKS.md)와 [문서 관리 기준](DOCUMENT_CONTROL.md)을 따름. [수정 전 원문](https://github.com/2026neuraldata/2026-BTS-Research/blob/df4fe3a6b15af486149f908c79f95811bb5c6119/docs/RESEARCH_REVIEW.md)은 그대로 보존.
+
+
 - 기준일: 11/24. 연도: 2026.
 - 남은 핵심은 기존 분석을 앱·에너지 계산·LLM 평가로 연결하고 12/6까지 포스터를 완성하는 것.
 
