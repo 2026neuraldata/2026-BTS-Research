@@ -1,6 +1,6 @@
 """Static checks for the public repository. No network or private evaluation data required.
 Run from the complete checkout; --inventory is for an explicitly partial review copy.
---release validates the 2026-11-28 document-cleanup patch only (not future revisions).
+--release validates the current team-sharing patch only (not future revisions).
 """
 import argparse,csv,fnmatch,hashlib,json,posixpath,re,subprocess,sys
 from pathlib import Path
@@ -38,9 +38,13 @@ for path in sorted(files):
   if target not in inventory and not any(x.startswith(target+'/') for x in inventory):fail(f'broken repository link: {path} -> {target}')
 # Current instructions: targeted regressions, not an exhaustive semantic proof.
 checks={
- 'management/tasks.csv':['오답·검색 실패·계산·채점·접근통제 오류와 실제 노출 이력을 분리 기록해 BTS 카카오톡 단체방에 제출'],
+ 'management/tasks.csv':['단체방에는 완료 안내만','팀장 통제 경로로 제출','팀장 전용'],
+ 'docs/TEAM_TASKS.md':['단체방에는 완료 안내만','비공개 업무는 별도 통제 경로'],
+ 'docs/EVALUATION_ACCESS_CONTROL.md':['단체방에는 완료 안내','팀장만 비공개 최종 자료 접근'],
+ 'docs/EVALUATION_PROTOCOL.md':['단체방은 비공개 산출물 완료 안내만','후보/개발자에게 전달 금지'],
+ 'deliverables/L/L01/README.md':['팀장 전용'],
  'deliverables/E/E01/formulas.md':['교반 절감 0(동일 조건 확인 시)','제조량·농도는 다음 주 확인한다.'],
- 'deliverables/L/L01/submission_manifest.json':['to public GitHub before evaluation'],
+ 'deliverables/L/L01/submission_manifest.json':['to public GitHub before evaluation','authorized_evaluation_custodians_only'],
  'deliverables/C/C01/evaluation_handoff.json':['confirm localhost-only presentation'],
  'docs/EVALUATION_PROTOCOL.md':['정답이나 근거 누락/오류 1점']}
 for p,phrases in checks.items():
@@ -83,7 +87,7 @@ corpus=jsonfile('deliverables/L/L02/corpus_manifest.json')
 eval_cfg=jsonfile('deliverables/L/L02/evaluation_config.json')
 if not isinstance(eval_cfg['ready_for_final_run'],bool):fail('invalid execution gate flag')
 if a.release:
- m=jsonfile('docs/DOCUMENT_CLEANUP_MANIFEST_20261128.json')
+ m=jsonfile('docs/TEAM_SHARING_MANIFEST_20261128.json')
  for x in m['replace_files']:
   p=ROOT/x['path']
   if not p.is_file():fail('release file missing: '+x['path']);continue
