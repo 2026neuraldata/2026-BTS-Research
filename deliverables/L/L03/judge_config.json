@@ -57,5 +57,6 @@
     }
   ],
   "next_gate": "L05 independent human ratings on separate responses; report additional comparison or unavailable reason. C05 verify actual API IDs/settings, freeze manual baseline, optionally optimize with DSPy and validate on separate responses, then freeze selected final configuration/prompt before final-response access.",
-  "security": "Public aggregate only. Raw scoring, question/gold packets and internal prompts withheld."
+  "security": "Public aggregate only. Raw scoring, question/gold packets and internal prompts withheld.",
+  "team_sharing_policy": "Team-internal group sharing for human review; no final item/gold use in candidate development or judge optimization; no public release without separate approval. Actual judging environment remains separate."
 }
