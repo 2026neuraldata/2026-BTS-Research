@@ -3,10 +3,11 @@
     "title": "2026 BTS Research",
     "repository": "2026neuraldata/2026-BTS-Research",
     "visibility": "public",
-    "as_of": "11/24",
+    "as_of": "11/27",
     "timezone": "Asia/Seoul",
-    "plan_status": "execution_schedule",
-    "year": 2026
+    "plan_status": "execution_schedule_integrated_pending_runtime_validation",
+    "year": 2026,
+    "base_commit": "42439fece3aa7708d03f0798790e2c6d2978fa7f"
   },
   "dates": {
     "meeting_days": [
@@ -53,7 +54,22 @@
       5,
       30
     ],
-    "raw_immutable": true
+    "raw_immutable": true,
+    "handoff_revision": "2026-11-27",
+    "jar_path": "deliverables/D/D02/jar_conditions.csv",
+    "dictionary_path": "deliverables/D/D02/data_dictionary.csv",
+    "solids_path": "deliverables/D/D02/solids_exploratory.csv",
+    "jar_sha256": "557c98b75443bb493de8d3d70150bb0a10aa14d35f42e2957264078f3d7d3648",
+    "dictionary_sha256": "ddebc86e1e90684917fb9469e106a50359f7124b2f96e3289bdce0b3263ffb82",
+    "supplemental_metadata_confirmed_date": "2026-11-27",
+    "rapid_rpm": 100,
+    "rapid_min": 1,
+    "slow_rpm": 30,
+    "slow_min": 30,
+    "hcl_stock_concentration_mol_L": 1,
+    "naoh_stock_concentration_mol_L": 1,
+    "per_beaker_reagent_usage_confirmed": false,
+    "actual_power_confirmed": false
   },
   "scope": {
     "required": [
@@ -78,7 +94,7 @@
     "questions": 20,
     "experimental_questions": 10,
     "literature_questions": 10,
-    "question_set_policy": "rebuild_from_scratch_using_1123_reanalysis_D01_D02_and_verified_literature",
+    "question_set_policy": "L01_integrated_internal_2026-11-27; exposure_review_pending",
     "legacy_question_set_status": "history_only_excluded_from_evaluation_calibration_and_retrieval",
     "solids_exploratory_policy": "qc_and_exploration_only_not_performance_optimum_or_carbon_gold",
     "primary_points_per_question": 2,
@@ -90,14 +106,29 @@
       "Gemini"
     ],
     "judge_selection_due": "11/27",
-    "judge_final_due": "12/2",
-    "primary_judge": "selected_by_calibration",
-    "secondary_judge": "different_provider"
+    "judge_final_due": "12/1",
+    "primary_judge": "provisional_Gemini",
+    "secondary_judge": "provisional_GPT",
+    "reserve_judge": "provisional_Claude",
+    "judge_config_path": "deliverables/L/L03/judge_config.json",
+    "comparison_config_path": "deliverables/L/L02/evaluation_config.json",
+    "corpus_manifest_path": "deliverables/L/L02/corpus_manifest.json",
+    "access_control_path": "docs/EVALUATION_ACCESS_CONTROL.md",
+    "access_control_verified": false,
+    "ready_for_final_run": false,
+    "freeze_gate": "C03/L04 runtime/access pass; C05 judge freeze; exposure review before L06",
+    "base_model_target": "claude-opus-5-5 (configured target, actual API unverified)"
   },
   "energy": {
     "electricity_equivalent_is_not_process_electricity": true,
     "unknown_input_policy": "missing_not_zero",
-    "mass_basis_must_match_factor": true
+    "mass_basis_must_match_factor": true,
+    "factors_path": "deliverables/E/E01/energy_factors.csv",
+    "formulas_path": "deliverables/E/E01/formulas.md",
+    "condition_mapping_path": "deliverables/E/E02/condition_energy_mapping.csv",
+    "scenario_only_until_inputs_verified": true,
+    "grid_factor_id": "GRID_KR_2023",
+    "deprecated_fe_factor_id": "FE_LEGACY"
   },
   "tracking": {
     "source": "management/tasks.csv",
