@@ -22,7 +22,7 @@
     "rubric": "scoring_rubric.md",
     "split_status": "수정 전후 20문항 및 L03/L04/L05 문제군 노출 검토 전 독립 평가 미확정",
     "path_base": "L02 configuration directory; repository corpus paths resolve from repository root, not this directory",
-    "access_note": "공개본에는 비공개 파일 없음; 경로는 평가 담당자 전용 환경에서만 사용."
+    "access_note": "팀 내부 단체방 공유 및 팀원 열람 허용. 실제 평가 파일은 후보/개발 작업 환경에서 제외; 평가 담당자 실행 환경에서만 사용. 공개본에는 경로만 포함."
   },
   "variants": [
     {
@@ -324,5 +324,12 @@
   ],
   "freeze_rule": "C03/L04 실제 API·자료 접근·형식·노출 검토와 팀 승인 전 최종 실행 금지. L05 추가 비교 집계(미실행 사유 포함), C05 수동 기준 고정→조건부 DSPy 최적화→별도 검증→최종 설정/프롬프트·루브릭 동결을 최종 답변 열람 전에 완료. 부족 시 수동 경로. 실제 실행은 미확정.",
   "revision_date": "2026-11-28",
-  "integration_revision": "2026-11-28_document_cleanup"
+  "integration_revision": "2026-11-28_team_sharing",
+  "team_sharing": {
+    "team_read_access": true,
+    "candidate_development_use": false,
+    "individual_read_log_required": false,
+    "actual_development_use_review_required": true,
+    "public_release_requires_approval": true
+  }
 }
