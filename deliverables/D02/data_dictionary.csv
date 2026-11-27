@@ -15,25 +15,29 @@ jar_conditions.csv,ntu_5min,NTU,Z,침전 5분 시점의 잔류 탁도(원본 시
 jar_conditions.csv,ntu_30min,NTU,AA,침전 30분 시점의 잔류 탁도(동일 비커).,0,공란은 미기록(0 아님); 임의 대체 금지,30분 선택 시 목표 잔류 탁도 비교,number (finite decimal)
 jar_conditions.csv,removal_5_pct,%,100*(F-Z)/F,5분 탁도 제거율 = 100×(원수 탁도−5분 탁도)/원수 탁도. 초기 탁도가 0 이하 또는 결측이면 계산하지 않음.,0,원수 탁도 0 이하 또는 필요한 값 결측 시 공란; 임의 대체 금지,5분 제거율 비교 지표; 독립 측정값 아님,number (finite decimal)
 jar_conditions.csv,removal_30_pct,%,100*(F-AA)/F,30분 탁도 제거율 = 100×(원수 탁도−30분 탁도)/원수 탁도. 초기 탁도가 0 이하 또는 결측이면 계산하지 않음.,0,원수 탁도 0 이하 또는 필요한 값 결측 시 공란; 임의 대체 금지,30분 제거율 비교 지표; 독립 측정값 아님,number (finite decimal)
-jar_conditions.csv,rapid_rpm,rpm,U,급속 교반 속도,24,공란은 미기록(0 아님); 임의 대체 금지,참고·에너지 입력 후보; 누락 시 계산 불가 또는 별도 가정 시나리오,number (finite decimal)
-jar_conditions.csv,rapid_min,min,V,급속 교반 시간,24,공란은 미기록(0 아님); 임의 대체 금지,참고·에너지 입력 후보; 누락 시 계산 불가 또는 별도 가정 시나리오,number (finite decimal)
-jar_conditions.csv,slow_rpm,rpm,W,완속 교반 속도,24,공란은 미기록(0 아님); 임의 대체 금지,참고·에너지 입력 후보; 누락 시 계산 불가 또는 별도 가정 시나리오,number (finite decimal)
-jar_conditions.csv,slow_min,min,X,완속 교반 시간,24,공란은 미기록(0 아님); 임의 대체 금지,참고·에너지 입력 후보; 누락 시 계산 불가 또는 별도 가정 시나리오,number (finite decimal)
-jar_conditions.csv,acid_type,text,P,HCl 명시된 경우만 기록,24,공란은 미기록(0 아님); 임의 대체 금지,참고·에너지 입력 후보; 누락 시 계산 불가 또는 별도 가정 시나리오,string
-jar_conditions.csv,acid_amount,µL,R conditional on P,산 단독 식별 시 총투입량,24,공란은 미기록(0 아님); 산·염기별 투입량 임의 배분 금지,참고·에너지 입력 후보; 누락 시 계산 불가 또는 별도 가정 시나리오,number (finite decimal)
-jar_conditions.csv,base_type,text,P,NaOH 명시된 경우만 기록,24,공란은 미기록(0 아님); 임의 대체 금지,참고·에너지 입력 후보; 누락 시 계산 불가 또는 별도 가정 시나리오,string
-jar_conditions.csv,base_amount,µL,R conditional on P,염기 단독 식별 시 총투입량,24,공란은 미기록(0 아님); 산·염기별 투입량 임의 배분 금지,참고·에너지 입력 후보; 누락 시 계산 불가 또는 별도 가정 시나리오,number (finite decimal)
+jar_conditions.csv,rapid_rpm,rpm,U (원본 미기록); E02/energy_inputs.csv COMMON_RAPID; E02_USER_20261127,급속 교반 속도; 2026-11-27 담당자 확인 공통 조건. 원본 Excel에 기록된 실측값이 아님.,0,공란은 미기록(0 아님); 임의 대체 금지,실험 맥락·에너지 입력 후보; rpm·시간만으로 실제 소비전력 계산 금지,number (finite decimal)
+jar_conditions.csv,rapid_min,min,V (원본 미기록); E02/energy_inputs.csv COMMON_RAPID; E02_USER_20261127,급속 교반 시간; 2026-11-27 담당자 확인 공통 조건. 원본 Excel에 기록된 실측값이 아님.,0,공란은 미기록(0 아님); 임의 대체 금지,실험 맥락·에너지 입력 후보; rpm·시간만으로 실제 소비전력 계산 금지,number (finite decimal)
+jar_conditions.csv,slow_rpm,rpm,W (원본 미기록); E02/energy_inputs.csv COMMON_SLOW; E02_USER_20261127,완속 교반 속도; 2026-11-27 담당자 확인 공통 조건. 원본 Excel에 기록된 실측값이 아님.,0,공란은 미기록(0 아님); 임의 대체 금지,실험 맥락·에너지 입력 후보; rpm·시간만으로 실제 소비전력 계산 금지,number (finite decimal)
+jar_conditions.csv,slow_min,min,X (원본 미기록); E02/energy_inputs.csv COMMON_SLOW; E02_USER_20261127,완속 교반 시간; 2026-11-27 담당자 확인 공통 조건. 원본 Excel에 기록된 실측값이 아님.,0,공란은 미기록(0 아님); 임의 대체 금지,실험 맥락·에너지 입력 후보; rpm·시간만으로 실제 소비전력 계산 금지,number (finite decimal)
+jar_conditions.csv,acid_type,text,P,HCl 명시된 경우만 기록; 공통 stock 종류가 확인되어도 각 비커에 사용된 약품은 별도 확인 전 공란 유지.,24,공란은 미기록(0 아님); 임의 대체 금지,참고·에너지 입력 후보; 누락 시 계산 불가 또는 별도 가정 시나리오,string
+jar_conditions.csv,acid_amount,µL,R conditional on P,산 단독 식별 시 총투입량; 1 M stock 농도로 실제 사용량을 역산하지 않음.,24,공란은 미기록(0 아님); 산·염기별 투입량 임의 배분 금지,참고·에너지 입력 후보; 누락 시 계산 불가 또는 별도 가정 시나리오,number (finite decimal)
+jar_conditions.csv,base_type,text,P,NaOH 명시된 경우만 기록; 공통 stock 종류가 확인되어도 각 비커에 사용된 약품은 별도 확인 전 공란 유지.,24,공란은 미기록(0 아님); 임의 대체 금지,참고·에너지 입력 후보; 누락 시 계산 불가 또는 별도 가정 시나리오,string
+jar_conditions.csv,base_amount,µL,R conditional on P,염기 단독 식별 시 총투입량; 1 M stock 농도로 실제 사용량을 역산하지 않음.,24,공란은 미기록(0 아님); 산·염기별 투입량 임의 배분 금지,참고·에너지 입력 후보; 누락 시 계산 불가 또는 별도 가정 시나리오,number (finite decimal)
 jar_conditions.csv,adjustment_reagent_raw,text,P,원본 조절 시약,24,공란은 미기록(0 아님); 임의 대체 금지,참고·에너지 입력 후보; 누락 시 계산 불가 또는 별도 가정 시나리오,string
-jar_conditions.csv,adjustment_concentration_mol_L,mol/L,Q,조절 시약 농도,24,공란은 미기록(0 아님); 임의 대체 금지,참고·에너지 입력 후보; 누락 시 계산 불가 또는 별도 가정 시나리오,number (finite decimal)
+jar_conditions.csv,adjustment_concentration_mol_L,mol/L,Q,조절 시약 농도; 원본 Q열의 개별 비커 기록만 보존. 공통 stock 농도는 별도 hcl_stock_concentration_mol_L / naoh_stock_concentration_mol_L 사용.,24,공란은 미기록(0 아님); 임의 대체 금지,참고·에너지 입력 후보; 누락 시 계산 불가 또는 별도 가정 시나리오,number (finite decimal)
 jar_conditions.csv,adjustment_total_uL,µL,R,산·염기 총투입; 개별량으로 임의 배분 금지,24,공란은 미기록(0 아님); 산·염기별 투입량 임의 배분 금지,참고·에너지 입력 후보; 누락 시 계산 불가 또는 별도 가정 시나리오,number (finite decimal)
 jar_conditions.csv,stock_mass_mg,mg,I,Stock 용액 제조에 사용한 시약의 실제 질량; 유효성분/무수물 기준은 미확인.,0,공란은 미기록(0 아님); 임의 대체 금지,참고·에너지 입력 후보; 누락 시 계산 불가 또는 별도 가정 시나리오,number (finite decimal)
 jar_conditions.csv,stock_volume_mL,mL,J,Stock 용액 제조 후 최종 부피.,0,공란은 미기록(0 아님); 임의 대체 금지,참고·에너지 입력 후보; 누락 시 계산 불가 또는 별도 가정 시나리오,number (finite decimal)
 jar_conditions.csv,stock_dose_mL,mL,L,비커에 투입한 stock 용액의 부피.,0,공란은 미기록(0 아님); 임의 대체 금지,참고·에너지 입력 후보; 누락 시 계산 불가 또는 별도 가정 시나리오,number (finite decimal)
 jar_conditions.csv,observation_note,text,AD;AE,"원본 AD(플록·침전 상태), AE(특이사항)의 기록을 보존. 기록 없음은 이상 없음의 증거가 아님.",22,공란은 미기록(0 아님); 임의 대체 금지,QC·참고 전용; 자동 제외 아님,string
-jar_conditions.csv,qc_flag,text,derived,세미콜론 구분: experiment_date_missing=실험일 미기록; mixing_incomplete=교반 미기록; adjustment_input_incomplete=산염기 입력 미기록; observation_note_present=원본 특이사항 존재. 모두 목표 pH ±0.2 적합; 자동 제외 아님,0,공란은 미기록(0 아님); 임의 대체 금지,QC·참고 전용; 자동 제외 아님,string
+jar_conditions.csv,qc_flag,text,derived,세미콜론 구분: experiment_date_missing=실험일 미기록; mixing_operator_confirmed=원본에는 미기록이나 E02 담당자 확인으로 교반조건 확보; adjustment_input_incomplete=개별 비커 산염기 사용/투입량 미기록; observation_note_present=원본 특이사항 존재. 모두 목표 pH ±0.2 적합; 자동 제외 아님,0,공란은 미기록(0 아님); 임의 대체 금지,QC·참고 전용; 자동 제외 아님,string
 jar_conditions.csv,source_id,ID,source index,GitHub 원본 식별 ID,0,공란은 미기록(0 아님); 임의 대체 금지,출처 추적용,string
 jar_conditions.csv,source_sha256,hex,source workbook,원본 SHA-256,0,공란은 미기록(0 아님); 임의 대체 금지,출처 추적용,string
 jar_conditions.csv,source_sheet,text,sheet name,원본 시트,0,공란은 미기록(0 아님); 임의 대체 금지,출처 추적용,string
+jar_conditions.csv,hcl_stock_concentration_mol_L,mol/L,E02/energy_inputs.csv COMMON_PH.acid_concentration_mol_L,공통 HCl stock 농도 1 M; 개별 비커 사용 여부·투입량을 뜻하지 않음.,0,공란은 미확인(0 아님); 임의 대체 금지,에너지 입력 후보; 실제 사용 부피 및 질량 기준 확보 후 계산,number (finite decimal)
+jar_conditions.csv,naoh_stock_concentration_mol_L,mol/L,E02/energy_inputs.csv COMMON_PH.base_concentration_mol_L,공통 NaOH stock 농도 1 M; 개별 비커 사용 여부·투입량을 뜻하지 않음.,0,공란은 미확인(0 아님); 임의 대체 금지,에너지 입력 후보; 실제 사용 부피 및 질량 기준 확보 후 계산,number (finite decimal)
+jar_conditions.csv,supplemental_metadata_source_id,ID,E02/energy_inputs.csv COMMON_RAPID; COMMON_SLOW; COMMON_PH,D01 data_manifest.json supplemental_metadata.source_id 연결. 원본 S018 및 원본 해시와 구분.,0,공란은 미확인(0 아님); 임의 대체 금지,추적용 식별자,string
+jar_conditions.csv,supplemental_metadata_confirmed_date,YYYY-MM-DD,E02 담당자 확인; 사용자 재확인,추가 공통 조건 확인일이며 실험일 또는 채수일 아님.,0,공란은 미확인(0 아님); 임의 대체 금지,출처 추적용; 날짜 조회 필터 사용 금지,date (ISO 8601; YYYY-MM-DD)
 solids_exploratory.csv,sample_id,ID,generated,"지역·원본 시료명(A열, 빈 셀은 직전 시료명으로 연결)·반복 번호로 생성한 고유 ID; 원본 실험 ID는 아님. 문자열로 사용.",0,공란은 미기록(0 아님); 임의 대체 금지,탐색 전용; 운영 추천 목적함수·필터에 사용 금지,string
 solids_exploratory.csv,condition_id,ID,A; Jar design match,처리수는 동일 지역·목표 pH·명목 투입량의 Jar 설계조건 ID와 연결. 원수는 공란. 같은 비커의 직접 반복 매칭이 아님.,2,원수는 해당 없음; 처리수는 Jar 설계조건 ID 필요,탐색 전용; 운영 추천 목적함수·필터에 사용 금지,string
 solids_exploratory.csv,replicate_id,index,B (raw); A group row order (treated),"원수는 B열 실제 반복 번호, 처리수는 A열 시료명별 행 순서로 부여한 독립 반복 식별자(1 또는 2). 실험 수행 순서·Jar 반복을 뜻하지 않음.",0,공란은 미기록(0 아님); 임의 대체 금지,탐색 전용; 운영 추천 목적함수·필터에 사용 금지,integer
