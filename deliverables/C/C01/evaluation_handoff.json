@@ -48,5 +48,6 @@
       "use G03 decision: local demonstration or external URL; QR only if external QR use approved; preserve same-version backup and applicable access checks"
     ]
   },
-  "ready_for_final_run": false
+  "ready_for_final_run": false,
+  "team_sharing_policy": "Human team review via BTS group allowed; final items/gold forbidden in development/optimization and candidate context; evaluator provides one current question at a time. Separate runtime from shared archives."
 }
