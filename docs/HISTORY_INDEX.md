@@ -13,3 +13,5 @@
 - [INTEGRATION_MANIFEST_20261127.json](INTEGRATION_MANIFEST_20261127.json) — 과거 기록/검토 시점 스냅샷; 현행 실행 지시 아님.
 - [PLAN_UPDATE_MANIFEST_20261127.json](PLAN_UPDATE_MANIFEST_20261127.json) — 과거 기록/검토 시점 스냅샷; 현행 실행 지시 아님.
 - [FINAL_REVIEW_MANIFEST_20261128.json](FINAL_REVIEW_MANIFEST_20261128.json) — 과거 기록/검토 시점 스냅샷; 현행 실행 지시 아님.
+- [DOCUMENT_CLEANUP_MANIFEST_20261128.json](DOCUMENT_CLEANUP_MANIFEST_20261128.json) — 이전 정비 배포 증빙; 현재 공유 정책과 구분.
+- [팀 내부 공유 정책](TEAM_SHARING_POLICY.md) — 현행 변경 사항.

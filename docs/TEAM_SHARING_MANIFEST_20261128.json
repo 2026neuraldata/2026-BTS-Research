@@ -1,0 +1,134 @@
+{
+  "base_commit": "4a3c48cc8d2566d42a190841cc253dd08abaea5d",
+  "revision": "2026-11-28_team_sharing",
+  "scope": "Team internal sharing only; existing runtime gates and evaluation content unchanged",
+  "replace_files": [
+    {
+      "path": "README.md",
+      "expected_existing_git_blob_sha1": "ddf78f4caba4eb1c075ab3af424cb2df7562b463",
+      "new_git_blob_sha1": "53719dd09e1de09a1694b70e4fac7a420bbe713c",
+      "new_sha256": "aa67b116eb1373c1027d280940e2fa77d1af21238d98b8831f41d47e9df05ded"
+    },
+    {
+      "path": "config.yaml",
+      "expected_existing_git_blob_sha1": "8018f9f0b65db17747998f020a2869d86f88c424",
+      "new_git_blob_sha1": "e125f6dedbadc8339cdec2e269708991557c6228",
+      "new_sha256": "55ece79836aa7dc06d0abfce2a69e956ff48669c9e5c03eb0cae56afbf13bd22"
+    },
+    {
+      "path": "deliverables/C/C01/README.md",
+      "expected_existing_git_blob_sha1": "3b973596105f63213d59e23712b0a7a113bde171",
+      "new_git_blob_sha1": "186b7990780111db26ab09d658c0a305ae699601",
+      "new_sha256": "52bd83f9ef88c587c0e5921496037a78fff61139008fee8a4ca223129836c515"
+    },
+    {
+      "path": "deliverables/C/C01/evaluation_handoff.json",
+      "expected_existing_git_blob_sha1": "8cbf3aeb46000830fbdb65f06adc84b6203bbc6c",
+      "new_git_blob_sha1": "54fc105186cc24afb2f65f516d11f59ae50c8877",
+      "new_sha256": "ebcd8bbaddc34d19936edf3346120492aed9396d63b80013a1dd243e08353f60"
+    },
+    {
+      "path": "deliverables/G/G01/meeting_agenda_1128.md",
+      "expected_existing_git_blob_sha1": "e369ba6c7c83e931e98172eee6a07e0e233d8ebb",
+      "new_git_blob_sha1": "5f20e5d6884892193f4095b6d2e0b51359c99fc4",
+      "new_sha256": "44682d65acbf1e95a330d7ca73118fc61a9f41731dcb1b18a57b69a49b0918c9"
+    },
+    {
+      "path": "deliverables/L/L01/README.md",
+      "expected_existing_git_blob_sha1": "58c488fb3c245874c8f08e9e1cc6a7e8c82b6a51",
+      "new_git_blob_sha1": "e4d14e712ff5b17c255283d6a99995ab7594ce24",
+      "new_sha256": "78d4a7512d406c581fb75da9510f95bca3d5547e0afbd63a4748697c8f1f8da5"
+    },
+    {
+      "path": "deliverables/L/L01/submission_manifest.json",
+      "expected_existing_git_blob_sha1": "5380d12eaab7c2871acaf8ec264971b93caf53df",
+      "new_git_blob_sha1": "c211ff58dc0a00a917a352f39b376200bcfc03ad",
+      "new_sha256": "15ecaf7560ae2516138eea3c6be0e2823cc4d12ff31e5a9737982b691e8de618"
+    },
+    {
+      "path": "deliverables/L/L02/README.md",
+      "expected_existing_git_blob_sha1": "536ce316591106f6792ae318728e70718abda1b2",
+      "new_git_blob_sha1": "14ae9cabe8d82b7f587180084bdff9085c4e8eda",
+      "new_sha256": "e872efef5807cd3763804444f9cbefaee489b0f5de6e5b4a5a9389e96457fb38"
+    },
+    {
+      "path": "deliverables/L/L02/evaluation_config.json",
+      "expected_existing_git_blob_sha1": "03181848bf5383e98267c888b48ff8128cc9b36b",
+      "new_git_blob_sha1": "8eccac6e797082f820fa0a35704ef03f2f509d80",
+      "new_sha256": "778d1fbd14c6fd7e0dd7aa45ae98a0dc438bce5e27d73d38de30511159856af0"
+    },
+    {
+      "path": "deliverables/L/L03/README.md",
+      "expected_existing_git_blob_sha1": "94ea53cc918a92de181de68be7d0084a49ab5d6f",
+      "new_git_blob_sha1": "db3792d9e7c2e2ea3e4a456b6a9421e215462277",
+      "new_sha256": "16165d21953f858eb184367a1dd8581ba1895f1f3a74a55b0df3a3e643030193"
+    },
+    {
+      "path": "deliverables/L/L03/judge_config.json",
+      "expected_existing_git_blob_sha1": "bde8cb8f4291451de102e5954d50cbe3771544fe",
+      "new_git_blob_sha1": "b87e0f63da32bb726459107557e0aba1580d57bf",
+      "new_sha256": "f33adbd16d4d27e0faad6793bc54f0ba8e6adfc45b0dc666b0b5bfce83fa6c1f"
+    },
+    {
+      "path": "docs/DOCUMENT_CONTROL.md",
+      "expected_existing_git_blob_sha1": "c7cd1d50483587d4bc17add5811dae3647c23ddf",
+      "new_git_blob_sha1": "7dc3950c6536e2aae81b516dc893c09b8865da3d",
+      "new_sha256": "d69ae9f5c8943f3f61141bf1e1e91c5b6aa1ee608690592e77f054ca944b3608"
+    },
+    {
+      "path": "docs/EVALUATION_ACCESS_CONTROL.md",
+      "expected_existing_git_blob_sha1": "777276dc5e31c39ce8597a03c5738c03355bb3a6",
+      "new_git_blob_sha1": "d6b59859a22c42a10133900e48ee41c59d091203",
+      "new_sha256": "913600b7334bcf635841e3a146aae8b9ad61d3318720890e577eeb6267620721"
+    },
+    {
+      "path": "docs/EVALUATION_PROTOCOL.md",
+      "expected_existing_git_blob_sha1": "2fa60b635c05fe349c4403348bea69bf4dc2383c",
+      "new_git_blob_sha1": "7c58690d208a804ba1ce7037f02737aa34ee8113",
+      "new_sha256": "f7aa9866d5b9cc615e2638d4ac4eb6233da8f9560e19299eed6033e06640281f"
+    },
+    {
+      "path": "docs/FINAL_REVIEW_20261128.md",
+      "expected_existing_git_blob_sha1": "216405a684eef47185405481823d14faf96b4db0",
+      "new_git_blob_sha1": "ec60549dca54ce20eb45b0c582fb59216e75ed14",
+      "new_sha256": "e025392654d6d944774b38653e38f11949ba9ad55e966b5cc549240a21a8b235"
+    },
+    {
+      "path": "docs/HISTORY_INDEX.md",
+      "expected_existing_git_blob_sha1": "8da509fd47f23c6036d6ebba83b1358ffa2d970d",
+      "new_git_blob_sha1": "8f45ced9732a986c60a658af7be7b75366524a69",
+      "new_sha256": "3c487f5e52b3e592844081e99d6d1665230f2b0825128b02c7f181f545d2b7d5"
+    },
+    {
+      "path": "docs/TEAM_SHARING_POLICY.md",
+      "expected_existing_git_blob_sha1": null,
+      "new_git_blob_sha1": "a3be004f48bfe5da13f835601a6cdaa49f6215b9",
+      "new_sha256": "9fe045e826fb998c9dced347f337b6c1d03a965b3e19dca954477e7f9f53c112"
+    },
+    {
+      "path": "docs/TEAM_TASKS.md",
+      "expected_existing_git_blob_sha1": "40950f2eadac8734709704fc08d99d16c73acb62",
+      "new_git_blob_sha1": "33b234b9b530f9320526cb2a13ccf47d4c5366b2",
+      "new_sha256": "5e0f351dd937965f015168454ab21e32f1be738aecd26fcf3912c5c22dc8d254"
+    },
+    {
+      "path": "management/tasks.csv",
+      "expected_existing_git_blob_sha1": "99ccc4b71930b3e280804587544617aba13060ee",
+      "new_git_blob_sha1": "1f5c1ad12ebb7be5d5242be4467dd28d236b3971",
+      "new_sha256": "da47f23a67c3c9bc60136175dc521b99433a5fd6ab6187f06e5692ae4aea49f6"
+    },
+    {
+      "path": "scripts/check_release.py",
+      "expected_existing_git_blob_sha1": "06c657555040f5dea582caa089f237aa0b1e3718",
+      "new_git_blob_sha1": "a028a4cb5d998a7e6c1db15ac776541bd9c28ffc",
+      "new_sha256": "fdefaa2d4e924c23a1c8a772464a71796ba3a704fa528c2bee8d2f86e82b2890"
+    },
+    {
+      "path": "scripts/update_trackers.py",
+      "expected_existing_git_blob_sha1": "d775d8da33995c1d64ee9607ab4973c61a7606d5",
+      "new_git_blob_sha1": "90b1aa5dc45144bd44711f2a9087a7814f4a76a1",
+      "new_sha256": "7a752917eb1bdcc2d2c965d1526bfb45003d9d779bea8822343f09f3112ae9e5"
+    }
+  ],
+  "note": "Prior manifests are historical. Team ZIPs not public. Static validation only."
+}

@@ -27,7 +27,7 @@
 ### 신규 20문항 확정 조건
 
 - 기존 문항을 수정·복사하여 제출하지 않고 신규 문항과 정답 근거를 작성함.
-- 제출물은 `questions.jsonl`, `gold.jsonl`, `source_page_mapping.csv`이며 모두 승인된 평가 담당자·팀장 전용이며 별도 공개 승인 전까지 평가 종료 후에도 비공개임. 공개 GitHub에는 [제출 확인 manifest](../deliverables/L/L01/submission_manifest.json)만 등록함.
+- 제출물은 `questions.jsonl`, `gold.jsonl`, `source_page_mapping.csv`이며 모두 팀 내부 단체방에 공유하며 별도 공개 승인 전까지 평가 종료 후에도 외부 비공개임. 공개 GitHub에는 [제출 확인 manifest](../deliverables/L/L01/submission_manifest.json)만 등록함.
 - 문항별 근거 경로·단위·조건을 기록하고 D02 수치를 대조한 뒤 확정함.
 - 기존 교과서·논문은 원문 검증 후 신규 문항의 출처로 활용 가능함.
 
@@ -129,7 +129,7 @@
 
 ## 필수 로그
 
-- 후보 실행 로그에는 run_id, timestamp, app_commit, model_id, config_hash, question_id, variant, prompt_hash, context_source_ids, retrieved_pages, response, selected_option, latency_s, retries, failure_reason, author 및 model_version, attempt_id, actual_generation_settings, corpus_hash, internal_model_calls, input_tokens, output_tokens, cost, format_failure를 저장함. human_option_score, human_evidence_score, judge_score는 평가 담당자만 접근하는 별도 채점 기록에서 연결함.
+- 후보 실행 로그에는 run_id, timestamp, app_commit, model_id, config_hash, question_id, variant, prompt_hash, context_source_ids, retrieved_pages, response, selected_option, latency_s, retries, failure_reason, author 및 model_version, attempt_id, actual_generation_settings, corpus_hash, internal_model_calls, input_tokens, output_tokens, cost, format_failure를 저장함. human_option_score, human_evidence_score, judge_score는 후보 입력과 분리한 별도 채점 기록에서 평가 담당자가 연결함. 팀 내부 공유는 허용함.
 - 모델 호출 전·후 변경은 새 run_id로 분리함. 개인용 API 키는 로그에 포함하지 않음.
 
 - L05/L06 사람 기준 점수는 이건희 1인의 독립 채점 결과로 기록. 평가자 간 일치도는 산출하지 않음. L03의 LLM 보조 후 사람 승인 기준과 구분함.
@@ -139,7 +139,7 @@
 - 실제 목표 설정의 기준은 [L02 evaluation_config.json](../deliverables/L/L02/evaluation_config.json), [C01 evaluation_handoff.json](../deliverables/C/C01/evaluation_handoff.json)임. 선언 모델 `claude-opus-5-5`, 최대 출력 16000 tokens, 답변 Effort medium, timeout 120초, temperature/top_p/seed 미설정, 전송 오류 최대 1회 재시도(중복 재시도 금지), fallback 비활성화 목표임. 실제 API 지원 및 반환 모델/버전 확인 전 적용 완료로 표시하지 않음. C 전용 내부 검색어 생성 low effort는 로그에 기록함.
 - A/B/C 공통 JSON `selected_option`, `evidence`, `sources` 및 한 문항씩 새 세션을 적용함. 틀린 답·근거 부족·형식 오류·무응답을 유리하게 재호출하지 않음.
 - C03/L04: 허용 파일 해시, A 추가자료 없음, B/C 동일 원자료, 금지 파일 접근 실패·가상 누출 표식·허용 목록 외 검색 없음·실제 요청/도구 로그 검증을 통과해야 함. 실제 모델/버전·설정·실패 기록과 접근통제 증빙이 없으면 최종 실행 금지.
-- L04 개발용, L03 선정용, L05 보정/검증용, L01 최종 문항을 문제군 단위로 분리하고 사용 이력 기록. 노출이 확인되거나 독립성이 미확정이면 사전에 평가 범위를 결정하고 독립 시험으로 주장하지 않음.
+- L04 개발용, L03 선정용, L05 보정/검증용, L01 최종 문항을 문제군 단위로 분리하고 사용 이력 기록. 실제 개발·튜닝 활용이 확인되거나 독립성이 미확정이면 사전에 평가 범위를 결정하고 독립 시험으로 주장하지 않음.
 - C05는 주·교차 심사위원 ID·설정 및 수동 기준을 먼저 고정·보존하고, 독립 보정/검증 자료 충분 시에만 DSPy 최적화 및 별도 검증을 실시함. 실제 최종 경로·설정·프롬프트·선정 근거는 최종 답변 열람 전에 동결하며 자료 부족 시 DSPy 생략. L06은 C03/L04 실행 및 접근통제 통과·C05 동결·노출 이력 확인 후 시작. 실패 시 미실행 사유를 남기고 G04에서는 실제 결과만 채택함. L07은 L06에 저장된 동일 응답만 사용함.
 
 ## 2026-11-28 설계 완료 및 최종 실행 승인 조건 (현행, 앞선 제안과 충돌 시 우선)
@@ -148,4 +148,4 @@
 - 실험 3지선다, 문헌 4지선다: 무작위 추측 확률 차이 명시. 각 분야 정답·근거 /10, 총점 /20과 전체 /40, A/B/C 같은 문항 비교를 보고. 문제군 간 의존성 및 한 번 실행 한계 표시.
 - 형식 승인 규칙: 단일 JSON 파싱 불가 또는 유효 선택지 없음 0점; 선택지가 정답이고 근거가 누락되거나 잘못된 경우 1점; 오답 0점; 허위 출처 근거 0점; 출처 누락은 문항 기준으로 판단. 후보 호출 실패 0점(예정 분모), 심사 실패 null; 실제 내용이 없는 품질/비교는 평가 불가. 임의 복구·재호출 금지. C03/L04 별도 fixture로 확인 후 L06 전 승인·동결.
 - L05의 독립 인간 채점으로 주/교차 후보 추가 비교를 확보 범위 내 실시. 신규 실제 답변 최소 12개는 추가 선정용 확보 목표이며 실제 확보 수와 미실행 사유를 기록하고 DSPy 충분성의 보증으로 보지 않음. 추가 비교 집계는 업무 원장의 필수 제출물임. 선정·DSPy 최적화·별도 검증 문제군 사전 분리. 부족 시 DSPy 생략. C05에서 실제 모델 ID/설정과 수동 기준 프롬프트를 먼저 보존하고, 조건부 최적화 및 별도 검증 뒤 실제 사용할 최종 설정·프롬프트·선정 근거를 최종 답변 열람 전 동결. L07은 L06의 동일 저장 응답만 사용.
-- 전체 문항·Gold·채점·개별 로그는 승인된 평가 담당자/팀장 통제 경로, 후보/개발자에게 전달 금지(개발용 별도 fixture 및 담당자 자신의 개발 로그, C05에 승인된 보정/검증용 부분집합만 분리 심사 환경에서 허용; 최종 문항/Gold는 제외). 단체방은 비공개 산출물 완료 안내만. 공개 GitHub에는 집계 및 안전한 설정만 등록. 실제 API 권한은 C03/L04에서 검증.
+- 전체 문항·Gold·채점·개별 로그는 팀 내부 단체방에 공유하고 팀원 열람을 허용함. 평가자료는 연구 이해 및 평가 설계 검토 목적으로 팀원이 자유롭게 열람할 수 있으나, 최종 평가문항 및 정답자료를 평가 대상 LLM의 개발·최적화·성능 개선에 사용하지 않음. 후보 입력 및 개발 작업 환경에는 제외하고 별도 개발 fixture를 사용함. C05는 승인된 보정/검증용 부분집합만 분리 심사 환경에서 사용함. 실제 개발·튜닝·선정·보정에 사용된 문항/문제군만 사용 이력으로 확인하며 단순 열람을 개인별로 기록하지 않음. 최종 문항이 개발에 사용된 경우 개발셋 평가로 표시하고 독립 시험이라고 주장하지 않음. [팀 공유 정책](TEAM_SHARING_POLICY.md) 참조. 공개 GitHub에는 집계 및 안전한 설정만 등록. 실제 API 권한은 C03/L04에서 검증.
