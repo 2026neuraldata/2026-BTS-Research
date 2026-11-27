@@ -1,0 +1,61 @@
+{
+  "task_id": "L03",
+  "schema_version": "0.2.0",
+  "status": "provisional_provider_roles_integrated_pending_API_verification",
+  "provisional_roles": {
+    "primary": "Gemini",
+    "cross": "GPT",
+    "reserve": "Claude"
+  },
+  "primary_judge": null,
+  "cross_judge": null,
+  "reserve_judge": null,
+  "ready_for_final_run": false,
+  "reference_method": "LLM-assisted draft, user review and explicit approval per question; not independent human ratings",
+  "selection_design": {
+    "questions": 10,
+    "responses": 30,
+    "valid_judgment_records": 90,
+    "reference_score_distribution": {
+      "0": 0,
+      "1": 1,
+      "2": 29
+    },
+    "execution": "manual web chat; imported scores; exact model IDs, API access, cost, latency and session/tool logs unverified"
+  },
+  "selection_basis": "Gemini lowest aggregate MCQ and G-Eval MAE. GPT cross-provider choice prioritizes quality/error sensitivity; Claude lower MCQ MAE than GPT. Limited sample and ceiling effect; not general performance proof.",
+  "candidates": [
+    {
+      "provider": "GPT",
+      "model_id": null,
+      "model_version": null,
+      "api_access": "unverified",
+      "catalog_url": "https://developers.openai.com/api/docs/models",
+      "temperature": null,
+      "max_output_tokens": null,
+      "settings_status": "pending_account_check"
+    },
+    {
+      "provider": "Claude",
+      "model_id": null,
+      "model_version": null,
+      "api_access": "unverified",
+      "catalog_url": "https://platform.claude.com/docs/en/about-claude/models/overview",
+      "temperature": null,
+      "max_output_tokens": null,
+      "settings_status": "pending_account_check"
+    },
+    {
+      "provider": "Gemini",
+      "model_id": null,
+      "model_version": null,
+      "api_access": "unverified",
+      "catalog_url": "https://ai.google.dev/gemini-api/docs/models",
+      "temperature": null,
+      "max_output_tokens": null,
+      "settings_status": "pending_account_check"
+    }
+  ],
+  "next_gate": "L05 separate independent human ratings, diverse actual responses; C05 verify exact API model IDs/settings and freeze manual prompt before final response access. DSPy conditional.",
+  "security": "Public aggregate only. Raw scoring, question/gold packets and internal prompts withheld."
+}
