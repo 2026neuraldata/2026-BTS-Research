@@ -1,12 +1,12 @@
 """Static checks for the public repository. No network or private evaluation data required.
 Run from the complete checkout; --inventory is for an explicitly partial review copy.
---release validates the selected manifest (defaults to the 11/28 C02 submission).
+--release validates the selected manifest (defaults to the 11/28 supplement revision).
 """
 import argparse,csv,fnmatch,hashlib,json,posixpath,re,subprocess,sys
 from pathlib import Path
 from urllib.parse import unquote,urlsplit
 ROOT=Path(__file__).resolve().parents[1]
-ap=argparse.ArgumentParser();ap.add_argument('--release',action='store_true');ap.add_argument('--manifest',default='docs/C02_MANIFEST_20261128.json');ap.add_argument('--inventory',type=Path,help='verified remote path inventory for partial review only');a=ap.parse_args()
+ap=argparse.ArgumentParser();ap.add_argument('--release',action='store_true');ap.add_argument('--manifest',default='docs/SUPPLEMENT_MANIFEST_20261128.json');ap.add_argument('--inventory',type=Path,help='verified remote path inventory for partial review only');a=ap.parse_args()
 errors=[]
 def fail(msg):errors.append(msg)
 def read(p):return (ROOT/p).read_text(encoding='utf-8-sig')
