@@ -56,7 +56,8 @@
       "settings_status": "pending_account_check"
     }
   ],
-  "next_gate": "L05 independent human ratings on separate responses; report additional comparison or unavailable reason. C05 verify actual API IDs/settings, freeze manual baseline, optionally optimize with DSPy and validate on separate responses, then freeze selected final configuration/prompt before final-response access.",
+  "next_gate": "L05 독립 인간 채점·선정/검증 자료와 추가 비교 집계(미실행 사유 포함)를 확인하고 C05 실제 수동 프롬프트·모델 설정·루브릭·선정 근거·해시를 최종 답변 열람 전에 동결함. DSPy는 11/28 회의에서 제외 확정. C03/L04 실제 API·접근통제·형식 및 실제 개발 활용 검토 미통과 시 L06 실행 금지. L07은 L06의 동일 저장 응답만 사용함.",
   "security": "Public aggregate only. Raw scoring, question/gold packets and internal prompts withheld.",
-  "team_sharing_policy": "Team-internal group sharing for human review; no final item/gold use in candidate development or judge optimization; no public release without separate approval. Actual judging environment remains separate."
+  "team_sharing_policy": "Team-internal group sharing for human review; no final item/gold use in candidate development or judge optimization; no public release without separate approval. Actual judging environment remains separate.",
+  "dspy_enabled": false
 }
