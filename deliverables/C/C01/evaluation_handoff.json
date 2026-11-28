@@ -1,6 +1,6 @@
 {
   "task_id": "C01",
-  "revision": "2026-11-28_final_review",
+  "revision": "2026-11-28_supplement",
   "baseline_preserved": true,
   "baseline_execution": {
     "provider": "Anthropic",
@@ -32,9 +32,7 @@
   },
   "deferred_to": {
     "C02": [
-      "use D02 instead of legacy Excel; preserve 80.16 precision",
-      "regional/time/coagulant filtering, no unsupported interpolation",
-      "generic multi-target/time filtering, explicit two-site common conditions, Pareto and calculations using synthetic/development fixtures"
+      "Completed submission handoff; see current_integration_baseline. Actual literature dosage/pH validation remains C03/L04."
     ],
     "C03": [
       "same model/settings A/B/C, disable fallback, record actual model ID, enforce corpus allowlist and output schema, fresh context, transport-only retry",
@@ -49,5 +47,42 @@
     ]
   },
   "ready_for_final_run": false,
-  "team_sharing_policy": "Human team review via BTS group allowed; final items/gold forbidden in development/optimization and candidate context; evaluator provides one current question at a time. Separate runtime from shared archives."
+  "team_sharing_policy": "Human team review via BTS group allowed; final items/gold forbidden in development/optimization and candidate context; evaluator provides one current question at a time. Separate runtime from shared archives.",
+  "current_integration_baseline": {
+    "task": "C02",
+    "repository_commit": "a780d88d30e07d7c6d7444aef95d89464dfdeb3d",
+    "source_path": "deliverables/C/C02",
+    "files": [
+      {
+        "path": "app/app.py",
+        "sha256": "4f2f353fa803d7ef262eb755d83e646530dfd7ae9c04a7eec47d0dd251180dfd"
+      },
+      {
+        "path": "app/logic.py",
+        "sha256": "4a13cecd02521968aaa4740cb4a92af5a38c3cea792cb99f19f7e5735825e4ca"
+      },
+      {
+        "path": "app/data/jar_conditions.csv",
+        "sha256": "557c98b75443bb493de8d3d70150bb0a10aa14d35f42e2957264078f3d7d3648"
+      },
+      {
+        "path": "app/.streamlit/config.toml",
+        "sha256": "4c90f621fcf0b63cbbd80602885b4493792228191eb787a7262240a779209519"
+      },
+      {
+        "path": "app/start_app.bat",
+        "sha256": "864a870f8e4e222109fba97fc793672a9122b64db354ae8f950db08e4b937dd0"
+      },
+      {
+        "path": "requirements.txt",
+        "sha256": "84b2aea9531a8eb9ca1127361d69dd0bfdfa68c86f91e9b7f1e8a681317718bf"
+      }
+    ],
+    "baseline_C01_preserved": true,
+    "actual_integrated_commit": null,
+    "actual_integrated_file_sha256": null,
+    "status": "C03/C04/C08 integration not yet verified; record actual commit/hash after implementation",
+    "regression_requirements": "지역·실제 dose 정밀도·5/30분 다중 목표·공통조건·Pareto·단위 계산·미확보 처리 회귀 검증; 최종 통합 버전 commit 및 파일 SHA-256 기록; C01은 초기 기준본으로 보존하고 C02 개선 기능을 덮어쓰지 않음",
+    "evaluation_boundary": "C03 uses only four approved A/B/C sources; operational paper2 and facility data excluded"
+  }
 }
