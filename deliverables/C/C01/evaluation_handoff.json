@@ -45,7 +45,7 @@
       "replace legacy carbon factors and equivalent labels using E01/E02; missing remains missing"
     ],
     "C07": [
-      "use G03 decision: local demonstration or external URL; QR only if external QR use approved; preserve same-version backup and applicable access checks"
+      "11/28 decision: both external QR and computer demo; verify public URL, permissions, external-device access, credentials protection, cost limit and same-version video backup; never expose localhost as public QR"
     ]
   },
   "ready_for_final_run": false,
