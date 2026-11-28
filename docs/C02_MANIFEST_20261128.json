@@ -1,0 +1,71 @@
+{
+  "base_commit": "bc7673bbe8b647be28ca7d3a05f15ebcfb39fdd4",
+  "scope": "C02 public operational files and completion status; private tests retained internally",
+  "replace_files": [
+    {
+      "path": "PROGRESS.md",
+      "new_git_blob_sha1": "78d51a45c31a8eb3482c2e1862ac2f56011958e3",
+      "new_sha256": "1b3b46703374722ba5588fc335dc026d58f2be398907cf4401092d56cacb16a7"
+    },
+    {
+      "path": "README.md",
+      "new_git_blob_sha1": "863a8678535d5455a16a3727b72a241366acddfe",
+      "new_sha256": "eb37ee2e3e9a1e6cb7652b0ee6a976f91ad0159c89eb77be409ba11d90e33f8d"
+    },
+    {
+      "path": "deliverables/C/C02/README.md",
+      "new_git_blob_sha1": "461a134f99de8ac3379d46d87ab9ca6c0dca1d4e",
+      "new_sha256": "2436e629095adfe2c982ae7aa1de7b8e34b410e3137cec60923304efc0a90fad"
+    },
+    {
+      "path": "deliverables/C/C02/app/.streamlit/config.toml",
+      "new_git_blob_sha1": "b8870f1ebcd26b283cc27ef7e0af3deed4611c52",
+      "new_sha256": "4c90f621fcf0b63cbbd80602885b4493792228191eb787a7262240a779209519"
+    },
+    {
+      "path": "deliverables/C/C02/app/app.py",
+      "new_git_blob_sha1": "3e8ac2dcab78522c2c92607b494d2f21fb1bac85",
+      "new_sha256": "4f2f353fa803d7ef262eb755d83e646530dfd7ae9c04a7eec47d0dd251180dfd"
+    },
+    {
+      "path": "deliverables/C/C02/app/data/jar_conditions.csv",
+      "new_git_blob_sha1": "bf46f9dc6cfc19dd824992d9b568571f47df99e0",
+      "new_sha256": "557c98b75443bb493de8d3d70150bb0a10aa14d35f42e2957264078f3d7d3648"
+    },
+    {
+      "path": "deliverables/C/C02/app/logic.py",
+      "new_git_blob_sha1": "31ed2c79989fccdc3486bb507a4f8db7027a29cb",
+      "new_sha256": "4a13cecd02521968aaa4740cb4a92af5a38c3cea792cb99f19f7e5735825e4ca"
+    },
+    {
+      "path": "deliverables/C/C02/app/start_app.bat",
+      "new_git_blob_sha1": "990ec8260f5767a34a65cc32a4ec7e8206841fed",
+      "new_sha256": "864a870f8e4e222109fba97fc793672a9122b64db354ae8f950db08e4b937dd0"
+    },
+    {
+      "path": "deliverables/C/C02/requirements.txt",
+      "new_git_blob_sha1": "8ed34811e1fce4549011043bbb5756029108f2b7",
+      "new_sha256": "84b2aea9531a8eb9ca1127361d69dd0bfdfa68c86f91e9b7f1e8a681317718bf"
+    },
+    {
+      "path": "deliverables/C/C02/submission_manifest.json",
+      "new_git_blob_sha1": "6095065f31f121904f462c448fbbb9a1b793f61e",
+      "new_sha256": "e705a346443bb3c8b65b50f6c79a41c0ca12014905b5f7036b676d18d322639b"
+    },
+    {
+      "path": "docs/TEAM_TASKS.md",
+      "new_git_blob_sha1": "112a6e03ca2885fcb29c3b3f564c5a7d978b82dd",
+      "new_sha256": "badd32a92099ffef86597596fb601e892e0bb8f16e3aa07576f949b603ebf30d"
+    },
+    {
+      "path": "management/tasks.csv",
+      "new_git_blob_sha1": "3ca1ac9c924b0717491a5c9a63530ce986830704",
+      "new_sha256": "3df5a919d209a8d39d1221a02a77e1d60403fb29c0bfd9998215975f230ff306"
+    },
+    {
+      "path": "scripts/check_release.py",
+      "new_git_blob_sha1": "0a39fe59ed2cfba81dc7c6e2f7c0161ef08f8e00",
+      "new_sha256": "65c77641d49e4c9c04f39fae84d499289bee294aa2f9b4e01597e1050a049c92"
+    }
+  ]
+}
