@@ -1,0 +1,16 @@
+# 색은 참고자료/디자인.html 팔레트. textColor만 디자인 ink(#14202a)보다 조금 어둡다:
+# Streamlit은 설명문(caption)을 이 색의 60%로 그리는데, #14202a면 배경 대비 4.26:1로
+# WCAG AA(4.5:1)에 못 미치고 이 값이면 4.83:1이다.
+[theme]
+base = "light"
+primaryColor = "#23545b"
+backgroundColor = "#f4f6f7"
+secondaryBackgroundColor = "#ffffff"
+textColor = "#0a1218"
+
+[client]
+toolbarMode = "minimal"  # 시연 화면에 개발용 Deploy 버튼을 숨긴다
+
+[server]
+port = 8503            # 8501은 Desktop/Test, 8502는 현대AI해커톤 앱이 쓰고 있다
+address = "127.0.0.1"  # 이 PC에서만 접속. 로그인 없이 API 키를 쓰는 앱이라 사내망에 열지 않는다.
