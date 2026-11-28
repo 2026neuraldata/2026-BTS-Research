@@ -19,4 +19,4 @@ F01–F11 정비 이후 팀 내부 공유 정책을 반영한 현행 기준임. 
 - 비공개 평가자료는 별도 공개 승인 전까지 평가 종료 후에도 보호. 팀 내부 단체방 및 회의는 열람 허용; 외부 공개 화면·회의록에는 집계 및 오류 유형만 제공. [팀 공유 정책](TEAM_SHARING_POLICY.md) 참조.
 - 원본 수치나 평가문항은 이번 수정 범위 아님. 실제 API·접근 통제·독립 채점·계산 기능은 기존 후속 업무에서 검증.
 
-- 현재 회의 결정: [11/28 회의록](../deliverables/G/G02/meeting_1128.md). `--release` 기본값은 이번 회의 반영 manifest이며 이전 배포는 `--manifest`로 명시. 담당자 내부 ZIP·scoring_rubric/split 원본은 이번 첨부에 없어 수정하지 않았으며 현재 수동 평가 지침과 동기화 필요.
+- 현재 회의 결정: [11/28 회의록](../deliverables/G/G02/meeting_1128.md). `--release` 기본값은 [보완사항 배포 manifest](SUPPLEMENT_MANIFEST_20261128.json)이며 check_release.py·README 안내와 함께 갱신함. 과거 배포는 해당 시점 커밋에서 `--manifest`로 당시 manifest를 명시하여 검증. 최신 커밋에서 과거 manifest의 해시가 다른 것은 후속 수정에 따른 정상 이력일 수 있음. 담당자 내부 ZIP·scoring_rubric/split 원본은 이번 첨부에 없어 수정하지 않았으며 현재 수동 평가 지침과 동기화 필요.

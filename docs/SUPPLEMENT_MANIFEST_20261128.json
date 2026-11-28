@@ -1,0 +1,69 @@
+{
+  "base_commit": "a780d88d30e07d7c6d7444aef95d89464dfdeb3d",
+  "scope": "R01-R06 supplement; existing 42 task owners/dates/status/dependencies preserved",
+  "limitations": [
+    "Actual API/paper2/private ZIP/latest integrated build not available; follow-up validation assigned, not claimed completed"
+  ],
+  "replace_files": [
+    {
+      "path": "README.md",
+      "new_git_blob_sha1": "b269ab2eae86388e722bc9daa42b44a77fca0771",
+      "new_sha256": "a2306eb4911940fc561cb4397525aa1ff1064d9959f64244d5e7a6fdf67d70dc"
+    },
+    {
+      "path": "deliverables/C/C01/evaluation_handoff.json",
+      "new_git_blob_sha1": "d68a33bc5a91cf636c506ca4b4c630fd216c8251",
+      "new_sha256": "8a3fc6354613bdef38f4e5fad4a2ce493a08c71b649390d5d204c9ca7e3194c8"
+    },
+    {
+      "path": "deliverables/C/C02/README.md",
+      "new_git_blob_sha1": "ab7edd8bda532d0c61c8246f78e0dd46c624faf4",
+      "new_sha256": "5dbdd47154678b6d303e0c8a3c6c7f263c2577a374aebc881790bafeb34e3e27"
+    },
+    {
+      "path": "deliverables/P/P01/poster_layout.pdf",
+      "new_git_blob_sha1": "0d6a8c25266a4eb81aa558f60859ceb96e10b945",
+      "new_sha256": "62a0709c5e8aafc64a1a29fb3715de93de26e8c849b75cae18fda09165c3e548"
+    },
+    {
+      "path": "deliverables/P/P01/poster_layout.png",
+      "new_git_blob_sha1": "ef7c659cb77249712fd9b3e9aa35f566a6bd2c7d",
+      "new_sha256": "0ced182fecf330f3ac278ad80003c32e29a89aa3969b578a323d8e288894d61b"
+    },
+    {
+      "path": "docs/DOCUMENT_CONTROL.md",
+      "new_git_blob_sha1": "1353fb03cdcabaf39ce57b4947786035f48ef2f0",
+      "new_sha256": "cbd1052a72a429885b99658909c4f93a491fea5f1b54d1f225b33ecb5e8f862d"
+    },
+    {
+      "path": "docs/HISTORY_INDEX.md",
+      "new_git_blob_sha1": "e3eb1e2669687c36f66618dfb9eadceff9f81e5e",
+      "new_sha256": "590b799441958f7c730e83edd4d3dcbf509a86de5c22710cb1d34ad813096890"
+    },
+    {
+      "path": "docs/POSTER_PLAN.md",
+      "new_git_blob_sha1": "6b759e9527bede73fcb54549de46025544ed0a72",
+      "new_sha256": "b658e1d2b62e9133c2eab5c80643665f3f4517da06440381d42e143bc1f2b862"
+    },
+    {
+      "path": "docs/SUPPLEMENT_GUIDE_20261128.pdf",
+      "new_git_blob_sha1": "6b99ddfa1d70d9776f1e0ff842c8ec06ce99cea2",
+      "new_sha256": "60116f4383046a058b9236913d4defb799c630a2b16db37db850a0706b83b557"
+    },
+    {
+      "path": "docs/TEAM_TASKS.md",
+      "new_git_blob_sha1": "01e88fb2834468544c962e68949c36f2a9cfef11",
+      "new_sha256": "9c83a9be2ab1623652b3e9f426d64179087369f4b7b312d7620d524c76fec0c7"
+    },
+    {
+      "path": "management/tasks.csv",
+      "new_git_blob_sha1": "81fde10d7332453b603e681a5d990e1e8b48dbcc",
+      "new_sha256": "fc986b800424382e202cfb61173eae4c248fab3970157241fe01296de6dfa4eb"
+    },
+    {
+      "path": "scripts/check_release.py",
+      "new_git_blob_sha1": "d703429860dcc9815a7df27b538863dab8e14e89",
+      "new_sha256": "16b5ac9b3999fa9ce65a4e6b0152d8a661fd0d488e729f8018d94783f9b6c1ad"
+    }
+  ]
+}

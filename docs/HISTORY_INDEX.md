@@ -17,3 +17,5 @@
 - [팀 내부 공유 정책](TEAM_SHARING_POLICY.md) — 현행 변경 사항.
 
 - [11/28 회의 반영](../deliverables/G/G02/meeting_1128.md) · [수정지침 원본](MEETING_REVISION_GUIDE_20261128.pdf) · [배포 manifest](MEETING_MANIFEST_20261128.json). 이전 배포 manifest는 당시 스냅샷으로 보존.
+
+- 11/28 보완사항 R01–R06: [배포 manifest](SUPPLEMENT_MANIFEST_20261128.json) · [지침서](SUPPLEMENT_GUIDE_20261128.pdf). 기존 회의·C02 manifest와 원본 해시는 해당 배포 이력으로 보존.
