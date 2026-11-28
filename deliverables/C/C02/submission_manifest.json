@@ -1,0 +1,43 @@
+{
+  "source_archive": "C02.zip",
+  "source_archive_sha256": "c27b25c12994c436886f5e65d988d48af883d409592438ea517ff7016e3f34cd",
+  "status": "done",
+  "status_basis": "User requested C02 completion on 11/28",
+  "submitted_regression_results": {
+    "PASS": 94
+  },
+  "independent_api_or_full_regression_run": false,
+  "public_files": [
+    {
+      "path": "app/app.py",
+      "sha256": "4f2f353fa803d7ef262eb755d83e646530dfd7ae9c04a7eec47d0dd251180dfd"
+    },
+    {
+      "path": "app/logic.py",
+      "sha256": "4a13cecd02521968aaa4740cb4a92af5a38c3cea792cb99f19f7e5735825e4ca"
+    },
+    {
+      "path": "app/data/jar_conditions.csv",
+      "sha256": "557c98b75443bb493de8d3d70150bb0a10aa14d35f42e2957264078f3d7d3648"
+    },
+    {
+      "path": "app/.streamlit/config.toml",
+      "sha256": "4c90f621fcf0b63cbbd80602885b4493792228191eb787a7262240a779209519"
+    },
+    {
+      "path": "app/start_app.bat",
+      "sha256": "864a870f8e4e222109fba97fc793672a9122b64db354ae8f950db08e4b937dd0"
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "84b2aea9531a8eb9ca1127361d69dd0bfdfa68c86f91e9b7f1e8a681317718bf"
+    }
+  ],
+  "internal_only": [
+    "README.md (original)",
+    "app/test_logic.py",
+    "app/regression_test.py",
+    "regression_test.csv",
+    "app/fixtures/synthetic_jar.csv"
+  ]
+}
