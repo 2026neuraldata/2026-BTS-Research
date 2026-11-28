@@ -7,7 +7,7 @@
     "timezone": "Asia/Seoul",
     "plan_status": "execution_schedule_integrated_pending_runtime_validation",
     "year": 2026,
-    "base_commit": "4a3c48cc8d2566d42a190841cc253dd08abaea5d",
+    "base_commit": "0503f91c686f56ecb0dcd8fa2818a934ff9bd93a",
     "document_control_path": "docs/DOCUMENT_CONTROL.md"
   },
   "dates": {
@@ -77,18 +77,19 @@
       "observed_condition_recommendation",
       "process_energy_scenarios",
       "human_scored_model_comparison",
-      "poster_and_demo"
+      "poster_and_demo",
+      "facility_analysis_and_visualization"
     ],
-    "conditional": [
-      "dspy_judge_optimization"
-    ],
+    "conditional": [],
     "deferred": [
       "local_llm_migration",
       "dense_vector_search_unless_needed",
       "AI_energy_measurement_without_inputs",
       "formal_certification",
-      "interactive_map_expansion",
       "sludge_reuse"
+    ],
+    "excluded": [
+      "dspy_judge_optimization"
     ]
   },
   "evaluation": {
@@ -117,9 +118,10 @@
     "access_control_path": "docs/EVALUATION_ACCESS_CONTROL.md",
     "access_control_verified": false,
     "ready_for_final_run": false,
-    "freeze_gate": "C03/L04 runtime/access/format pass; L05 comparison report; C05 manual baseline then optional DSPy and independent validation, final model/config/prompt/rubric freeze; exposure review before L06",
+    "freeze_gate": "C03/L04 runtime/access/format pass; L05 independent comparison report; C05 manual model/config/prompt/rubric freeze; actual development-use review before L06",
     "base_model_target": "claude-opus-5-5 (configured target, actual API unverified)",
-    "design_status": "complete"
+    "design_status": "complete",
+    "dspy_enabled": false
   },
   "energy": {
     "electricity_equivalent_is_not_process_electricity": true,
@@ -149,5 +151,15 @@
     "actual_development_use_review_required": true,
     "public_release_requires_separate_approval": true,
     "policy_path": "docs/TEAM_SHARING_POLICY.md"
+  },
+  "demo": {
+    "qr_required": true,
+    "computer_required": true,
+    "public_url_verified": false
+  },
+  "report": {
+    "use": "supporting_evidence_only",
+    "direct_evidence": false,
+    "official_certification": false
   }
 }
