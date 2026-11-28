@@ -1,0 +1,191 @@
+{
+  "base_commit": "0503f91c686f56ecb0dcd8fa2818a934ff9bd93a",
+  "revision": "2026-11-28_meeting",
+  "scope": "M01-M07; D04/C08 owner/dates approved by user; G02/P01 done; original P01 PDF/PNG preserved",
+  "limitations": [
+    "Original meeting TXT and private evaluation packages not attached; meeting record derived from supplied guideline",
+    "Actual API, QR, permissions, nationwide data, official poster specifications not verified"
+  ],
+  "replace_files": [
+    {
+      "path": "PROGRESS.md",
+      "expected_existing_git_blob_sha1": "1a5f6b769c28418102e08c15b7c059c00a88a454",
+      "new_git_blob_sha1": "23eee7a69a12cd9df56dde72f67a2d387eacaeaf",
+      "new_sha256": "b2dc2edeb027938d96696f42a87ac571ed87402543d622bab92ba3f0ed525860"
+    },
+    {
+      "path": "README.md",
+      "expected_existing_git_blob_sha1": "53719dd09e1de09a1694b70e4fac7a420bbe713c",
+      "new_git_blob_sha1": "6a28275278d6c0f99b32321774ef2a7f89df59c0",
+      "new_sha256": "17828e8bcac7751c3fb7205885cb5ce3530c8bd2bb794b6b85a413a4da472ac9"
+    },
+    {
+      "path": "config.yaml",
+      "expected_existing_git_blob_sha1": "e125f6dedbadc8339cdec2e269708991557c6228",
+      "new_git_blob_sha1": "c63b53a0bf18d3e868cd3f0f5f7a5471bd78155d",
+      "new_sha256": "029b472112f0bf9bd0d37340c4ca517717b6305408ab281a16f1adbdc0d86d73"
+    },
+    {
+      "path": "deliverables/C/C01/README.md",
+      "expected_existing_git_blob_sha1": "186b7990780111db26ab09d658c0a305ae699601",
+      "new_git_blob_sha1": "17f29dfe656f084e33545fc31799bdc9a3df996c",
+      "new_sha256": "b3e36e63817c375eea83394128aef2b9d479317b9b7a6e1c725a6a47a14dce8b"
+    },
+    {
+      "path": "deliverables/C/C01/evaluation_handoff.json",
+      "expected_existing_git_blob_sha1": "54fc105186cc24afb2f65f516d11f59ae50c8877",
+      "new_git_blob_sha1": "2f3f5ddcab2b6d2745cb0c57a36736aec6a1db5c",
+      "new_sha256": "beab5c1d930b9dc37cfbca7e1b85adc2761381524531f773d5994f1cfe5e26ca"
+    },
+    {
+      "path": "deliverables/G/G01/meeting_agenda_1128.md",
+      "expected_existing_git_blob_sha1": "5f20e5d6884892193f4095b6d2e0b51359c99fc4",
+      "new_git_blob_sha1": "0aa06df661fcaf36cfe04f20ed77af4e5cb36028",
+      "new_sha256": "f82b59c22178a22bdc0f2f12e531dd36d10cf084b15481b66d799c0a52a6d1b6"
+    },
+    {
+      "path": "deliverables/G/G02/meeting_1128.md",
+      "expected_existing_git_blob_sha1": null,
+      "new_git_blob_sha1": "509e98211747e15abe17e1bedb910f4d9e909a1e",
+      "new_sha256": "dd5d1df3d55bcaf4ddd4ab971fc4fe838e04627e5d93225da961138979081625"
+    },
+    {
+      "path": "deliverables/L/L02/README.md",
+      "expected_existing_git_blob_sha1": "14ae9cabe8d82b7f587180084bdff9085c4e8eda",
+      "new_git_blob_sha1": "81a1ce6a93914ae84c4527c9dcf6e5998399aa09",
+      "new_sha256": "4a438e37623966ef3289b8f13b1a03a066f90c05f8fd173d4133d1e71940531a"
+    },
+    {
+      "path": "deliverables/L/L02/evaluation_config.json",
+      "expected_existing_git_blob_sha1": "8eccac6e797082f820fa0a35704ef03f2f509d80",
+      "new_git_blob_sha1": "7bd79d9d828a753c147a33d0cdcecb9c7e483263",
+      "new_sha256": "13d940d38f5b16c84a95671dfbc3feb8477597bcd408a1e7632bb55f6f310ffb"
+    },
+    {
+      "path": "deliverables/L/L03/README.md",
+      "expected_existing_git_blob_sha1": "db3792d9e7c2e2ea3e4a456b6a9421e215462277",
+      "new_git_blob_sha1": "0040876c3f33c49ab606fd9da5876b96401df671",
+      "new_sha256": "c2b9cee02bef5f20a197561ddec043c2317da681eb60453baab7b596c1bdc538"
+    },
+    {
+      "path": "deliverables/L/L03/judge_config.json",
+      "expected_existing_git_blob_sha1": "b87e0f63da32bb726459107557e0aba1580d57bf",
+      "new_git_blob_sha1": "3d84dbc63d4b9b467f10ad10f3834cee1cd9be67",
+      "new_sha256": "dbac5e7e7a1d8d881925a02a2404b5770d2fc1de922d48a4887968590d8669b2"
+    },
+    {
+      "path": "deliverables/P/P01/poster_layout.pdf",
+      "expected_existing_git_blob_sha1": null,
+      "new_git_blob_sha1": "73f801f3d318a79100d3689a2f12aef37ba9ad9f",
+      "new_sha256": "ec45663305e649555c839c46640370ae2000347b33517a65e126cc1a182628ac"
+    },
+    {
+      "path": "deliverables/P/P01/poster_layout.png",
+      "expected_existing_git_blob_sha1": null,
+      "new_git_blob_sha1": "c02e77aa401ca6f481301c93f845be2474528ccc",
+      "new_sha256": "abee4826554499c6983ea7926eb9a63bea34b67a70a6e7ad91699b5a0b8b2c87"
+    },
+    {
+      "path": "docs/DECISIONS.md",
+      "expected_existing_git_blob_sha1": "d5f8a0259a027cb45534c53cdaed9b5e17ea8862",
+      "new_git_blob_sha1": "a062aea0f4377d6da62915f12ee85a597f795398",
+      "new_sha256": "a29ea143720a5b5906eb8c4666bafa330f49b24db7964d2f0a5344862becdd3b"
+    },
+    {
+      "path": "docs/DOCUMENT_CONTROL.md",
+      "expected_existing_git_blob_sha1": "7dc3950c6536e2aae81b516dc893c09b8865da3d",
+      "new_git_blob_sha1": "0305f2e3be1cb249984f9e1a5345e1de4d9a5f2c",
+      "new_sha256": "4f15c8380f7eba249290298a28a703aa4a69d49bbf86f8cb7229a3c8399ccd4d"
+    },
+    {
+      "path": "docs/ENERGY_SPEC.md",
+      "expected_existing_git_blob_sha1": "f0e9cf8870ce201e4500d58bb7bc1fe8f058be26",
+      "new_git_blob_sha1": "b5e7fc8baa5b6c1d3eeddac82d1b1aabe7630cdb",
+      "new_sha256": "e76b3893c562f0fdf70069db0d55480b037c91144b1cf5089d07a72b453a4010"
+    },
+    {
+      "path": "docs/EVALUATION_ACCESS_CONTROL.md",
+      "expected_existing_git_blob_sha1": "d6b59859a22c42a10133900e48ee41c59d091203",
+      "new_git_blob_sha1": "5afb636c5b3950a845f6287e3ca05d886aa28e0c",
+      "new_sha256": "614eb329b0cf72acb72fccb53e8e77daf9238b9df9088453d49867c80b0a3064"
+    },
+    {
+      "path": "docs/EVALUATION_PROTOCOL.md",
+      "expected_existing_git_blob_sha1": "7c58690d208a804ba1ce7037f02737aa34ee8113",
+      "new_git_blob_sha1": "4c03fb53c0ad64c7659fa007e7dc3d702c63ebc4",
+      "new_sha256": "af7702f8508dbb771f1aa6beca024f8ece56a47af0d550dfc05fc2924751ed0b"
+    },
+    {
+      "path": "docs/FINAL_REVIEW_20261128.md",
+      "expected_existing_git_blob_sha1": "ec60549dca54ce20eb45b0c582fb59216e75ed14",
+      "new_git_blob_sha1": "e4aa107c1ba0f0b2b21c7e8ad9ec95bdbf6fb618",
+      "new_sha256": "ad21c97a6c04a89d090b7b352fff37058264fd8147fdf03aed203827d736fce2"
+    },
+    {
+      "path": "docs/HISTORY_INDEX.md",
+      "expected_existing_git_blob_sha1": "8f45ced9732a986c60a658af7be7b75366524a69",
+      "new_git_blob_sha1": "6833e7edbf80c6af6acfc77f150f93f8dacc5896",
+      "new_sha256": "11217d869eb383eb2040f74164a45c927efce4d2e61e9839eed75f2c83cf3c95"
+    },
+    {
+      "path": "docs/MEETING_REVISION_GUIDE_20261128.pdf",
+      "expected_existing_git_blob_sha1": null,
+      "new_git_blob_sha1": "235b92e247d63786e6abeb37eab3be6cd4bd13c1",
+      "new_sha256": "711d18b9b1a749811121a6bc1b22a816b35ab2b4aec4885c79a5e752fff89404"
+    },
+    {
+      "path": "docs/PDF_EVIDENCE_SPEC.md",
+      "expected_existing_git_blob_sha1": "4da351875156509a850c076007645c3ceab0d86e",
+      "new_git_blob_sha1": "5056dd5ff877ca6a52109b04898045cec552951c",
+      "new_sha256": "e5d27e520501a2ad8a1fb699c8279d6b4f40949567553e3452225893d394cdf6"
+    },
+    {
+      "path": "docs/POSTER_PLAN.md",
+      "expected_existing_git_blob_sha1": "cca3b1d5fdf0659120e4c36f15156de1519ca3af",
+      "new_git_blob_sha1": "2ead701853aab78ad4c7c0bbcb4d372405e19803",
+      "new_sha256": "b2598bb845499af9afefc282fb2d08524ff7ab0bdab2d73cd7be94bc17094351"
+    },
+    {
+      "path": "docs/ROADMAP.md",
+      "expected_existing_git_blob_sha1": "d65f5033143639e90e95982ded150bf5350f12ff",
+      "new_git_blob_sha1": "9fdaa01de49f5aa7ec2b8e7a4806f924e8f94a73",
+      "new_sha256": "3e39e48a51acbf04bd060f68b47a46eb88a8babc0ba4bae0ef6f68b83cece473"
+    },
+    {
+      "path": "docs/TEAM_SHARING_POLICY.md",
+      "expected_existing_git_blob_sha1": "a3be004f48bfe5da13f835601a6cdaa49f6215b9",
+      "new_git_blob_sha1": "d311589f0e720c6fb4ae39382a63fa4c0863f79d",
+      "new_sha256": "b013035a6f75332bc84841387110880d2f9703ff3798ae04778c67e2029d1e73"
+    },
+    {
+      "path": "docs/TEAM_TASKS.md",
+      "expected_existing_git_blob_sha1": "33b234b9b530f9320526cb2a13ccf47d4c5366b2",
+      "new_git_blob_sha1": "13ef648a67440ba1ac4e216d8634cf8af315d73e",
+      "new_sha256": "8ffdc54cd3749cc817ae4575b7758e50bbb32452866b7d4847e82a367c2642a6"
+    },
+    {
+      "path": "management/milestones.csv",
+      "expected_existing_git_blob_sha1": "26dddec353f1e1a8a554dc2fd7f64a79ba2d607a",
+      "new_git_blob_sha1": "305f816f23f717ba275e542c0d02fa82de832bdf",
+      "new_sha256": "a9441c9000589492fb12d73f5ac2bfc681ba3eb5f70ce8402314ebc0e21e7ce0"
+    },
+    {
+      "path": "management/tasks.csv",
+      "expected_existing_git_blob_sha1": "1f5c1ad12ebb7be5d5242be4467dd28d236b3971",
+      "new_git_blob_sha1": "9c1bd121574e964de37354d28a67de9d95132227",
+      "new_sha256": "94b5fc5937fdda900f6402dd93da80e4debc8600fb7639b547676101aebdb039"
+    },
+    {
+      "path": "scripts/check_release.py",
+      "expected_existing_git_blob_sha1": "a028a4cb5d998a7e6c1db15ac776541bd9c28ffc",
+      "new_git_blob_sha1": "c19545f8a6f275d02a67f1cee295bb7135f88506",
+      "new_sha256": "57158470dd05313de83a009100499a18fca7779871bcaa1c90064fdc67b22251"
+    },
+    {
+      "path": "templates/REPORT_FIELDS.csv",
+      "expected_existing_git_blob_sha1": "8c760f63c0be89f713bd8b13f4c41006ff18d5cb",
+      "new_git_blob_sha1": "fd954e965c5dcbefa3aa92986c53037e4e4636d2",
+      "new_sha256": "f8c2e4eb8a367b35cb454c7c9ceb751daa8b5a52cf602ad46eccc41956aac838"
+    }
+  ]
+}

@@ -15,3 +15,5 @@
 - [FINAL_REVIEW_MANIFEST_20261128.json](FINAL_REVIEW_MANIFEST_20261128.json) — 과거 기록/검토 시점 스냅샷; 현행 실행 지시 아님.
 - [DOCUMENT_CLEANUP_MANIFEST_20261128.json](DOCUMENT_CLEANUP_MANIFEST_20261128.json) — 이전 정비 배포 증빙; 현재 공유 정책과 구분.
 - [팀 내부 공유 정책](TEAM_SHARING_POLICY.md) — 현행 변경 사항.
+
+- [11/28 회의 반영](../deliverables/G/G02/meeting_1128.md) · [수정지침 원본](MEETING_REVISION_GUIDE_20261128.pdf) · [배포 manifest](MEETING_MANIFEST_20261128.json). 이전 배포 manifest는 당시 스냅샷으로 보존.

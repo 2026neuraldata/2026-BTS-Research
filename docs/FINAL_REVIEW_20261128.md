@@ -1,5 +1,8 @@
 # 2026-11-28 최종 검토 및 인계 기준
 
+> 이후 현행 결정은 [11/28 회의록](../deliverables/G/G02/meeting_1128.md) 참조. 아래는 회의 전 배포 기록.
+
+
 > 과거 배포 기록(R01–R18): 이후 문서 정비 F01–F11 및 단체방 공유 정책은 [문서 관리 기준](DOCUMENT_CONTROL.md)·[팀 공유 정책](TEAM_SHARING_POLICY.md)을 따름. 아래 개별 전달 지침은 당시 기록이며 현행이 아님. [수정 전 원문](https://github.com/2026neuraldata/2026-BTS-Research/blob/df4fe3a6b15af486149f908c79f95811bb5c6119/docs/FINAL_REVIEW_20261128.md) 보존.
 
 기준 커밋: `017ac5c6d0bce78754bcacd95f7d0934c2dfa589`. R01–R18 범위 동결. 11/27 통합 및 계획 문서/manifest는 당시 스냅샷으로 보존함. 본 문서와 최신 업무 원장/manifest가 현행 수정 범위의 기준임.
