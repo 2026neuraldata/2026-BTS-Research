@@ -1,12 +1,12 @@
 """Static checks for the public repository. No network or private evaluation data required.
 Run from the complete checkout; --inventory is for an explicitly partial review copy.
---release validates the current team-sharing patch only (not future revisions).
+--release validates the selected manifest (defaults to the 11/28 meeting revision).
 """
 import argparse,csv,fnmatch,hashlib,json,posixpath,re,subprocess,sys
 from pathlib import Path
 from urllib.parse import unquote,urlsplit
 ROOT=Path(__file__).resolve().parents[1]
-ap=argparse.ArgumentParser();ap.add_argument('--release',action='store_true');ap.add_argument('--inventory',type=Path,help='verified remote path inventory for partial review only');a=ap.parse_args()
+ap=argparse.ArgumentParser();ap.add_argument('--release',action='store_true');ap.add_argument('--manifest',default='docs/MEETING_MANIFEST_20261128.json');ap.add_argument('--inventory',type=Path,help='verified remote path inventory for partial review only');a=ap.parse_args()
 errors=[]
 def fail(msg):errors.append(msg)
 def read(p):return (ROOT/p).read_text(encoding='utf-8-sig')
@@ -41,15 +41,20 @@ checks={
  'management/tasks.csv':['단체방에는 완료 안내만','팀장 통제 경로로 제출','팀장 전용'],
  'docs/TEAM_TASKS.md':['단체방에는 완료 안내만','비공개 업무는 별도 통제 경로'],
  'docs/EVALUATION_ACCESS_CONTROL.md':['단체방에는 완료 안내','팀장만 비공개 최종 자료 접근'],
- 'docs/EVALUATION_PROTOCOL.md':['단체방은 비공개 산출물 완료 안내만','후보/개발자에게 전달 금지'],
+ 'docs/EVALUATION_PROTOCOL.md':['단체방은 비공개 산출물 완료 안내만','후보/개발자에게 전달 금지','정답이나 근거 누락/오류 1점'],
  'deliverables/L/L01/README.md':['팀장 전용'],
  'deliverables/E/E01/formulas.md':['교반 절감 0(동일 조건 확인 시)','제조량·농도는 다음 주 확인한다.'],
  'deliverables/L/L01/submission_manifest.json':['to public GitHub before evaluation','authorized_evaluation_custodians_only'],
- 'deliverables/C/C01/evaluation_handoff.json':['confirm localhost-only presentation'],
- 'docs/EVALUATION_PROTOCOL.md':['정답이나 근거 누락/오류 1점']}
+ 'deliverables/C/C01/evaluation_handoff.json':['confirm localhost-only presentation']}
 for p,phrases in checks.items():
  for phrase in phrases:
   if phrase in read(p):fail('known obsolete instruction: '+p)
+# Current meeting instructions only; dated history and immutable manifests excluded.
+current_paths=['README.md','config.yaml','management/tasks.csv','docs/TEAM_TASKS.md','docs/ROADMAP.md','docs/DECISIONS.md','docs/DOCUMENT_CONTROL.md','docs/EVALUATION_PROTOCOL.md','docs/PDF_EVIDENCE_SPEC.md','docs/POSTER_PLAN.md','deliverables/C/C01/evaluation_handoff.json','deliverables/L/L02/evaluation_config.json','deliverables/L/L03/judge_config.json']
+obsolete=['조건부 DSPy','optional DSPy','optionally optimize with DSPy','DSPy 적용 시','외부 QR 사용 결정 시','QR 사용 여부','직접/간접 활용 조건 확정']
+for path in current_paths:
+ for phrase in obsolete:
+  if phrase in read(path):fail('obsolete meeting instruction: '+path+' : '+phrase)
 # Date/dependency validation on current source ledger, works in review copy too.
 from datetime import datetime
 cfg=jsonfile('config.yaml');year=cfg['project']['year'];tasks=list(csv.DictReader(read('management/tasks.csv').splitlines()));by={t['id']:t for t in tasks}
@@ -85,9 +90,10 @@ for k in ['jar','dictionary']:
 corpus=jsonfile('deliverables/L/L02/corpus_manifest.json')
 # Actual config has private evaluation file pointers; never demand their presence in public repo.
 eval_cfg=jsonfile('deliverables/L/L02/evaluation_config.json')
+if cfg['evaluation'].get('dspy_enabled') is not False:fail('DSPy must remain excluded')
 if not isinstance(eval_cfg['ready_for_final_run'],bool):fail('invalid execution gate flag')
 if a.release:
- m=jsonfile('docs/TEAM_SHARING_MANIFEST_20261128.json')
+ m=jsonfile(a.manifest)
  for x in m['replace_files']:
   p=ROOT/x['path']
   if not p.is_file():fail('release file missing: '+x['path']);continue
